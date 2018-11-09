@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/META-INF
+END
+jboss.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/META-INF/jboss.xml
+END
+ejb_jar_xml_was_ebank
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/META-INF/ejb_jar_xml_was_ebank
+END
+MANIFEST.MF
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/META-INF/MANIFEST.MF
+END
+ejb-jar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/META-INF/ejb-jar.xml
+END
+ejb_jar_xml_was_finance
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/META-INF/ejb_jar_xml_was_finance
+END

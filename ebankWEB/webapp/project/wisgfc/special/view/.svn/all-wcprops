@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/project/wisgfc/special/view
+END
+consignReceiveConfirmUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/project/wisgfc/special/view/consignReceiveConfirmUpdate.jsp
+END
+consignReceiveStartUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/project/wisgfc/special/view/consignReceiveStartUpdate.jsp
+END
+consignReceiveConfirmQuery.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/project/wisgfc/special/view/consignReceiveConfirmQuery.jsp
+END
+consignReceiveStartQuery.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/project/wisgfc/special/view/consignReceiveStartQuery.jsp
+END
+consignReceiveStartAdd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/project/wisgfc/special/view/consignReceiveStartAdd.jsp
+END

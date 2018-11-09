@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/mywork/dataentity
+END
+CraMyWorkInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/mywork/dataentity/CraMyWorkInterface.java
+END
+ColumnNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/mywork/dataentity/ColumnNode.java
+END
+MyWorkColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/mywork/dataentity/MyWorkColumn.java
+END
+TransactionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/mywork/dataentity/TransactionType.java
+END
+TransactionURL.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/mywork/dataentity/TransactionURL.java
+END
+CraMyWorkInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/mywork/dataentity/CraMyWorkInfo.java
+END
+CreditSettingMyWorkInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/mywork/dataentity/CreditSettingMyWorkInfo.java
+END

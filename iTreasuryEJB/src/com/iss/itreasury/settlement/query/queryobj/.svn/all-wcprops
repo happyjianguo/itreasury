@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj
+END
+QAccountBalanceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QAccountBalanceInfo.java
+END
+QSecurities.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QSecurities.java
+END
+QCapitalReceive.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QCapitalReceive.java
+END
+QSecuritiesNotice.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QSecuritiesNotice.java
+END
+QComparision.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QComparision.java
+END
+QCapitalSupervise.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QCapitalSupervise.java
+END
+QBankAccountCheck.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QBankAccountCheck.java
+END
+QContractSearchDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QContractSearchDao.java
+END
+QTransAccountDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QTransAccountDetail.java
+END
+QCapitalPlan.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QCapitalPlan.java
+END
+QInterestEstimate.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QInterestEstimate.java
+END
+QAccountTrustVoucher.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QAccountTrustVoucher.java
+END
+QTransLiquidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QTransLiquidation.java
+END
+QAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QAccount.java
+END
+QInterest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QInterest.java
+END
+QCountertTransDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QCountertTransDao.java
+END
+QCapitalDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QCapitalDetail.java
+END
+QDepositLoanSearch_ConsignLoan.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QDepositLoanSearch_ConsignLoan.java
+END
+AccountDailyTransGather.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/AccountDailyTransGather.java
+END
+QAccountBalance.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QAccountBalance.java
+END
+QStatement.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QStatement.java
+END
+BaseQueryObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/BaseQueryObject.java
+END
+QueryGL.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QueryGL.java
+END
+QStockCompanyAssetsStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QStockCompanyAssetsStatistics.java
+END
+QOtherDeposit.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QOtherDeposit.java
+END
+QStockCompanyProfitLossStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QStockCompanyProfitLossStatistics.java
+END
+QDailyAmountVaryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QDailyAmountVaryDao.java
+END
+QDailyCapitalVaryAllDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QDailyCapitalVaryAllDao.java
+END
+QAccountAmountInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QAccountAmountInfoDao.java
+END
+QReckoningBill.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QReckoningBill.java
+END
+QTransactionForSubAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QTransactionForSubAccount.java
+END
+QAccountBalanceDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QAccountBalanceDetail.java
+END
+QTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QTransaction.java
+END
+QFixedDeposit.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QFixedDeposit.java
+END
+QDepositDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QDepositDetail.java
+END
+QSubAccountDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QSubAccountDao.java
+END
+QLoanNotice.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QLoanNotice.java
+END
+QAverageAccountBalance.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QAverageAccountBalance.java
+END
+QTransAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QTransAccount.java
+END
+QDailyAmountVaryAllDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QDailyAmountVaryAllDao.java
+END
+QTransInterest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QTransInterest.java
+END
+QLoanNoticeBook.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QLoanNoticeBook.java
+END
+QDepositLoanSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QDepositLoanSearch.java
+END
+QDepositLoanSearch_IntrustLoan.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QDepositLoanSearch_IntrustLoan.java
+END
+QClientGather.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QClientGather.java
+END
+QCapitalPayment.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/queryobj/QCapitalPayment.java
+END

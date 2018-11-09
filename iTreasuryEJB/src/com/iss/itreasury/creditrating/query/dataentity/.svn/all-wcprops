@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/creditrating/query/dataentity
+END
+CreditRatingRecordQueryResultInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/creditrating/query/dataentity/CreditRatingRecordQueryResultInfo.java
+END
+Crert_CreditRatingQueryResultInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/creditrating/query/dataentity/Crert_CreditRatingQueryResultInfo.java
+END
+CreditRatingRecordQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/creditrating/query/dataentity/CreditRatingRecordQueryInfo.java
+END
+Crert_CreditRatingQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/creditrating/query/dataentity/Crert_CreditRatingQueryInfo.java
+END

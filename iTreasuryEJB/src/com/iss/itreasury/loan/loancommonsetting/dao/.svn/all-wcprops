@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loancommonsetting/dao
+END
+LoanCommonSettingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loancommonsetting/dao/LoanCommonSettingDao.java
+END
+AtTermAwakeSettingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loancommonsetting/dao/AtTermAwakeSettingDao.java
+END
+LoanClientSettingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loancommonsetting/dao/LoanClientSettingDao.java
+END
+LoanSettingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loancommonsetting/dao/LoanSettingDao.java
+END

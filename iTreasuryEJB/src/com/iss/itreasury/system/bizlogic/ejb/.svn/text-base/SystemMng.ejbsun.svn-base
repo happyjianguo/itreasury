@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sun-ejb-jar>
+  <enterprise-beans>
+    <ejb>
+      <ejb-name>SystemMng</ejb-name>
+      <jndi-name>ejb/SystemMng</jndi-name>
+      <resource-ref>
+        <res-ref-name>jdbc/cpf/type4</res-ref-name>
+        <jndi-name>jdbc/cpf/type4</jndi-name>
+        <default-resource-principal>
+          <name></name>
+          <password></password>
+        </default-resource-principal>
+      </resource-ref>
+      <pass-by-reference>false</pass-by-reference>
+    </ejb>
+  </enterprise-beans>
+</sun-ejb-jar>

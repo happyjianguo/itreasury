@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/attornmentapply/dao
+END
+AttornmentApplyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/attornmentapply/dao/AttornmentApplyDao.java
+END
+AttornmentContractDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/attornmentapply/dao/AttornmentContractDao.java
+END

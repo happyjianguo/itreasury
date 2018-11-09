@@ -1,0 +1,18 @@
+<HTML >
+<HEAD>
+<TITLE>打印格式设计</TITLE>
+<script src="../js/csjsrequest.js"></script>
+<script language="javascript">
+var toptempid= Request.QueryString("tempid");
+var toptempname= Request.QueryString("tempname");
+var Printer =window.opener.Printer
+</script>
+</HEAD>
+<frameset rows=5%,95%,0 frameborder=1 border=0>
+<frame id="menu" src="menutoolbar.htm" scrolling=no border=0 frameborder=1  noresize >
+<frameset id=main1 cols=0,100% frameborder=1 resize >
+<frame id="objlist" src="objlist.htm" scrolling=no frameborder=1  resize >
+<frame id="topic" name="rightmain" src="layout.htm"  scrolling=auto border=0 frameborder=0 bordercolor=LightGrey marginwidth=1 resize>
+</frameset>
+</frameset>
+</HTML>

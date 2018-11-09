@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/query/dataentity
+END
+QueryAttornContractResultInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/query/dataentity/QueryAttornContractResultInfo.java
+END
+QueryAttornContractInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/query/dataentity/QueryAttornContractInfo.java
+END
+AssetInterestCalResultInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/query/dataentity/AssetInterestCalResultInfo.java
+END
+AssetInterestCalInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/query/dataentity/AssetInterestCalInfo.java
+END
+QueryFundLendingRequisitionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/query/dataentity/QueryFundLendingRequisitionInfo.java
+END
+ContractbillInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/query/dataentity/ContractbillInfo.java
+END
+QueryPerformInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/query/dataentity/QueryPerformInfo.java
+END

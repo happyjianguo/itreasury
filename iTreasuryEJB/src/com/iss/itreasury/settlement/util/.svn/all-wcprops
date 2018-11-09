@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util
+END
+SETTMagnifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util/SETTMagnifier.java
+END
+BankDataUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util/BankDataUtil.java
+END
+SETTHTML.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util/SETTHTML.java
+END
+SETTConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util/SETTConstant.java
+END
+SETTools.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util/SETTools.java
+END
+NameRef.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util/NameRef.java
+END
+SimulateData.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util/SimulateData.java
+END
+UtilOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/util/UtilOperation.java
+END

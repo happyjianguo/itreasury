@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiesgeneralledger/bizlogic
+END
+SecuritiesGeneralLedger.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiesgeneralledger/bizlogic/SecuritiesGeneralLedger.java
+END
+SecuritiesGeneralLedgerEJB.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiesgeneralledger/bizlogic/SecuritiesGeneralLedgerEJB.java
+END
+SecuritiesGeneralLedgerOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiesgeneralledger/bizlogic/SecuritiesGeneralLedgerOperation.java
+END
+SecuritiesGeneralLedgerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiesgeneralledger/bizlogic/SecuritiesGeneralLedgerBean.java
+END
+SecuritiesGeneralLedgerHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiesgeneralledger/bizlogic/SecuritiesGeneralLedgerHome.java
+END

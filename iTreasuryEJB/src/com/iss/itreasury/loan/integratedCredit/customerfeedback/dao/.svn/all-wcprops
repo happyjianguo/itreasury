@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao
+END
+ClientDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao/ClientDao.java
+END
+IntegratedCreditPrintDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao/IntegratedCreditPrintDao.java
+END
+LoanFinanceitemdetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao/LoanFinanceitemdetailDao.java
+END
+SelectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao/SelectDao.java
+END
+CustomerfeedbackDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao/CustomerfeedbackDao.java
+END
+LoanClientDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao/LoanClientDao.java
+END
+LoanCreditgradeInfoQueryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao/LoanCreditgradeInfoQueryDao.java
+END
+LoanCreditGradedetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dao/LoanCreditGradedetailDao.java
+END

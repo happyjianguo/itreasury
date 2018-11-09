@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity
+END
+TRF_NotifyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_NotifyInfo.java
+END
+TRF_ExtendDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_ExtendDetailInfo.java
+END
+TRF_ConsignLoanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_ConsignLoanInfo.java
+END
+TRF_LoanContractFormInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_LoanContractFormInfo.java
+END
+TRF_ClientInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_ClientInfo.java
+END
+TRF_AssureAccountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_AssureAccountInfo.java
+END
+TRF_LoanDiscountContractFormInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_LoanDiscountContractFormInfo.java
+END
+TRF_LoanPayFormInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_LoanPayFormInfo.java
+END
+TRF_CurrencyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_CurrencyInfo.java
+END
+TRF_TrustLoanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_TrustLoanInfo.java
+END
+TRF_LoanAssureContractFormInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_LoanAssureContractFormInfo.java
+END
+TRF_FixedInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_FixedInfo.java
+END
+TRF_CustomFieldSetting.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_CustomFieldSetting.java
+END
+TRF_LoanContractPlanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_LoanContractPlanInfo.java
+END
+TRF_DiscountAccountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/dataentity/TRF_DiscountAccountInfo.java
+END

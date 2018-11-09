@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transnoteacceptance/dataentity
+END
+QueryByStatusConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transnoteacceptance/dataentity/QueryByStatusConditionInfo.java
+END
+TransAcceptanceNoteAcceptanceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transnoteacceptance/dataentity/TransAcceptanceNoteAcceptanceInfo.java
+END
+TransAdvancedReceviceNoteAcceptanceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transnoteacceptance/dataentity/TransAdvancedReceviceNoteAcceptanceInfo.java
+END

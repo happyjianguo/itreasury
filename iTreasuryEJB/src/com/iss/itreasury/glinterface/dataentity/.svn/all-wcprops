@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity
+END
+GLKingDeePzInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLKingDeePzInfo.java
+END
+GLEntryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLEntryInfo.java
+END
+GLKingDeeExtAcctInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLKingDeeExtAcctInfo.java
+END
+GLKingDeePzflInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLKingDeePzflInfo.java
+END
+GLISSAcntVchInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLISSAcntVchInfo.java
+END
+GLGenerSoftPzInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLGenerSoftPzInfo.java
+END
+U8SettingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/U8SettingInfo.java
+END
+GLGenerSoftPzflInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLGenerSoftPzflInfo.java
+END
+GLAnyiPzInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLAnyiPzInfo.java
+END
+GLAnyiPznrInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLAnyiPznrInfo.java
+END
+GLVoucherInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLVoucherInfo.java
+END
+GLAnyiPzflInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLAnyiPzflInfo.java
+END
+GLVoucherLogInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/dataentity/GLVoucherLogInfo.java
+END

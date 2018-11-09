@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/clientmanage/client/dao
+END
+ClientDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/clientmanage/client/dao/ClientDAO.java
+END
+NatureDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/clientmanage/client/dao/NatureDAO.java
+END
+CorporationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/clientmanage/client/dao/CorporationDAO.java
+END
+ClientmanageDao_New.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/clientmanage/client/dao/ClientmanageDao_New.java
+END
+ClientmanageDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/clientmanage/client/dao/ClientmanageDAO.java
+END

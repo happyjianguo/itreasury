@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/reportelements/dataentity
+END
+ContractExtQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/reportelements/dataentity/ContractExtQueryInfo.java
+END
+RepayExtQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/reportelements/dataentity/RepayExtQueryInfo.java
+END
+CreditExtInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/reportelements/dataentity/CreditExtInfo.java
+END
+ContractExtInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/reportelements/dataentity/ContractExtInfo.java
+END
+CreditExtQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/reportelements/dataentity/CreditExtQueryInfo.java
+END
+RepayExtInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/reportelements/dataentity/RepayExtInfo.java
+END

@@ -1,0 +1,198 @@
+<HTML xmlns:fc xmlns:v="urn:schemas-microsoft-com:vml">
+<HEAD>
+<link rel="stylesheet" type="text/css" href="menu.css">
+<STYLE> 
+v\:* { BEHAVIOR: url(#default#VML);};
+.subpageDiv { BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: #0000cd 2px outset; BORDER-LEFT: #0000cd 2px ridge; 
+BORDER-RIGHT: #0000cd 2px outset; BORDER-TOP: #0000cd 2px ridge;  OVERFLOW: hidden;  
+WIDTH:210MM; HEIGHT:297MM;padding:8mm; }
+.billsheet { BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid; 
+BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid;OVERFLOW: hidden; WIDTH:100%; HEIGHT:100%; 
+}
+</STYLE>
+<script src="../js/fcpub.js"></script>
+<script src="../js/design.js"></script>
+<script src="../js/fcbasecont.js"></script>
+<script src="../js/fcopendj.js"></script>
+<script src="../js/fctorun.js"></script>	
+<script src="../eprint/eprint.js"></script>	
+<script src="../eprint/printer.js"></script>	
+<SCRIPT ID="clientEventHandlersJS" LANGUAGE="javascript">
+var	lngUndo = -1 
+var	lngRedo = -1
+var oUndo = SetDom("<root></root>")
+var oRedo = SetDom("<root></root>")
+var curtempid ;    
+var curtempname = "出库单一" ;
+var oXmlType ; 
+var oXmlTypeSub = null ; 
+var oPageSet = {
+width		: '210',
+height		: '297',
+top			: '8',
+bottom		: '8',
+left		: '8',
+right		: '8',
+size		: 'A4',   
+header		: '', 
+footer		: '',
+orientation : '1',   
+after_onpagechange	: ''	
+}
+var Printer = parent.Printer ;
+var curdjid=0	
+var pstrUserFunction=""		
+var pstrAddHtml=""		
+var pstrSplitAddHtml= "<p id=splitaddhtml />" ;
+var blnChange=false		
+var curSelElement =null		
+var strXml;
+var strID;
+var arrtmp1=new Array();
+var ArrName=new Array();
+ArrName[0]="ep_memo";
+ArrName[1]="ep_band";
+ArrName[2]="shape";
+ArrName[3]="img";
+ArrName[4]="ep_subreport" ;
+var oContXml = SetDom("<root></root>"); 
+var ArrNum=new Array(); 
+InitControlNo()
+function InitControlNo(){
+for(var Num=0;Num<ArrName.length;Num++){
+ArrNum[ArrName[Num]]=0;
+}
+}
+function window_onload() {
+SKbillsheet.unselectable = "on";
+SKbillsheet.contentEditable=true
+document.execCommand("2D-Position", true, true);
+document.execCommand("MultipleSelection", true, true);
+SKbillsheet.focus() ;
+design_window_onload() ;
+}
+function window_onclick() {
+if(event.srcElement.id=="mainbody"){
+curSelElement=null
+}
+}
+function controlselect() {
+curSelElement=event.srcElement
+}
+function controlselectcancel() {
+event.returnValue=false
+}
+function DesignDjOpen(djid){
+SaveTip()
+if (djid<=0) return ""
+if(fcpubdata.databaseTypeName == "oracle"){
+var sRet = loadClob("<no>designtext</no><no>"+djid+"</no>")
+sRet = UnTransSql(sRet)   	
+}else{
+var sql="select designtext from FC_BILLZL where djid="+djid ;
+var sRet=SqlToField(sql);
+if(isSpace(sRet)) return ""
+}
+var s = DesignDjOpenSub(sRet,djid);
+return s
+}
+function DesignDjOpenSub(sRet,djid) {
+if(typeof djid == "undefined") djid = 0
+var iEnd=sRet.indexOf("</scr"+"ipt>") ;
+if(iEnd==-1){
+pstrUserFunction="";
+sHtm=sRet
+}else{
+var sHtm=sRet.substring(iEnd+9,sRet.length) ;
+if(isSpace(sHtm)){
+return ""
+} 
+pstrUserFunction=sRet.substring(8,iEnd) ;
+pstrUserFunction=UnTransXml(pstrUserFunction);
+}
+var ipos=sHtm.indexOf(pstrSplitAddHtml)
+if(ipos==-1){
+pstrAddHtml=""
+}else{
+pstrAddHtml=sHtm.substring(ipos+pstrSplitAddHtml.length,sHtm.length)	
+sHtm=sHtm.substring(0,ipos)
+}
+bigmain.innerHTML=sHtm 
+curdjid=djid ;
+if(isSpace(SKbillsheet.controlno)) return ""
+ArrNum = OpenControlNo(SKbillsheet.controlno,ArrNum)
+var scontxml = SKbillsheet.contxml
+if(isSpace(scontxml)  ) {
+scontxml = "<root></root>"
+}
+oContXml=SetDom(scontxml)
+pageonload()
+ChangeWinTitle(SKbillsheet.dj_sn)
+SKbillsheet.focus() ;
+blnChange = false
+return "OK"
+}
+function SaveTip(){
+if(blnChange == false) return 
+var ret = window.confirm("确定保存当前表单吗？");		
+if (ret) {
+DesignDjSave();
+}
+return ret;
+}
+function SaveControlNo() {
+var sRet=""
+for(var Num=0;Num<ArrName.length;Num++){
+sRet+=ArrName[Num]+":"+ArrNum[ArrName[Num]]+";" ;
+}
+sRet=sRet.substring(0,sRet.length-1);
+return sRet ;
+}
+function window_onbeforeunload() {
+if(blnChange == false) return 
+event.returnValue="离开当前页面将导致当前输入的数据丢失!"
+}
+function main_onbeforeeditfocus() {
+event.returnValue = false
+}
+function main_exec(scomm) {
+document.execCommand(scomm)
+}
+function window_onresize() {
+bigmain.style.width = document.body.clientWidth-2
+bigmain.style.height = document.body.clientHeight-2
+}
+//-->.
+</SCRIPT>
+</HEAD>
+<BODY onbeforeunload="window_onbeforeunload()" onload="window_onload()" id="mainbody"
+onclick="window_onclick()" onkeydown="main_onkeydown()"
+oncontextmenu="RightMenu.showMenu(window,RightMenu.dataSource.documentElement.selectSingleNode('//MenuItem'),window.document.body,event.x,event.y)"
+onresize=window_onresize() 
+>
+<div id="bigmain" ondblclick="main_ondblclick()" onbeforeeditfocus="main_onbeforeeditfocus()"
+border="0" align=center  
+style="BACKGROUND-COLOR: #858382; DISPLAY: block;  padding:2mm;"
+>
+<div id="middlediv"  class=subpageDiv align=center >
+<div id="middlediv1"  class=billsheet align=center >
+<div id="SKbillsheet" oncontrolselect="controlselect()"   >
+</div>
+</div>
+</div>
+</div>
+<WebMenu DataSource="MenuCode.value" class="WebMenu" id="RightMenu" Width="100" Effect="3" MenuType="1" ></WebMenu>
+<textarea rows="17" id="MenuCode" cols="73" style="display:none" NAME="MenuCode">
+<?xml version="1.0" encoding="gb2312"?>
+<Root>
+<MenuItem  hasSub="1" subWidth="160" >
+<MenuItem Func="javascript:CopyCont();main_onkeydown(46);main_exec('Delete');main_onkeyup(46);" Text="剪切 ctrl+x" img="../images/ef_design_cut.gif" />  
+<MenuItem Func="javascript:CopyCont()" Text="复制 ctrl+c" img="../images/ef_design_copy.gif" />  
+<MenuItem Func="javascript:PasteCont()" Text="粘贴 ctrl+v" img="../images/ef_design_paste.gif" hasLine="1" />
+<MenuItem Func="javascript:main_onkeydown(46);main_exec('Delete');main_onkeyup(46);" Text="删除	Del" img="../images/ef_design_delete.gif" hasLine="1"/>
+<MenuItem Func="javascript:main_ondblclick()" Text="属性	" img="../images/ef_design_shuxing.gif" />
+</MenuItem>
+</Root>
+</textarea>
+</BODY>
+</HTML>

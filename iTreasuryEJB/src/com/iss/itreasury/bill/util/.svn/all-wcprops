@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util
+END
+BillNameRef.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util/BillNameRef.java
+END
+BillException.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util/BillException.java
+END
+BILLMagnifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util/BILLMagnifier.java
+END
+BillDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util/BillDAO.java
+END
+BILLHTML.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util/BILLHTML.java
+END
+BillDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util/BillDataEntity.java
+END
+BILLConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util/BILLConstant.java
+END
+UtilOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/bill/util/UtilOperation.java
+END

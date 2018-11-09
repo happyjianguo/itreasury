@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao
+END
+Sett_SyndicationLoanInterestDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/Sett_SyndicationLoanInterestDAO.java
+END
+Sett_TransGrantLoanDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/Sett_TransGrantLoanDAO.java
+END
+Sett_TransGrantLoanDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/Sett_TransGrantLoanDAOTest.java
+END
+QTransGrantLoanDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/QTransGrantLoanDao.java
+END
+DAOHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/DAOHelper.java
+END
+TransloanDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/TransloanDao.java
+END
+QTransLoanDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/QTransLoanDao.java
+END
+Sett_TransRepaymentLoanDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/Sett_TransRepaymentLoanDAO.java
+END
+AllTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/AllTests.java
+END
+QTransRepaymentLoanDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/QTransRepaymentLoanDao.java
+END
+Loan_DAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transloan/dao/Loan_DAO.java
+END

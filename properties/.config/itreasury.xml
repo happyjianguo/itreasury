@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes"?>
+<itreasury_configitems>
+
+	<itreasury_configitem>
+		<name>全局</name>
+		<desc>global.xml</desc>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>结算系统</name>		
+		<desc>settlement.xml</desc>	
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>信贷系统</name>	
+		<desc>loan.xml</desc>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>网银系统</name>
+		<desc>ebank.xml</desc>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>银企接口</name>
+		<desc>integration.xml</desc>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>系统管理</name>
+		<desc>system.xml</desc>
+	</itreasury_configitem>
+
+</itreasury_configitems>
+
+<!--
+	itreasury_configitems                    ******xml文件根结点，其下可以有多个配置项
+		itreasury_configitem                          ******一个配置项
+-->

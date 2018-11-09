@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dao
+END
+Sec_RemarkDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dao/Sec_RemarkDAO.java
+END
+Sec_RemarkDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dao/Sec_RemarkDAOTest.java
+END
+SEC_DeliveryOrderDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dao/SEC_DeliveryOrderDAO.java
+END

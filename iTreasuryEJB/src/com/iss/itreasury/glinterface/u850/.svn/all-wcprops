@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/u850
+END
+XMLDataMarshalUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/u850/XMLDataMarshalUtil.java
+END
+XMLHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/u850/XMLHelper.java
+END
+GLU850BeanForHL.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/u850/GLU850BeanForHL.java
+END
+ConnectionSQLServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/u850/ConnectionSQLServer.java
+END
+ConvertDataUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/u850/ConvertDataUtil.java
+END
+GLU850Bean.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/glinterface/u850/GLU850Bean.java
+END

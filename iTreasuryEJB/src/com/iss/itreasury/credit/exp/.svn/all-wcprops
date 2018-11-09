@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/credit/exp
+END
+CreditFlexException.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/credit/exp/CreditFlexException.java
+END
+CreditRigidityException.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/credit/exp/CreditRigidityException.java
+END

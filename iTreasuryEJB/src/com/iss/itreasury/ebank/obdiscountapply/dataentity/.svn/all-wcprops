@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/obdiscountapply/dataentity
+END
+DiscountBillStatInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/obdiscountapply/dataentity/DiscountBillStatInfo.java
+END
+DiscountCredenceQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/obdiscountapply/dataentity/DiscountCredenceQueryInfo.java
+END
+DiscountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/obdiscountapply/dataentity/DiscountInfo.java
+END
+DiscountBillInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/obdiscountapply/dataentity/DiscountBillInfo.java
+END
+DiscountMainInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/obdiscountapply/dataentity/DiscountMainInfo.java
+END
+DiscountBillQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/obdiscountapply/dataentity/DiscountBillQueryInfo.java
+END
+DiscountCredenceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/obdiscountapply/dataentity/DiscountCredenceInfo.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity
+END
+LoanAssortSettingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/LoanAssortSettingInfo.java
+END
+ApprovalOpinionQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/ApprovalOpinionQueryInfo.java
+END
+YTLoanAttendBankQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/YTLoanAttendBankQueryInfo.java
+END
+LoanTypeRelationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/LoanTypeRelationInfo.java
+END
+LoanTypeSettingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/LoanTypeSettingInfo.java
+END
+ApprovalOpinionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/ApprovalOpinionInfo.java
+END
+LiborInterestRateInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/LiborInterestRateInfo.java
+END
+LoanContractAssortSettingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/LoanContractAssortSettingInfo.java
+END
+LiborInformInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/LiborInformInfo.java
+END
+YTLoanAttendBankInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/setting/dataentity/YTLoanAttendBankInfo.java
+END

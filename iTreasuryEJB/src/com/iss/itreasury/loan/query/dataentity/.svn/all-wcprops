@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity
+END
+QueryLoanApplyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryLoanApplyInfo.java
+END
+RepurchaseFormInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/RepurchaseFormInfo.java
+END
+QuerySumInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuerySumInfo.java
+END
+QueryAssureNoticeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryAssureNoticeInfo.java
+END
+QuestCredenceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestCredenceInfo.java
+END
+RepurchaseLoanFormWhereInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/RepurchaseLoanFormWhereInfo.java
+END
+QuestLoanDrawNoticeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestLoanDrawNoticeInfo.java
+END
+QueryBatchWillContractInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryBatchWillContractInfo.java
+END
+QuestAllBusinessesInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestAllBusinessesInfo.java
+END
+QuestContractInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestContractInfo.java
+END
+RepurchaseLoanFormInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/RepurchaseLoanFormInfo.java
+END
+QueryPerformInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryPerformInfo.java
+END
+QuestFreeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestFreeInfo.java
+END
+QuestRepayNoticeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestRepayNoticeInfo.java
+END
+QueryBatchWillContractForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryBatchWillContractForm.java
+END
+QueryNoticeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryNoticeInfo.java
+END
+QueryRepayNoticeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryRepayNoticeInfo.java
+END
+RepurchaseFormDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/RepurchaseFormDetailInfo.java
+END
+QuestExtendInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestExtendInfo.java
+END
+QuestContractPlanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestContractPlanInfo.java
+END
+QuestLoanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestLoanInfo.java
+END
+QuestPayNoticeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QuestPayNoticeInfo.java
+END
+QueryDiscountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryDiscountInfo.java
+END
+ContractInfoAdjustQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/ContractInfoAdjustQuery.java
+END
+QueryMyJobCountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryMyJobCountInfo.java
+END
+QueryBatchWillContractResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryBatchWillContractResult.java
+END
+RepurchaseFormWhereInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/RepurchaseFormWhereInfo.java
+END
+RepurchaseItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/RepurchaseItemInfo.java
+END
+QueryPayformOverdue.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dataentity/QueryPayformOverdue.java
+END

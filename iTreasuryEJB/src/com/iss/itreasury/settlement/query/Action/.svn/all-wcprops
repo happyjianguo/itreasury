@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action
+END
+QDepositLoanAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QDepositLoanAction.java
+END
+QQueryAccountAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QQueryAccountAction.java
+END
+QTransactionAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QTransactionAction.java
+END
+QCounterTransAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QCounterTransAction.java
+END
+QLoanAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QLoanAction.java
+END
+QueryDailyGLAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QueryDailyGLAction.java
+END
+QDepositDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QDepositDetailAction.java
+END
+QueryGLDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QueryGLDetailAction.java
+END
+QAverageAccountBalanceAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QAverageAccountBalanceAction.java
+END
+QueryGLSearchAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QueryGLSearchAction.java
+END
+QueryDailyGLUnderStrAccountAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QueryDailyGLUnderStrAccountAction.java
+END
+QTransAccountAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QTransAccountAction.java
+END
+QTransInterestAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QTransInterestAction.java
+END
+QLoanTransHistoryDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QLoanTransHistoryDetailAction.java
+END
+QLoanNoticeBookAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QLoanNoticeBookAction.java
+END
+QueryGLAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QueryGLAction.java
+END
+QueryGLDetailUnderSubjectAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QueryGLDetailUnderSubjectAction.java
+END
+QClientGatherAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QClientGatherAction.java
+END
+QuerySubjectBalanceAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QuerySubjectBalanceAction.java
+END
+QDepositDetailsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/query/Action/QDepositDetailsAction.java
+END

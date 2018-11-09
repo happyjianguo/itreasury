@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao
+END
+ReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/ReportDao.java
+END
+Report10Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report10Dao.java
+END
+Report1Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report1Dao.java
+END
+Report11Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report11Dao.java
+END
+Report2Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report2Dao.java
+END
+Report3Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report3Dao.java
+END
+Report4Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report4Dao.java
+END
+Report5Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report5Dao.java
+END
+Report6Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report6Dao.java
+END
+Report7Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report7Dao.java
+END
+Report8Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report8Dao.java
+END
+Report9Dao.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/report/dao/Report9Dao.java
+END

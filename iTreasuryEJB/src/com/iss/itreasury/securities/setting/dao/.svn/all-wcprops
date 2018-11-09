@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao
+END
+SEC_RemarkDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_RemarkDAO.java
+END
+SEC_SecuritiesCreditLineDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_SecuritiesCreditLineDAO.java
+END
+SEC_ExchangeCenterDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_ExchangeCenterDAO.java
+END
+SEC_SecuritiesTypeCreditLineDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_SecuritiesTypeCreditLineDAO.java
+END
+SEC_CounterPartDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_CounterPartDAO.java
+END
+SEC_TransactionTypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_TransactionTypeDAO.java
+END
+SEC_ActionSettingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_ActionSettingDAO.java
+END
+SEC_AccountDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_AccountDAO.java
+END
+SEC_ClientDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_ClientDAO.java
+END
+SEC_StockHolderAccountDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_StockHolderAccountDAO.java
+END
+SEC_CounterPartBankAccountDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_CounterPartBankAccountDAO.java
+END
+SEC_SecuritiesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/setting/dao/SEC_SecuritiesDAO.java
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao
+END
+ClientMainInvestorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/ClientMainInvestorDao.java
+END
+ClientDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/ClientDao.java
+END
+IntegratedCreditPrintDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/IntegratedCreditPrintDao.java
+END
+LoanFinanceitemdetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/LoanFinanceitemdetailDao.java
+END
+SelectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/SelectDao.java
+END
+ClientaddinfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/ClientaddinfoDao.java
+END
+CustomerfeedbackDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/CustomerfeedbackDao.java
+END
+LoanConClusionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/LoanConClusionDao.java
+END
+LoanClientDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/LoanClientDao.java
+END
+LoanCreditgradeInfoQueryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/LoanCreditgradeInfoQueryDao.java
+END
+LoanCreditGradedetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/integratedCredit/dao/LoanCreditGradedetailDao.java
+END

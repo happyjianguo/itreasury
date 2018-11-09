@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao
+END
+QueryRepurchaseFormDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao/QueryRepurchaseFormDao.java
+END
+QueryBatchWillContractDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao/QueryBatchWillContractDao.java
+END
+QueryDiscountDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao/QueryDiscountDao.java
+END
+QueryRepurchaseFormDetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao/QueryRepurchaseFormDetailDao.java
+END
+QueryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao/QueryDao.java
+END
+QueryRepurchaseLoanFormDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao/QueryRepurchaseLoanFormDao.java
+END
+QueryOperationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao/QueryOperationDao.java
+END
+QueryNoticeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/query/dao/QueryNoticeDao.java
+END

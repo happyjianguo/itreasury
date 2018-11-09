@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transmargindeposit/dao
+END
+Sett_TransMarginWithdrawDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transmargindeposit/dao/Sett_TransMarginWithdrawDAO.java
+END
+Sett_TransOpenMarginDepositDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transmargindeposit/dao/Sett_TransOpenMarginDepositDAO.java
+END

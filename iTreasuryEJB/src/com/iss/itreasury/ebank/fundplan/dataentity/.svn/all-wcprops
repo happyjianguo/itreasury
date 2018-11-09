@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/fundplan/dataentity
+END
+CapitalPlanCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/fundplan/dataentity/CapitalPlanCondition.java
+END
+CapitalPlanGatherInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/fundplan/dataentity/CapitalPlanGatherInfo.java
+END
+Sett_CapitalPlanSettingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/fundplan/dataentity/Sett_CapitalPlanSettingInfo.java
+END
+FundPlanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/fundplan/dataentity/FundPlanInfo.java
+END
+CapitalPlanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/fundplan/dataentity/CapitalPlanInfo.java
+END
+CapitalPlanConfigModelInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/fundplan/dataentity/CapitalPlanConfigModelInfo.java
+END
+SubCapitalPlanInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/ebank/fundplan/dataentity/SubCapitalPlanInfo.java
+END

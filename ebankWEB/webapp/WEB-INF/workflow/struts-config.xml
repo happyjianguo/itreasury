@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC 
+					"-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" 
+					"dtds/struts-config_1_2.dtd">
+
+<!--
+     This is a blank Struts configuration file with an example
+     welcome action/page and other commented sample elements.
+
+     Tiles and the Struts Validator are configured using the factory defaults
+     and are ready-to-use.
+
+     NOTE: If you have a generator tool to create the corresponding Java classes
+     for you, you could include the details in the "form-bean" declarations.
+     Otherwise, you would only define the "form-bean" element itself, with the
+     corresponding "name" and "type" attributes, as shown here.
+-->
+
+
+<struts-config>  
+
+<!-- ================================================ Form Bean Definitions -->
+
+    <form-beans>	
+			<!--<form-bean name="baseForm" type="com.iss.system.base.BaseForm" />-->
+			<form-bean name="userManagerCtrl" type="com.iss.inut.workflow.usermanager.action.UserManagerCtrl"/>
+			<form-bean name="testCtrl" type="com.iss.inut.workflow.test.action.TestCtrl"/>
+    </form-beans>
+
+
+<!-- ========================================= Global Exception Definitions -->
+
+  <global-exceptions>
+		<exception path="/workflow/common/Error.jsp" key="exception" type="java.lang.Throwable" handler="com.iss.inut.web.ExceptionManager" />
+	</global-exceptions>
+
+
+<!-- =========================================== Global Forward Definitions -->
+
+    <global-forwards>
+    	<forward  name="login"  path="/login.jsp"  />
+			<forward   name="failure"  path="/workflow/common/systemException.jsp"/>	
+    </global-forwards>
+
+
+<!-- =========================================== Action Mapping Definitions -->
+
+    <action-mappings>
+    	<!-- UserManager -->
+			<action path="/login" type="com.iss.inut.web.BaseAction" name="userManagerCtrl" scope="request" parameter="operate" validate="false">
+      	<forward name="tocurrentsteplist" path="/currentStep.do?operate=selectCurrentStepList"/>
+    		<forward name="testpage" path="/testCtrl.do?operate=toTestPage"/>
+    		<forward name="indexpage" path="/workflow/jsp/index.jsp"/>
+    		<forward name="toAvailableStepList" path="/wfSearchCtrl.do?operate=toAvailableStepList"/>
+    		<forward name="tologin" path="/login.jsp"/>
+    	</action>
+
+			<action path="/testCtrl" type="com.iss.inut.web.BaseAction" name="testCtrl" scope="request" parameter="operate" validate="false">
+      	<forward name="testjsp" path="/workflow/jsp/test/test.jsp"/>      	
+    		<forward name="test1jsp" path="/workflow/jsp/test/test1.jsp"/>
+    		<forward name="tocurrentsteplist" path="/currentStep.do?operate=selectCurrentStepList"/>  
+    	</action>
+
+
+    </action-mappings>
+
+
+<!-- ======================================== Message Resources Definitions -->
+
+    <message-resources parameter="resources.StrutsMessageResources" />
+    <message-resources parameter="resources.Errors" key="error" />
+
+</struts-config>

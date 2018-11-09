@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dataentity
+END
+DeliveryOrderConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dataentity/DeliveryOrderConditionInfo.java
+END
+MappingDataentity.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dataentity/MappingDataentity.java
+END
+DeliveryOrderInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dataentity/DeliveryOrderInfo.java
+END
+RemarkInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorder/dataentity/RemarkInfo.java
+END

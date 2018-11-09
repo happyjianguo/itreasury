@@ -1,0 +1,19 @@
+<HTML >
+<HEAD>
+<TITLE>打印格式设计</TITLE>
+<script src="../eprint/eprint.js"></script>
+<script src="../js/csjsrequest.js"></script>
+</HEAD>
+<script language="javascript">
+var Printer =window.opener.Printer
+markModelFile(Printer,Printer,Printer,Printer);
+</script>
+
+
+
+
+
+</HTML>
+
+
+

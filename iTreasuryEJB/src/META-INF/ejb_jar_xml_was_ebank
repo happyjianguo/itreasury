@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>itreasuryEJB</display-name>
+	<enterprise-beans>
+		<session id="OBAheadRepayNotice">
+			<ejb-name>OBAheadRepayNotice</ejb-name>
+			<home>com.iss.itreasury.ebank.obaheadrepaynotice.bizlogic.OBAheadRepayNoticeHome</home>
+			<remote>com.iss.itreasury.ebank.obaheadrepaynotice.bizlogic.OBAheadRepayNotice</remote>
+			<ejb-class>com.iss.itreasury.ebank.obaheadrepaynotice.bizlogic.OBAheadRepayNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294132571737">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBDiscountApply">
+			<ejb-name>OBDiscountApply</ejb-name>
+			<home>com.iss.itreasury.ebank.obdiscountapply.bizlogic.OBDiscountApplyHome</home>
+			<remote>com.iss.itreasury.ebank.obdiscountapply.bizlogic.OBDiscountApply</remote>
+			<ejb-class>com.iss.itreasury.ebank.obdiscountapply.bizlogic.OBDiscountApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294132936922">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBDrawNotice">
+			<ejb-name>OBDrawNotice</ejb-name>
+			<home>com.iss.itreasury.ebank.obdrawnotice.bizlogic.OBDrawNoticeHome</home>
+			<remote>com.iss.itreasury.ebank.obdrawnotice.bizlogic.OBDrawNotice</remote>
+			<ejb-class>com.iss.itreasury.ebank.obdrawnotice.bizlogic.OBDrawNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294136059603">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBExtendApply">
+			<ejb-name>OBExtendApply</ejb-name>
+			<home>com.iss.itreasury.ebank.obextendapply.bizlogic.OBExtendApplyHome</home>
+			<remote>com.iss.itreasury.ebank.obextendapply.bizlogic.OBExtendApply</remote>
+			<ejb-class>com.iss.itreasury.ebank.obextendapply.bizlogic.OBExtendApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294132936927">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBFinanceInstr">
+			<ejb-name>OBFinanceInstr</ejb-name>
+			<home>com.iss.itreasury.ebank.obfinanceinstr.bizlogic.OBFinanceInstrHome</home>
+			<remote>com.iss.itreasury.ebank.obfinanceinstr.bizlogic.OBFinanceInstr</remote>
+			<ejb-class>com.iss.itreasury.ebank.obfinanceinstr.bizlogic.OBFinanceInstrEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294132936932">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBFreeApply">
+			<ejb-name>OBFreeApply</ejb-name>
+			<home>com.iss.itreasury.ebank.obfreeapply.bizlogic.OBFreeApplyHome</home>
+			<remote>com.iss.itreasury.ebank.obfreeapply.bizlogic.OBFreeApply</remote>
+			<ejb-class>com.iss.itreasury.ebank.obfreeapply.bizlogic.OBFreeApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294133038260">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBInterest">
+			<ejb-name>OBInterest</ejb-name>
+			<home>com.iss.itreasury.ebank.obinterest.bizlogic.OBInterestHome</home>
+			<remote>com.iss.itreasury.ebank.obinterest.bizlogic.OBInterest</remote>
+			<ejb-class>com.iss.itreasury.ebank.obinterest.bizlogic.OBInterestEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294133038265">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBLoanApply">
+			<ejb-name>OBLoanApply</ejb-name>
+			<home>com.iss.itreasury.ebank.obloanapply.bizlogic.OBLoanApplyHome</home>
+			<remote>com.iss.itreasury.ebank.obloanapply.bizlogic.OBLoanApply</remote>
+			<ejb-class>com.iss.itreasury.ebank.obloanapply.bizlogic.OBLoanApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294133038269">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBPayNotice">
+			<ejb-name>OBPayNotice</ejb-name>
+			<home>com.iss.itreasury.ebank.obpaynotice.bizlogic.OBPayNoticeHome</home>
+			<remote>com.iss.itreasury.ebank.obpaynotice.bizlogic.OBPayNotice</remote>
+			<ejb-class>com.iss.itreasury.ebank.obpaynotice.bizlogic.OBPayNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294133038274">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBRepayPlan">
+			<ejb-name>OBRepayPlan</ejb-name>
+			<home>com.iss.itreasury.ebank.obrepayplan.bizlogic.OBRepayPlanHome</home>
+			<remote>com.iss.itreasury.ebank.obrepayplan.bizlogic.OBRepayPlan</remote>
+			<ejb-class>com.iss.itreasury.ebank.obrepayplan.bizlogic.OBRepayPlanEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294133038278">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBSystem">
+			<ejb-name>OBSystem</ejb-name>
+			<home>com.iss.itreasury.ebank.obsystem.bizlogic.OBSystemHome</home>
+			<remote>com.iss.itreasury.ebank.obsystem.bizlogic.OBSystem</remote>
+			<ejb-class>com.iss.itreasury.ebank.obsystem.bizlogic.OBSystemEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294133038283">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBBudget">
+			<ejb-name>OBBudget</ejb-name>
+			<home>com.iss.itreasury.ebank.obbudget.bizlogic.OBBudgetHome</home>
+			<remote>com.iss.itreasury.ebank.obbudget.bizlogic.OBBudget</remote>
+			<ejb-class>com.iss.itreasury.ebank.obbudget.bizlogic.OBBudgetEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294132936938">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>OBAheadRepayNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBBudget</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBDiscountApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBDrawNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBExtendApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBFinanceInstr</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBFreeApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBInterest</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBLoanApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBPayNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBRepayPlan</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBSystem</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+</ejb-jar>

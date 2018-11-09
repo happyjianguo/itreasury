@@ -1,0 +1,1724 @@
+<?xml version="1.0" encoding="gb2312"?>
+<xmlConfig>
+	<trans transName="拆借业务--同业拆入" transId="">
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select C_mBorrowAmount, NSUBINVESTMENTTYPEID, SSERIALNO
+		from sett_transinvestment a 
+		where 	C_dtBorrowDate = @transDate
+		AND nStatusID != 0
+		and NSUBINVESTMENTTYPEID=10
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>C_mBorrowAmount</databaseFieldName>  <!-- C_mBorrowAmount -->
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	       <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      
+		   </field>
+	</trans>
+	
+        <trans transName="拆借业务--同业拆出" transId="">
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select C_mBorrowAmount, NSUBINVESTMENTTYPEID, SSERIALNO
+		from sett_transinvestment a 
+		where 	C_dtBorrowDate = @transDate
+		AND nStatusID != 0
+		and NSUBINVESTMENTTYPEID =11
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>C_mBorrowAmount</databaseFieldName>  <!-- C_mBorrowAmount -->
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      
+		   </field>
+	</trans>
+	
+        <trans transName="拆借反款业务--拆入还款" transId="">
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where C_dtPayDate = @transDate 
+		AND nStatusID != 0
+		and c_nIsPaid = 1
+	        and NSUBINVESTMENTTYPEID =10
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>C_mPayAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>12</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      
+		   </field>
+	</trans>
+        <trans transName="拆借反款业务--拆出还款" transId="">
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where C_dtPayDate = @transDate 
+		AND nStatusID != 0
+		and c_nIsPaid = 1
+	        and NSUBINVESTMENTTYPEID =11
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>C_mPayAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>13</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	
+        <trans transName="交易所间现券业务台账--买入" transId="">
+                <!-- 
+                       股票买入 = 36
+		
+		       交易所国债买入 = 38
+		
+		       可转债买入 = 40
+		
+		       企业债买入 = 42
+		
+		       封闭式基金买入 = 44
+		
+		       开放式基金买入 = 46
+		
+		       其他交易所间现券买入 = 48 
+
+                -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Q_dtDealDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in ( 36,38,40,42,44,46,48)
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		<!-- and NTRANSACTOINTYPEID = 买入 -->
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Q_mPayAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+		   <field>
+		      <entityFieldName>SecuritiesName</entityFieldName>
+		      <databaseFieldName>Q_SPRODUCTTYPE</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	<trans transName="交易所间现券业务台账--卖出" transId="">
+                <!-- 
+                       股票卖出 = 37
+		
+		       交易所国债卖出 = 39
+		
+		       可转债卖出 = 41
+		
+		       企业债卖出 = 43
+		
+		       封闭式基金卖出 = 45
+		
+		       开放式基金卖出 = 47
+		
+		       其他交易所间现券卖出 = 49
+
+                -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Q_dtDealDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in ( 37,39,41,43,45,47,49)
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		<!-- and NTRANSACTOINTYPEID = 卖出 -->
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Q_mPayAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+		   <field>
+		      <entityFieldName>SecuritiesName</entityFieldName>
+		      <databaseFieldName>Q_SPRODUCTTYPE</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	
+	
+        <trans transName="银行间现券业务台账--买入" transId="">
+                <!-- 
+                       央行票据买入 = 26
+
+		       银行间国债买入 = 28
+		
+		       金融债买入 = 30
+		
+		       货币市场基金买入 = 32
+		
+		       其他银行间现券买入= 34
+		       
+		       政策性金融债买入 = 60
+
+                -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Q_dtDealDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in ( 26,28,30,32,34 ,60)
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Q_mPayAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+		   <field>
+		      <entityFieldName>SecuritiesName</entityFieldName>
+		      <databaseFieldName>Q_SPRODUCTTYPE</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	<trans transName="银行间现券业务台账--卖出" transId="">
+                <!-- 
+                       央行票据卖出 = 27
+
+		       银行间国债卖出 = 29
+		
+		       金融债卖出 = 31
+		
+		       货币市场基金卖出 = 33
+		
+		       其他银行间现券卖出= 35
+		       
+		       政策性金融债卖出 = 61
+                -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Q_dtDealDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in ( 27,29,31,33,35,61 )
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Q_mPayAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+		   <field>
+		      <entityFieldName>SecuritiesName</entityFieldName>
+		      <databaseFieldName>Q_SPRODUCTTYPE</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 3.1.1-->
+	<trans transName="银行间债券回购业务台账/交易所间债券回购业务台账--融资回购,正回购" transId="">
+	        <!-- 
+	        银行间债券回购业务台账 正回购= 18
+	        交易所间债券回购业务台账 融资回购 = 22
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Q_dtDealDate = @transDate
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in (18 ,22 )
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Q_mPayAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 3.1.2-->
+	<trans transName="银行间债券回购业务台账/交易所间债券回购业务台账--融券回购, 逆回购" transId="">
+	        <!-- 
+	        银行间债券回购业务台账 逆回购      = 20
+	        交易所间债券回购业务台账 融券回购  = 24
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Q_dtDealDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in (20,24)
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Q_mPayAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	
+	<!-- 3.2.1 -->
+	<trans transName="交易所/银行间债券--融券购回, 逆回购到期" transId="">
+	        <!-- 
+	        银行间债券回购业务台账 逆回购到期  = 21(20)
+	        交易所间债券回购业务台账 融券购回  = 25(24)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where JQ_dtInterestEnd = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =20
+		and jq_bBought = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>JQ_nBuyAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>21</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	<trans transName="交易所/银行间债券--融券购回, 逆回购到期" transId="">
+	        <!-- 
+	        银行间债券回购业务台账 逆回购到期  = 21(20)
+	        交易所间债券回购业务台账 融券购回  = 25(24)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where JQ_dtInterestEnd = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =24
+		and jq_bBought = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>JQ_nBuyAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>25</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 3.2.2-->
+	<trans transName="交易所/银行间债券--融资购回, 正回购到期" transId="">
+	        <!-- 
+	        银行间债券回购业务台账 正回购到期  = 19(18)
+	        交易所间债券回购业务台账 融资购回  = 23(22)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where JQ_dtInterestEnd = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =18
+		and jq_bBought = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>JQ_nBuyAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>19</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	<trans transName="交易所/银行间债券--融资购回, 正回购到期" transId="">
+	        <!-- 
+	        银行间债券回购业务台账 正回购到期  = 19(18)
+	        交易所间债券回购业务台账 融资购回  = 23(22)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where JQ_dtInterestEnd = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =22
+		and jq_bBought = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>JQ_nBuyAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>23</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 4.1.1 -->
+	<trans transName="转贴现业务台账--转贴现卖出（买断）, 转贴现卖出（回购）" transId="">
+	        <!-- 
+	        转贴现卖出（买断）         =  52 
+	        转贴现卖出（回购）         =  53
+	        -->
+		<!--
+		@officeID
+		@currencyID  
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select Z_mDiscountPayAmount, NSUBINVESTMENTTYPEID, SSERIALNO
+		from sett_transinvestment a 
+		where Z_DTDISCOUNTDATE = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in (52,53)
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Z_mDiscountPayAmount</databaseFieldName>  <!-- Z_mDiscountPayAmount -->
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 4.1.2-->
+	<trans transName="转贴现业务台账--转贴现买入（买断）, 转贴现买入（回购）" transId="">
+	        <!-- 
+	        转贴现买入（买断）= 57 
+	        转贴现买入（回购）= 58
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select Z_mDiscountPayAmount, NSUBINVESTMENTTYPEID, SSERIALNO
+		from sett_transinvestment a
+		where Z_DTDISCOUNTDATE = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in (57,58)
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Z_mDiscountPayAmount</databaseFieldName>  <!-- Z_mDiscountPayAmount -->
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 4.2.1 -->
+	<trans transName="转贴现业务台账--转贴现买入到期收回（买断）, 转贴现买入购回（回购）" transId="">
+	        <!-- 
+	        转贴现买入到期收回（买断） = 55(57)
+	        转贴现买入购回（回购）     = 56(58)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Z_dtBillENDDATE = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =57
+		and z_nIsRepayment = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Z_MBILLAMOUNT</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>55</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	<trans transName="转贴现业务台账--转贴现买入到期收回（买断）, 转贴现买入购回（回购）" transId="">
+	        <!-- 
+	        转贴现买入到期收回（买断） = 55(57)
+	        转贴现买入购回（回购）     = 56(58)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Z_DTBUYENDDATE = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =58
+		and z_nIsRepurchase = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Z_MBILLAMOUNT</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>56</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 4.2.2-->
+	<trans transName="转贴现业务台账--转贴现卖出购回（回购）" transId="">
+	        <!-- 
+	        转贴现卖出购回（回购）= 59 (53)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Z_DTBUYENDDATE = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =53
+		and z_nIsRepurchase = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Z_MBILLAMOUNT</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>59</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 4.3.1 -->
+	<trans transName="转贴现业务台账--卖出（到期收回）" transId="">
+	        <!-- 
+	        转贴现卖出（到期收回）     =  54(53)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where Z_dtBillEndDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID = 53 
+		and z_nIsRepayment = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>Z_MBILLAMOUNT</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>54</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	
+	<!-- 5.1 -->
+	<trans transName="贷款回购业务台账--资产回购进款(卖出)" transId="">
+	        <!-- 
+	        资产回购进款 = 50
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select JQ_nBuyAmount , NSUBINVESTMENTTYPEID, SSERIALNO
+		from sett_transinvestment a 
+		where d_dtRepurchaseDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID = 50 
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>JQ_nBuyAmount</databaseFieldName>  <!-- JQ_nBuyAmount -->
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 5.2-->
+	<trans transName="贷款回购业务台账--资产回购出款(买入)" transId="">
+	        <!-- 
+	        资产回购出款 = 51
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select JQ_nBuyAmount , NSUBINVESTMENTTYPEID, SSERIALNO
+		from sett_transinvestment a 
+		where d_dtRepurchaseDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =51
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>JQ_nBuyAmount</databaseFieldName>  <!-- JQ_nBuyAmount -->
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	
+	<!-- 5.3 -->
+	<trans transName="贷款回购业务台账--资产回购进款(买入已回购)" transId="">
+	        <!-- 
+	        资产回购进款 = 72(51)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where d_dtbuydate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =51
+		and jq_bbought =1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>D_MBUYAMOUNT</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>72</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<!-- 5.4-->
+	<trans transName="贷款回购业务台账--资产回购出款(卖出已回购)" transId="">
+	        <!-- 
+	        资产回购出款 = 73(50)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where d_dtbuydate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =50
+		and jq_bbought =1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>D_MBUYAMOUNT</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>73</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	
+	<!-- 追加的利息 -->
+	<trans transName="转贴现业务台账--转贴现买入（买断）--利息" transId="">
+	        <!-- 
+	        转贴现买入（买断）= 57 
+	        转贴现买入（回购）= 58
+	        
+	        
+	        转贴现买入-买断利息 = 68 
+	        转贴现买入-回购利息 = 69
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where z_dtDiscountDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =57
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>68</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<trans transName="转贴现业务台账--转贴现买入（回购）--利息" transId="">
+	        <!-- 
+	        转贴现买入（买断）= 57 
+	        转贴现买入（回购）= 58
+	        
+	        
+	        转贴现买入-买断利息 = 68 
+	        转贴现买入-回购利息 = 69
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where z_dtDiscountDate = @transDate
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =58
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>69</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<trans transName="转贴现业务台账--转贴现卖出（买断）--利息" transId="">
+	        <!-- 
+	        转贴现卖出（买断）         =  52 
+	        转贴现卖出（回购）         =  53
+
+	        
+	        
+	        转贴现卖出-买断利息 = 70
+                转贴现卖出-回购利息 = 71
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where z_dtDiscountDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =52
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>70</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<trans transName="转贴现业务台账--转贴现卖出（回购）--利息" transId="">
+	        <!-- 
+	        转贴现卖出（买断）         =  52 
+	        转贴现卖出（回购）         =  53
+
+	        
+	        
+	        转贴现卖出-买断利息 = 70
+                转贴现卖出-回购利息 = 71
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where z_dtDiscountDate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID =53
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>71</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	
+
+	<trans transName="银行间债券回购业务台账/交易所间债券回购业务台账--正回购--利息" transId="">
+	        <!-- 
+	        银行间债券回购业务台账 正回购= 18
+	        交易所间债券回购业务台账 融资回购 = 22
+	        
+	        正回购利息 = 66
+                逆回购利息 = 67
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where jq_dtinterestend = @transDate 
+		AND nStatusID != 0
+		and jq_bBought = 1
+	        and NSUBINVESTMENTTYPEID in (18,22)
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>66</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+
+	<trans transName="银行间债券回购业务台账/交易所间债券回购业务台账-- 逆回购 --利息 " transId="">
+	        <!-- 
+	        银行间债券回购业务台账 逆回购      = 20
+	        交易所间债券回购业务台账 融券回购  = 24
+	        
+	        正回购利息 = 66
+                逆回购利息 = 67
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where JQ_dtInterestEnd = @transDate 
+		and jq_bBought = 1
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID in (20,24)
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>67</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+
+	<trans transName="贷款回购业务台账--资产回购进款(买入已购回)--利息" transId="">
+	    	<!--   
+	    	资产回购进款 = 72     
+	    	贷款回购-买入已购回利息 = 64(51)
+              贷款回购-卖出已购回利息 = 65
+            -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where d_dtBuyDate = @transDate 
+		and jq_bbought =1
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID = 51
+		and jq_bbought =1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	       <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>64</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	<trans transName="贷款回购业务台账--资产回购出款--利息" transId="">
+	        <!-- 
+	        资产回购出款 = 73
+	        
+	        贷款回购-买入已购回利息 = 64
+                贷款回购-卖出已购回利息 = 65(50)
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment  
+		where d_dtbuydate = @transDate 
+		AND nStatusID != 0
+	        and NSUBINVESTMENTTYPEID = 50
+		and jq_bbought =1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>65</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		   </field>
+	</trans>
+	
+	
+	<trans transName="拆借业务--同业拆入--利息" transId="">
+	        <!-- 
+	        同业拆入 = 10 
+	        
+	        拆入利息 = 62
+                拆出利息 = 63
+	        -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment a 
+		where 	C_dtPayDate = @transDate
+		AND nStatusID != 0
+		and NSUBINVESTMENTTYPEID= 10
+		and c_nIsPaid = 1
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	       <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>62</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.SUBTRACT</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      
+		   </field>
+	</trans>
+
+	<trans transName="拆借业务--同业拆出--利息" transId="">
+                <!-- 
+                同业拆出 = 11 
+                
+                拆入利息 = 62
+                拆出利息 = 63
+                
+                -->
+		<!--
+		@officeID
+		@currencyID 
+		@executeDate
+		@transDate
+		-->
+		<strSql>
+		select  * from sett_transinvestment a 
+		where 	C_dtBorrowDate = @transDate
+		AND nStatusID != 0
+		and NSUBINVESTMENTTYPEID =11
+		and nofficeid = @officeID 
+		and ncurrencyid = @currencyID
+		</strSql>
+		   <field>
+		      <entityFieldName>ActualAmount</entityFieldName>
+		      <databaseFieldName>mInterestAmount</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      <defaultValue></defaultValue>
+		   </field>
+		   
+	           <field>
+		      <entityFieldName>AccountTypeId</entityFieldName>
+		      <databaseFieldName>NSUBINVESTMENTTYPEID</databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>63</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>AmountDirection</entityFieldName>
+		      <databaseFieldName></databaseFieldName>
+		      <isGetDataFromDatabase>false</isGetDataFromDatabase>
+		      <defaultValue>TPConstant.AmountDirection.PLUS</defaultValue>
+		   </field>
+		   
+		   <field>
+		      <entityFieldName>TransactionCode</entityFieldName>
+		      <databaseFieldName>SSERIALNO</databaseFieldName>
+		      <isGetDataFromDatabase>true</isGetDataFromDatabase>
+		      
+		   </field>
+	</trans>
+	
+</xmlConfig>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="gb2312"?>
+<itreasury_codingpara>
+	<parameter>
+		<name>officeID</name>
+		<desc>办事处</desc>
+		<type>long</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>true</required><!--是否必须-->
+	</parameter>
+	<parameter>
+		<name>currencyID</name>
+		<desc>币种</desc>
+		<type>long</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>true</required>
+	</parameter>
+	<parameter>
+		<name>moduleID</name>
+		<desc>模块</desc>
+		<type>long</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>true</required>
+	</parameter>
+	<parameter>
+		<name>transTypeID</name>
+		<desc>业务类型</desc>
+		<type>java.lang.String</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>true</required>
+	</parameter>
+	
+	<parameter>
+		<name>subTransTypeID</name>
+		<desc>业务子类型</desc>
+		<type>java.lang.String</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>true</required>
+	</parameter>
+
+	<parameter>
+		<name>actionID</name>
+		<desc>操作类型</desc>
+		<type>java.lang.String</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>false</required>
+	</parameter>
+	<parameter>
+		<name>clientID</name>
+		<desc>客户id</desc>
+		<type>java.lang.String</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>false</required>
+	</parameter>
+	<parameter>
+		<name>contractID</name>
+		<desc>流水号区分标识（前期以为只有放款单会根据合同分，所以取名为contractID,但实际可能还会根据帐户、客户等区分）</desc>
+		<type>java.lang.String</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>false</required>
+	</parameter>
+	<parameter>
+		<name>clientCode</name>
+		<desc>客户编号</desc>
+		<type>java.lang.String</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>false</required>
+	</parameter>		
+	<parameter>
+		<name>selfHashMap</name>
+		<desc>自身引用</desc>
+		<type>java.util.HashMap</type><!--参数类型，如果是类，写出完整类路径及类名-->
+		<required>false</required>
+	</parameter>				
+</itreasury_codingpara>

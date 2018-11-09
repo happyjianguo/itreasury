@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes"?>
+<itreasury_configitems>
+	<itreasury_configitem>
+		<name>是否支持并行关机</name>
+		<namemap>global.can.multiclose</namemap>
+		<type>boolean</type>
+		<desc>默认是true</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+	<itreasury_configitem>
+		<name>是否权限控制</name>
+		<namemap>global_isRequirePrivilege</namemap>
+		<type>boolean</type>
+		<desc>默认是true</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+	
+	<!--安全控制 begin-->
+	<itreasury_configitem>
+		<name>ebank使用证书系统登陆</name>
+		<namemap>global.troy.name</namemap>
+		<type>String</type>
+		<desc>使用证书系统登陆(NetSignHard:新安世纪硬件;iTrusSoft:天威诚信软件;iTrusHard:天威诚信硬件;CFCASoft:金融认证中心软件;CFCAHard:金融认证中心硬件;isoftstone:不使用证书认证;)</desc>
+		<value>isoftstone</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>支持的证书颁发机构</name>
+		<namemap>global.troy.issuerdnarray</namemap>
+		<type>String</type>
+		<desc>多个颁发机构之间用 ### 分隔，value不填表示没有限制</desc>
+		<value/>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>结算:使用哪种证书系统登陆</name>
+		<namemap>global.settlement.troy.name</namemap>
+		<type>String</type>
+		<desc>使用证书系统登陆(netSign:信安世纪证书认证系统;iTrus:天威诚信的证书认证系统;isoftstone:不使用证书认证;)</desc>
+		<value>isoftstone</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>结算:支持的证书颁发机构</name>
+		<namemap>global.settlement.troy.issuerdnarray</namemap>
+		<type>String</type>
+		<desc>多个颁发机构之间用 ### 分隔，value不填表示没有限制</desc>
+		<value/>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>网银:是否必须绑定证书CN</name>
+		<namemap>ebank.cert.subjectcommonname.isneeded</namemap>
+		<type>boolean</type>
+		<desc/>
+		<value>true</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>结算:是否必须绑定证书CN</name>
+		<namemap>settlement.cert.subjectcommonname.isneeded</namemap>
+		<type>boolean</type>
+		<desc/>
+		<value/>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>结算:是否必须绑定证书序列号</name>
+		<namemap>settlement.cert.serialnumber.isneeded</namemap>
+		<type>boolean</type>
+		<desc/>
+		<value/>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>网银:是否必须绑定证书序列号</name>
+		<namemap>ebank.cert.serialnumber.isneeded</namemap>
+		<type>boolean</type>
+		<desc/>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	
+	<itreasury_configitem>
+		<name>KeyStore 文件的路径与名称</name>
+		<namemap>global.keystore.keystorefilepathname</namemap>
+		<type>String</type>
+		<desc/>
+		<value>.config/cafiles/gdfcl.jks</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>KeyStore 的密码</name>
+		<namemap>global.keystore.keystorepassword</namemap>
+		<type>String</type>
+		<desc/>
+		<value>12345678</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>Key Alias</name>
+		<namemap>global.keystore.keyalias</namemap>
+		<type>String</type>
+		<desc/>
+		<value>server</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>Key 的密码</name>
+		<namemap>global.keystore.keypassword</namemap>
+		<type>String</type>
+		<desc/>
+		<value>12345678</value>
+	</itreasury_configitem>
+	<!--安全控制 end-->
+
+	<itreasury_configitem>
+		<name>是否支持加密</name>
+		<namemap>global.can.encrypt</namemap>
+		<type>boolean</type>
+		<desc>默认是true</desc>
+		<value>false</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem>
+		<name>是否默认为人民币</name>
+		<namemap>global.is.currency</namemap>
+		<type>boolean</type>
+		<desc>默认是true</desc>
+		<value>true</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>账户号的段数</name>
+		<namemap>global.accountno.field</namemap>
+		<type>int</type>
+		<desc>默认是4</desc>
+		<value>4</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem>
+		<name>客户号/账户号最长段的长度</name>
+		<namemap>global.maxaccountno.length</namemap>
+		<type>int</type>
+		<desc>默认是4</desc>
+		<value>6</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem>
+		<name>账户号最长段的段位</name>
+		<namemap>global.maxaccountno.number</namemap>
+		<type>int</type>
+		<desc>默认是3</desc>
+		<value>3</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem>
+		<name>客户号/账户号的段间符号</name>
+		<namemap>global.accountno.tag</namemap>
+		<type>string</type>
+		<desc>默认是-</desc>
+		<value>-</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem>
+		<name>账户号第一段的类型</name>
+		<namemap>global.accountno.firstfieldtype</namemap>
+		<type>int</type>
+		<desc>1 人民币;2 办事处[如果没有选择1则人民币不在账户编号中;如果选择2则人民币不在账户编号中]</desc>
+		<value>2</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem>
+		<name>业务提醒中字幕滚动速度</name>
+		<namemap>global.remind.scrolldelay</namemap>
+		<type>int</type>
+		<desc>默认值:250</desc>
+		<value>250</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem>
+		<name>电子回单柜打印控件打印间隔时间</name>
+		<namemap>global.evoucher.printtime</namemap>
+		<type>int</type>
+		<desc>默认值:5</desc>
+		<value>4000</value>
+	</itreasury_configitem>
+	
+        <itreasury_configitem>
+		<name>1104数据库ip</name>
+		<namemap>global.1104db.ip</namemap>
+		<type>String</type>
+		<desc>1104数据库主机地址</desc>
+		<value>10.93.241.1</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>1104数据库sid</name>
+		<namemap>global.1104db.sid</namemap>
+		<type>String</type>
+		<desc>1104数据库sid</desc>
+		<value>gdtest</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>1104数据库端口</name>
+		<namemap>global.1104db.port</namemap>
+		<type>String</type>
+		<desc>1104数据库主机服务端口</desc>
+		<value>1521</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>1104数据库服务名</name>
+		<namemap>global.1104db.servicename</namemap>
+		<type>String</type>
+		<desc>1104全局数据库服务名</desc>
+		<value>db9i</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>1104数据库登录用户名</name>
+		<namemap>global.1104db.username</namemap>
+		<type>String</type>
+		<desc>1104数据库登录用户名</desc>
+		<value>ireport</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem>
+		<name>1104数据库登录口令</name>
+		<namemap>global.1104db.password</namemap>
+		<type>String</type>
+		<desc>1104数据库登录口令</desc>
+		<value>ireport</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>结算系统是否保存业务日志</name>
+		<namemap>global.system.translog</namemap>
+		<type>boolean</type>
+		<desc>结算系统是否保存业务日志</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>网银系统是否保存业务日志</name>
+		<namemap>global.ebank.translog</namemap>
+		<type>boolean</type>
+		<desc>网银系统是否保存业务日志</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	
+	<itreasury_configitem>
+		<name>网银系统登陆是否采用软键盘</name>
+		<namemap>global.ebank.softkeyboard</namemap>
+		<type>boolean</type>
+		<desc>网银系统登陆是否采用软键盘</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>结算系统登陆是否采用软键盘</name>
+		<namemap>global.system.softkeyboard</namemap>
+		<type>boolean</type>
+		<desc>结算系统登陆是否采用软键盘</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	<itreasury_configitem>
+		<name>是否多人操作</name>
+		<namemap>global.ifmoreoperate</namemap>
+		<type>boolean</type>
+		<desc>是否能多人操作贷款申请或生成合同</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+	<name>是否启用是否指纹管理员功能</name>
+	<namemap>global.isornotenable.fingerprinttype</namemap>
+	<type>boolean</type>
+	<desc>是否启用是否指纹管理员功能</desc>
+	<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>Ldap查询</name>
+		<namemap>global.privilege.ldap</namemap>
+		<type>boolean</type>
+		<desc>是否启用Ldap查询 true为启动，false 为不启用，用于新奥新增用户</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>指纹验证配置</name>
+		<namemap>global.privilege.fingerprint</namemap>
+		<type>boolean</type>
+		<desc>是否启用指纹验证配置 true为启动，false 为不启用，最初用于新奥业务</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>指纹服务器url地址</name>
+		<namemap>global.fingerprint.server.url</namemap>
+		<type>String</type>
+		<desc>指纹服务器url地址</desc>
+		<value>http://ncndc1fpi1.addom.xinaogroup.com/finger/</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>指纹验证机构编号</name>
+		<namemap>global.fingerprint.sys.id</namemap>
+		<type>String</type>
+		<desc>指纹验证机构编号 默认为"1"</desc>
+		<value>1</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>是否开启SAP服务监控</name>
+		<namemap>global.fcinterface.sap</namemap>
+		<type>boolean</type>
+		<desc>是否开启SAP服务监控</desc>
+		<value>flase</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>电子单据柜模板存放位置</name>
+		<namemap>global.evoucher.filepath</namemap>
+		<type>String</type>
+		<desc>电子单据柜模板存放位置</desc>
+		<value>/upload/evoucher/prnfile/</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>登录页面地址</name>
+		<namemap>global.login.url</namemap>
+		<type>String</type>
+		<desc>/Index.jsp 或者 /iTreasury-settlement/Index.jsp</desc>
+		<value>/iTreasury-settlement/Index.jsp</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem>
+		<name>打印签章中是够显示日期</name>
+		<namemap>global.signature.showdate</namemap>
+		<type>boolean</type>
+		<desc>打印签章中是够显示日期</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>打印签章的显示位置</name>
+		<namemap>global.signature.position</namemap>
+		<type>String</type>
+		<desc>格式【X;Y】</desc>
+		<value>400;300</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>打印签章（日期）的显示位置</name>
+		<namemap>global.signaturedate.position</namemap>
+		<type>String</type>
+		<desc>格式【X;Y】</desc>
+		<value>0;25</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>CFCA 服务器签名证书路径</name>
+		<namemap>global.certificate.path</namemap>
+		<type>String</type>
+		<desc></desc>
+		<value>.config\cafiles\cfcatest.pfx</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>CFCA 服务器签名证书密码</name>
+		<namemap>global.certificate.password</namemap>
+		<type>String</type>
+		<desc></desc>
+		<value></value>
+	</itreasury_configitem>	
+	
+   <itreasury_configitem>
+        <name>是否保存操作日志(按钮级别)</name>
+        <namemap>global.btnlevellog.isvalid</namemap>
+        <type>boolean</type>
+        <desc></desc>
+        <value>true</value>
+   </itreasury_configitem>
+
+
+   <itreasury_configitem>
+        <name>报表厂商类型，报表平台和经理查询模块使用皕杰报表还是帆软(不填值默认为皕杰报表)</name>
+        <namemap>global.report.type</namemap>
+        <type>String</type>
+        <desc>finereport:帆软报表；biosreport:皕杰报表</desc>
+        <value>biosreport</value>
+   </itreasury_configitem>
+   
+   <itreasury_configitem>
+		<name>打印签章服务url地址</name>
+		<namemap>global.signature.server.url</namemap>
+		<type>String</type>
+		<desc>格式【http://ip:port】 注：设置为网关映射前的地址，若无映射，则留空</desc>
+		<value></value>
+   </itreasury_configitem>
+
+
+<itreasury_configitem>
+<name>&#198;±&#190;&#221;&#185;&#220;&#192;í</name>
+<namemap/>
+<type>boolean</type>
+<desc/>
+<value>true</value>
+</itreasury_configitem>
+</itreasury_configitems>
+<!--
+	itreasury_configitems                    ******xml文件根结点，其下可以有多个配置项
+		itreasury_configitem                          ******一个配置项
+-->

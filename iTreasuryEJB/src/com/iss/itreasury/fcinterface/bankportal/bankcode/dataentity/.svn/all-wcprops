@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/bankcode/dataentity
+END
+AreaCodeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/bankcode/dataentity/AreaCodeInfo.java
+END
+BankCodeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/bankcode/dataentity/BankCodeInfo.java
+END
+BankCodeParamInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/bankcode/dataentity/BankCodeParamInfo.java
+END

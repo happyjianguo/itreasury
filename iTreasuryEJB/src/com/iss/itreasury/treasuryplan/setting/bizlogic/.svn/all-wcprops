@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/bizlogic
+END
+Trea_OtherIndustryOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/bizlogic/Trea_OtherIndustryOperation.java
+END
+Trea_TPForecastDataOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/bizlogic/Trea_TPForecastDataOperation.java
+END
+Trea_SystemParameterOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/bizlogic/Trea_SystemParameterOperation.java
+END
+Trea_DepartmentPopedomOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/bizlogic/Trea_DepartmentPopedomOperation.java
+END
+Trea_UserInfoOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/bizlogic/Trea_UserInfoOperation.java
+END
+Trea_TPTemplateSetting.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/bizlogic/Trea_TPTemplateSetting.java
+END
+Trea_OtherIndustryItemOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/bizlogic/Trea_OtherIndustryItemOperation.java
+END

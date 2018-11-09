@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dao
+END
+Sett_BankBillDailyReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dao/Sett_BankBillDailyReportDAO.java
+END
+Sett_BankBillDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dao/Sett_BankBillDAO.java
+END
+Sett_BillTypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dao/Sett_BillTypeDAO.java
+END
+PageInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dao/PageInfo.java
+END
+Sett_DepositRelatedBankBillDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dao/Sett_DepositRelatedBankBillDAO.java
+END
+Sett_BankAllowedBillTypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dao/Sett_BankAllowedBillTypeDAO.java
+END

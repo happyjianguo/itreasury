@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic
+END
+PrintStockRationBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintStockRationBean.java
+END
+PrintSecuritiesChangeFundBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesChangeFundBean.java
+END
+PrintSecuritiesProfitAndLossFundBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesProfitAndLossFundBean.java
+END
+PrintBondRepurchaseBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintBondRepurchaseBean.java
+END
+PrintSecuritiesChangeBourseBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesChangeBourseBean.java
+END
+PrintSecuritiesProfitAndLossBourseBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesProfitAndLossBourseBean.java
+END
+PrintSecuritiesInvestBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesInvestBean.java
+END
+PrintSecuritiesChangeBankBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesChangeBankBean.java
+END
+PrintOpenFundApplyingBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintOpenFundApplyingBean.java
+END
+PrintCapitalTransferBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintCapitalTransferBean.java
+END
+PrintSecuritiesProfitAndLossBankBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesProfitAndLossBankBean.java
+END
+PrintSecuritiesTransferBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesTransferBean.java
+END
+PrintSecuritiesBalanceBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesBalanceBean.java
+END
+PrintSecuritiesApplyBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesApplyBean.java
+END
+PrintSecuritiesExchangeStatusBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesExchangeStatusBean.java
+END
+PrintStockApplyingBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintStockApplyingBean.java
+END
+PrintSecuritiesListAccountBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesListAccountBean.java
+END
+PrintSecuritiesChangeStockBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesChangeStockBean.java
+END
+PrintSecuritiesStockChangeBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesStockChangeBean.java
+END
+PrintNotPurchaseDebtBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintNotPurchaseDebtBean.java
+END
+PrintSecuritiesProfitAndLossStockBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/print/bizlogic/PrintSecuritiesProfitAndLossStockBean.java
+END

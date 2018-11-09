@@ -1,0 +1,73 @@
+body {
+	background-color: #6DA6CE;
+}
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#tabCalendar {
+	background-color: #F8F8F8;
+}
+.dtHead  {
+	background-color: #F8F8F8;
+}
+.dtHead .dtButton {
+	color: #666666;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+	margin: 1px;
+	height: 19px;
+	font-size: 11px;
+	padding-top: 2px;
+}
+.dtHead .dtText {
+	color: #666666;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+	margin: 1px;
+	font-size: 11px;
+	height: 19px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.dtHead .dtOption {
+	color: #666666;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+	margin: 1px;
+	font-size: 11px;
+	height: 19px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width:100px;
+}
+.dtDateHead {
+	background-color: #6DA6CE;
+	padding:1px;
+	color:#000000;
+	font-weight:bold;
+}
+.dtDate {
+	background-color: #F8F8F8;
+}
+.dtDateButton {
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+}
+.dtDateButtonSelect {
+	color: #ffffff;
+	background-color: #666666;
+	border: 1px solid #666666;
+}
+.dtTime {
+	background-color: #F8F8F8;
+}
+.dtAction {
+	background-color: #6DA6CE;
+}
+.dtButton {
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+	margin: 1px;
+	height:19px;
+}

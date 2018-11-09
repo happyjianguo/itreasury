@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity
+END
+ImportBankAccountCurDataSettingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/ImportBankAccountCurDataSettingInfo.java
+END
+BankAccountOffiliale.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/BankAccountOffiliale.java
+END
+QueryAccountBalanceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/QueryAccountBalanceInfo.java
+END
+BankAccountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/BankAccountInfo.java
+END
+CorpAccountMappingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/CorpAccountMappingInfo.java
+END
+BranchInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/BranchInfo.java
+END
+QueryBankAccountTransConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/QueryBankAccountTransConditionInfo.java
+END
+QueryAccountMappingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/QueryAccountMappingInfo.java
+END
+BankAccountBalanceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/BankAccountBalanceInfo.java
+END
+BankAccountTransInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/BankAccountTransInfo.java
+END
+BankAccountMappingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/BankAccountMappingInfo.java
+END
+QueryResultInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/QueryResultInfo.java
+END
+ImportBankTransDataRecordInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/ImportBankTransDataRecordInfo.java
+END
+InstructionPostResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/InstructionPostResult.java
+END
+QueryBankInstructionConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/QueryBankInstructionConditionInfo.java
+END
+QueryConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/QueryConditionInfo.java
+END
+BankInstructionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/BankInstructionInfo.java
+END
+QueryAccountTransSumInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/QueryAccountTransSumInfo.java
+END
+ImportBankAccountHisDataSettingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/ImportBankAccountHisDataSettingInfo.java
+END
+BankInstructionLogInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dataentity/BankInstructionLogInfo.java
+END

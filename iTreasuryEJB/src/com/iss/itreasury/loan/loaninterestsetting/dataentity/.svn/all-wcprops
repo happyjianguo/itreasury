@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loaninterestsetting/dataentity
+END
+AdjustRateInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loaninterestsetting/dataentity/AdjustRateInfo.java
+END
+AdjustInterestInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loaninterestsetting/dataentity/AdjustInterestInfo.java
+END
+InterestRateInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loaninterestsetting/dataentity/InterestRateInfo.java
+END
+AdjustInterestDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loaninterestsetting/dataentity/AdjustInterestDetailInfo.java
+END
+AdjustPayConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loaninterestsetting/dataentity/AdjustPayConditionInfo.java
+END
+AdjustcontractdetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loaninterestsetting/dataentity/AdjustcontractdetailInfo.java
+END
+AdjustInterestConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/loaninterestsetting/dataentity/AdjustInterestConditionInfo.java
+END

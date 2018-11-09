@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties
+END
+bank_service_config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/bank_service_config.xml
+END
+itreasury.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/itreasury.properties
+END
+loan.properties
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/loan.properties
+END
+office.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/office.properties
+END
+plan_transConfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/plan_transConfig.xml
+END
+simplelog.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/simplelog.properties
+END
+bankportal.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/bankportal.properties
+END
+jasperreports_extension.properties
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/jasperreports_extension.properties
+END
+commons-logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/commons-logging.properties
+END
+plan_daycount.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/plan_daycount.properties
+END
+bank_name.property
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/bank_name.property
+END
+bank_type.property
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/bank_type.property
+END
+plan_aftertransconfig.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/plan_aftertransconfig.properties
+END
+sec.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/sec.properties
+END
+IExceptionMessage.properties
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/IExceptionMessage.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/log4j.properties
+END
+plan_lineNoPrefix.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/plan_lineNoPrefix.xml
+END
+issTag-default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/issTag-default.xml
+END

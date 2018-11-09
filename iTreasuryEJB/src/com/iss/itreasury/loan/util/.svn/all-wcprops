@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util
+END
+LOANEnv.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/LOANEnv.java
+END
+DailyOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/DailyOperation.java
+END
+LOANConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/LOANConstant.java
+END
+DailyTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/DailyTask.java
+END
+LoanSubType.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/LoanSubType.java
+END
+loanPrint.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/loanPrint.java
+END
+LOANNameRef.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/LOANNameRef.java
+END
+LOANMagnifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/LOANMagnifier.java
+END
+LOANHTML.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/util/LOANHTML.java
+END

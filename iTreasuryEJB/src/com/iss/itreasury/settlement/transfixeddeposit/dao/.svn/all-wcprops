@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao
+END
+Sett_TransFixedContinueDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/Sett_TransFixedContinueDAO.java
+END
+Sett_TransFixedContinueDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/Sett_TransFixedContinueDAOTest.java
+END
+TransFixedDepositDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/TransFixedDepositDao.java
+END
+NotifyDepositDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/NotifyDepositDao.java
+END
+Sett_TransFixedWithDrawDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/Sett_TransFixedWithDrawDAO.java
+END
+Sett_TransFixedWithDrawDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/Sett_TransFixedWithDrawDAOTest.java
+END
+Sett_TransOpenFixedDepositDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/Sett_TransOpenFixedDepositDAO.java
+END
+Sett_TransOpenFixedDepositDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/Sett_TransOpenFixedDepositDAOTest.java
+END
+Sett_TransChangeFixedDepositDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/Sett_TransChangeFixedDepositDAO.java
+END
+TransFixedDrawDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/TransFixedDrawDao.java
+END
+AllTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/AllTests.java
+END
+Sett_NotifyDepositInformDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transfixeddeposit/dao/Sett_NotifyDepositInformDAO.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/repaymentloancorresponding/bizlogic
+END
+RepaymentLoanCorrespondingBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/repaymentloancorresponding/bizlogic/RepaymentLoanCorrespondingBean.java
+END
+ReportBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/repaymentloancorresponding/bizlogic/ReportBean.java
+END
+LoanDetailBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/repaymentloancorresponding/bizlogic/LoanDetailBean.java
+END

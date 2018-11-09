@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/dataentity
+END
+JasperElementConfigInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/dataentity/JasperElementConfigInfo.java
+END
+JasperPageConfigInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/dataentity/JasperPageConfigInfo.java
+END
+JasperFieldInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/dataentity/JasperFieldInfo.java
+END
+JasperHelperConfigInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/dataentity/JasperHelperConfigInfo.java
+END
+JasperBandConfigInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/dataentity/JasperBandConfigInfo.java
+END
+JasperFlexigridInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/dataentity/JasperFlexigridInfo.java
+END

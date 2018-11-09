@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontract/dataentity
+END
+ContractBalanceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontract/dataentity/ContractBalanceInfo.java
+END
+SecuritiesContractQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontract/dataentity/SecuritiesContractQueryInfo.java
+END
+SecuritiesContractInterestInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontract/dataentity/SecuritiesContractInterestInfo.java
+END
+SecuritiesContractInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontract/dataentity/SecuritiesContractInfo.java
+END
+AssetDealRequisitionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontract/dataentity/AssetDealRequisitionInfo.java
+END
+ContractBondTypeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontract/dataentity/ContractBondTypeInfo.java
+END

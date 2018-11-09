@@ -1,0 +1,425 @@
+!SESSION 2013-07-16 11:37:51.385 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -data E:\workspace_itreasury -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:55.907
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\com.collabnet.subversion.merge.feature_1.10.0.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:55.985
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\com.sun.jna_3.0.9.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:56.157
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.clientadapter.feature_1.6.4.1.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:56.157
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.clientadapter.javahl.feature_1.6.4.1.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:56.172
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.clientadapter.svnkit.feature_1.6.4.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:56.172
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.subclipse.graph.feature_1.0.7.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:56.172
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.subclipse.mylyn_3.0.0.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:56.172
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.subclipse_1.6.5.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:37:56.172
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tmatesoft.svnkit_1.3.0.5847.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:38:24.334
+!MESSAGE Could not install bundle plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:38:24.349
+!MESSAGE Could not install bundle plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:38:24.349
+!MESSAGE Could not install bundle plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-16 11:38:24.365
+!MESSAGE Could not install bundle plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:56.299
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\css_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.329
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\forms_lists_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.453
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\htmlform_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.531
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.594
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\html\javascript_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.656
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\jsf_f_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.734
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\jsf_h_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.796
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\struts_bean_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.859
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\struts_html_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.952
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\struts_logic_snippets.xml
+
+!ENTRY com.genuitec.eclipse.wizards 1 0 2013-07-16 11:38:57.999
+!MESSAGE Installed snippet library: E:\MyEclipse 6.5\myeclipse\eclipse\plugins\com.genuitec.eclipse.wizards_6.5.0.zmyeclipse650200806\snippets\jsp\struts_tiles_snippets.xml
+!SESSION 2013-07-18 14:10:50.092 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.526
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\com.collabnet.subversion.merge.feature_1.10.0.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.541
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\com.sun.jna_3.0.9.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.666
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.clientadapter.feature_1.6.4.1.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.682
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.clientadapter.javahl.feature_1.6.4.1.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.682
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.clientadapter.svnkit.feature_1.6.4.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.682
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.subclipse.graph.feature_1.0.7.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.682
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.subclipse.mylyn_3.0.0.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.682
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tigris.subversion.subclipse_1.6.5.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:10:53.697
+!MESSAGE Unable to find feature.xml in directory: E:\MyEclipse 6.5\myeclipse\eclipse\features\org.tmatesoft.svnkit_1.3.0.5847.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:11:15.564
+!MESSAGE Could not install bundle plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:11:15.564
+!MESSAGE Could not install bundle plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:11:15.579
+!MESSAGE Could not install bundle plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-07-18 14:11:15.579
+!MESSAGE Could not install bundle plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.eclipse.update.core 1 0 2013-07-18 14:12:22.568
+!MESSAGE An exception occured while downloading feature from "http://downloads.myeclipseide.com/downloads/products/eworkbench/discovery-6.5/features/com.genuitec.myeclipse.icefaces.feature_6.6.0.zmyeclipse660200810.jar".
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.update.internal.core.connection.HttpResponse.getInputStream(HttpResponse.java:127)
+	at org.eclipse.update.core.ContentReference.getInputStream(ContentReference.java:149)
+	at org.eclipse.update.core.FeatureContentProvider.asLocalReference(FeatureContentProvider.java:268)
+	at org.eclipse.update.internal.core.FeaturePackagedContentProvider.getFeatureEntryArchiveReferences(FeaturePackagedContentProvider.java:157)
+	at org.eclipse.update.internal.core.FeaturePackagedContentProvider.getFeatureManifestReference(FeaturePackagedContentProvider.java:83)
+	at org.eclipse.update.internal.core.FeaturePackagedFactory.createFeature(FeaturePackagedFactory.java:39)
+	at org.eclipse.update.core.Site.createFeature(Site.java:534)
+	at org.eclipse.update.core.FeatureReference.createFeature(FeatureReference.java:122)
+	at org.eclipse.update.core.FeatureReference.getFeature(FeatureReference.java:110)
+	at org.eclipse.update.core.FeatureReference.getFeature(FeatureReference.java:97)
+	at org.eclipse.update.internal.search.SiteSearchCategory$FeatureDownloader.run(SiteSearchCategory.java:222)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at org.eclipse.update.internal.core.connection.HttpResponse.getStatusCode(HttpResponse.java:204)
+	at org.eclipse.update.internal.core.UpdateManagerUtils.checkConnectionResult(UpdateManagerUtils.java:557)
+	at org.eclipse.update.core.ContentReference.getInputStream(ContentReference.java:147)
+	... 10 more
+
+!ENTRY org.eclipse.update.core 1 0 2013-07-18 14:12:22.568
+!MESSAGE An exception occured while downloading feature from "http://downloads.myeclipseide.com/downloads/products/eworkbench/discovery-6.5/features/com.genuitec.myeclipse.matisse_6.6.0.zmyeclipse660200810.jar".
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.update.internal.core.connection.HttpResponse.getInputStream(HttpResponse.java:127)
+	at org.eclipse.update.core.ContentReference.getInputStream(ContentReference.java:149)
+	at org.eclipse.update.core.FeatureContentProvider.asLocalReference(FeatureContentProvider.java:268)
+	at org.eclipse.update.internal.core.FeaturePackagedContentProvider.getFeatureEntryArchiveReferences(FeaturePackagedContentProvider.java:157)
+	at org.eclipse.update.internal.core.FeaturePackagedContentProvider.getFeatureManifestReference(FeaturePackagedContentProvider.java:83)
+	at org.eclipse.update.internal.core.FeaturePackagedFactory.createFeature(FeaturePackagedFactory.java:39)
+	at org.eclipse.update.core.Site.createFeature(Site.java:534)
+	at org.eclipse.update.core.FeatureReference.createFeature(FeatureReference.java:122)
+	at org.eclipse.update.core.FeatureReference.getFeature(FeatureReference.java:110)
+	at org.eclipse.update.core.FeatureReference.getFeature(FeatureReference.java:97)
+	at org.eclipse.update.internal.search.SiteSearchCategory$FeatureDownloader.run(SiteSearchCategory.java:222)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at org.eclipse.update.internal.core.connection.HttpResponse.getStatusCode(HttpResponse.java:204)
+	at org.eclipse.update.internal.core.UpdateManagerUtils.checkConnectionResult(UpdateManagerUtils.java:557)
+	at org.eclipse.update.core.ContentReference.getInputStream(ContentReference.java:147)
+	... 10 more
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.622
+!MESSAGE NLS missing message: JavaMetaUtils_warning_default_package in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.622
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.638
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.638
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.638
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.638
+!MESSAGE NLS missing message: JavaVMUtility_launchconfig_default_server_type_id_attr in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.638
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_browse_jar_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.638
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.654
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.654
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_add_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.654
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_down_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.654
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_edit_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.654
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_remove_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.654
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_up_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.654
+!MESSAGE NLS missing message: MELibraryWizardPage_description in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.669
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_onlyone in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.669
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_zero in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.669
+!MESSAGE NLS missing message: MELibraryWizardPage_list_library_selector_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-07-18 14:13:45.669
+!MESSAGE NLS missing message: MELibraryWizardPage_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-07-18 14:13:56.325
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.internet.cache 1 0 2013-07-18 14:13:59.180
+!MESSAGE wtp.autotest.noninteractive is set. Licenses dialogs will not be displayed.
+
+!ENTRY com.genuitec.eclipse.javascript 1 0 2013-07-18 15:07:28.782
+!MESSAGE 
+!STACK 0
+org.mozilla.javascript.JavaScriptException: [object Function] (JS lint#358)
+	at org.mozilla.javascript.gen.c2._c9(JS lint:358)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callProp0(OptRuntime.java:117)
+	at org.mozilla.javascript.gen.c2._c76(JS lint:1368)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName0(OptRuntime.java:106)
+	at org.mozilla.javascript.gen.c2._c4(JS lint:201)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:95)
+	at org.mozilla.javascript.gen.c2._c0(JS lint:1740)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:337)
+	at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:2755)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.gen.c2.exec(JS lint)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:471)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:429)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateFile(JavaScriptValidator.java:544)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateDelta(JavaScriptValidator.java:519)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:416)
+	at org.eclipse.wst.validation.internal.core.ValidatorLauncher.start(ValidatorLauncher.java:98)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.launchValidator(ValidationOperation.java:1286)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.internalValidate(ValidationOperation.java:1101)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.validate(ValidationOperation.java:996)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:657)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:203)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.genuitec.eclipse.javascript 1 0 2013-07-18 15:07:32.536
+!MESSAGE 
+!STACK 0
+org.mozilla.javascript.JavaScriptException: [object Function] (JS lint#456)
+	at org.mozilla.javascript.gen.c2._c13(JS lint:456)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:95)
+	at org.mozilla.javascript.gen.c2._c9(JS lint:389)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callProp0(OptRuntime.java:117)
+	at org.mozilla.javascript.gen.c2._c76(JS lint:1368)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName0(OptRuntime.java:106)
+	at org.mozilla.javascript.gen.c2._c4(JS lint:201)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:95)
+	at org.mozilla.javascript.gen.c2._c0(JS lint:1740)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:337)
+	at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:2755)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.gen.c2.exec(JS lint)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:471)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:429)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateFile(JavaScriptValidator.java:544)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateDelta(JavaScriptValidator.java:519)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:416)
+	at org.eclipse.wst.validation.internal.core.ValidatorLauncher.start(ValidatorLauncher.java:98)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.launchValidator(ValidationOperation.java:1286)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.internalValidate(ValidationOperation.java:1101)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.validate(ValidationOperation.java:996)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:657)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:203)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.genuitec.eclipse.javascript 1 0 2013-07-18 15:07:35.095
+!MESSAGE 
+!STACK 0
+org.mozilla.javascript.JavaScriptException: [object Function] (JS lint#456)
+	at org.mozilla.javascript.gen.c2._c13(JS lint:456)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:95)
+	at org.mozilla.javascript.gen.c2._c9(JS lint:389)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callProp0(OptRuntime.java:117)
+	at org.mozilla.javascript.gen.c2._c76(JS lint:1368)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName0(OptRuntime.java:106)
+	at org.mozilla.javascript.gen.c2._c4(JS lint:201)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:95)
+	at org.mozilla.javascript.gen.c2._c0(JS lint:1740)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:337)
+	at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:2755)
+	at org.mozilla.javascript.gen.c2.call(JS lint)
+	at org.mozilla.javascript.gen.c2.exec(JS lint)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:471)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:429)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateFile(JavaScriptValidator.java:544)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validateDelta(JavaScriptValidator.java:519)
+	at com.genuitec.eclipse.javascript.validation.JavaScriptValidator.validate(JavaScriptValidator.java:416)
+	at org.eclipse.wst.validation.internal.core.ValidatorLauncher.start(ValidatorLauncher.java:98)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.launchValidator(ValidationOperation.java:1286)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.internalValidate(ValidationOperation.java:1101)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.validate(ValidationOperation.java:996)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:657)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:203)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

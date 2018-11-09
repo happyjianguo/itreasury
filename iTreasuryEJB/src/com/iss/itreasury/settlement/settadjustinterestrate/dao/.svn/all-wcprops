@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/settadjustinterestrate/dao
+END
+Sett_RateAdjustPayDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/settadjustinterestrate/dao/Sett_RateAdjustPayDetailDAO.java
+END
+Sett_RateAdjustContractDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/settadjustinterestrate/dao/Sett_RateAdjustContractDetailDAO.java
+END
+Sett_RateAdjustPayConditionDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/settadjustinterestrate/dao/Sett_RateAdjustPayConditionDAO.java
+END

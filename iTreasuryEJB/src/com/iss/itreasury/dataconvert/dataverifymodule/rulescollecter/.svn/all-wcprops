@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter
+END
+LoanContractPlanCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/LoanContractPlanCollecter.java
+END
+AbstractCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/AbstractCollecter.java
+END
+DiscountAccountCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/DiscountAccountCollecter.java
+END
+NotifyCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/NotifyCollecter.java
+END
+ExtendDetailCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/ExtendDetailCollecter.java
+END
+ConsignLoanCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/ConsignLoanCollecter.java
+END
+ClientCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/ClientCollecter.java
+END
+AssureAccountCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/AssureAccountCollecter.java
+END
+LoanDiscountContractFormCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/LoanDiscountContractFormCollecter.java
+END
+LoanPayFormCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/LoanPayFormCollecter.java
+END
+LoanContractCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/LoanContractCollecter.java
+END
+ICollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/ICollecter.java
+END
+CurrencyCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/CurrencyCollecter.java
+END
+TrustLoanCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/TrustLoanCollecter.java
+END
+FixedCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/FixedCollecter.java
+END
+AssureContractCollecter.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/dataverifymodule/rulescollecter/AssureContractCollecter.java
+END

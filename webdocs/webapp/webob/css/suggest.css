@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.suggestBorder {
+	border-bottom: #acbabd 1px solid;
+	border-left: #acbabd 1px solid;
+	margin: 0px 0px 0px 1px;
+	background: #fff;
+	float: none;
+	font-size: 0%;
+	border-top: #acbabd 1px solid;
+	border-right: #acbabd 1px solid;
+	width: 148px;
+}
+
+.suggest {
+	border-width: 0px 0px 0px 0px;
+}
+
+.suggestImage {
+	border: none;
+	margin: 0px 0px 0px 0px;
+	width: 18px;
+	height: 18px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(../graphics/suggest/search_btn.gif) #f9761d;
+}

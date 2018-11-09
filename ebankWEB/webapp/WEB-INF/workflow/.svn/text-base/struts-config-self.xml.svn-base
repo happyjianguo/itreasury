@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "../../dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="wfDefineCtrl" type="com.iss.inut.workflow.webmanage.web.WfDefineCtrl" />
+ 	</form-beans>
+
+	<action-mappings>
+		<action path="/wfDefine" type="com.iss.inut.web.BaseAction" name="wfDefineCtrl"
+		 scope="request" parameter="operate" validate="false">
+			<forward name="wfDefineList" path="/workflow/jsp/wfdesign/wfDefineList.jsp" />
+			<forward name="delete" path="/wfDefine.do?operate=selectWfDefineList" redirect="true"/>
+		</action>
+		<action path="/wfPreview" type="com.iss.inut.web.BaseAction" name="wfDefineCtrl"
+		 scope="request" parameter="operate" validate="false">
+			<forward name="wfPreview" path="/workflow/jsp/wfdesign/wfPreview.jsp" />
+		</action>
+
+	</action-mappings>
+
+</struts-config>

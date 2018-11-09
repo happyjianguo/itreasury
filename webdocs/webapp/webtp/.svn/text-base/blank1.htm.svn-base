@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>中油财务有限责任公司</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+.top {  border: thin outset;background-color: #E0DE89}
+.box {  border: 1px #333333 inset; background-color: #FFFFCC}
+.button {  border: thin outset; background-color: #E0DE89; font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px; font-style: normal; color: #333333}
+-->
+</style>
+<script language="JavaScript">
+<!--
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<link rel="stylesheet" href="template.css" type="text/css">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="76%"><img src="capital_logo.jpg" width="392" height="38"></td>
+    <td width="24%"><img src="CNPC_Logo.jpg" width="342" height="46" align="right"></td>
+  </tr>
+</table>
+<hr size="2" noshade color="#FF6633">
+<NOSCRIPT> 
+<TABLE cellSpacing=0 cellPadding=0 width=798 border=0>
+  <TBODY> 
+  <TR vAlign=center>
+          <TD bgColor=#cccccc height=1><SPACER height="1" type="block" 
+            width="720"></TD></TR></TBODY></TABLE>
+<table cellspacing=0 cellpadding=0 width=798 border=0>
+  <tbody> 
+  <tr valign=center align=middle width="718" bordercolor="#666666"> 
+    <td width=90 bgcolor=white height=20><font 
+                  style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none">??
+
+</font></td>
+    <td width=90 bgcolor=white height=20><font 
+                  style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none">??
+
+</font></td>
+    <td width=90 bgcolor=white height=20><font 
+                  style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none">??
+
+</font></td>
+    <td width=90 bgcolor=white height=20><font 
+                  style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none">??
+
+</font></td>
+    <td width=90 bgcolor=white height=20><font 
+                  style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none">??
+
+</font></td>
+    <td width=90 bgcolor=white height=20><font 
+                  style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none">??
+
+</font></td>
+    <td width=90 bgcolor=white height=20><font 
+                  style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none">??
+
+</font></td>
+    <td width=90 bgcolor=white height=20><font 
+                  style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none">??
+
+</font></td>
+  </tr>
+  </tbody>
+</table>
+<TABLE cellSpacing=0 cellPadding=0 width=798 border=0>
+  <TBODY> 
+  <TR>
+          <TD bgColor=#cccccc height=1><SPACER height="1" type="block" 
+            width="720"></TD></TR></TBODY></TABLE>
+        
+</NOSCRIPT> 
+<p> 
+  <script language=JavaScript1.2 src="DropDownData.js" 
+      type=text/javascript></script>
+</p>
+<p align="center">&nbsp;</p>
+<p align="center"> <br>
+  <font size="6"><b><br>
+  <font color="#CC6600" size="7">中油财务有限责任公司</font></b></font></p>
+<p align="center"><font color="#CC6600" size="7"><b>—— 电子商务系统资金结算模块</b></font></p>
+</body>
+</html>

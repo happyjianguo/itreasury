@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/workflow/common
+END
+wf_header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/workflow/common/wf_header.jsp
+END
+Error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/workflow/common/Error.jsp
+END
+wf_footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/workflow/common/wf_footer.jsp
+END
+wf_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/workflow/common/wf_menu.jsp
+END
+systemException.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/workflow/common/systemException.jsp
+END

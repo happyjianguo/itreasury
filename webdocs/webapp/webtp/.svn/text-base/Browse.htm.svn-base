@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>导入文件</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script language="JavaScript">
+<!--
+function  Back(MSG)
+{
+	if (confirm(MSG)) 
+	{
+		alert("成功导入文件！");
+		window.close();
+	}   
+}
+
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000">
+<table width="300" height="100" align="center">
+  <tr bordercolor="#FFFFFF"> 
+    <td height="27" width="217"><font size="2"><b>导入</b>：</font></td>
+  </tr>
+  <tr bordercolor="#FFFFFF"> 
+    <td height="50" align="right" width="217"> 
+      <div align="center"><font size="2"> 
+        <input type="file" name="file" size="35">
+        </font></div>
+    </td>
+  </tr>
+  <tr>
+    <td height="26" align="right" width="217"> 
+      <div align="center"><font size="2"> 
+        <input type="submit" name="Submit2" value="导入文件" onClick="Back('是否确认导入文件?');">
+        <input type="submit" name="Submit22" value="查看文件">
+        </font></div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

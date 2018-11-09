@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes"?>
+<issTag>
+	<database>
+	    <classname>com.iss.itreasury.tags.database.Database</classname>
+	</database>
+</issTag>

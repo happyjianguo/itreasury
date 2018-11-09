@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontractplan/dao
+END
+SecuritiesContractPlanDetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontractplan/dao/SecuritiesContractPlanDetailDao.java
+END
+SecuritiesPlanModifyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontractplan/dao/SecuritiesPlanModifyDao.java
+END
+SecuritiesContractPlanDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/securitiescontractplan/dao/SecuritiesContractPlanDao.java
+END

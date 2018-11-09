@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/cafiles
+END
+itrus.crl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/cafiles/itrus.crl
+END
+keystore.jks
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/cafiles/keystore.jks
+END
+itrus.cer
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/cafiles/itrus.cer
+END

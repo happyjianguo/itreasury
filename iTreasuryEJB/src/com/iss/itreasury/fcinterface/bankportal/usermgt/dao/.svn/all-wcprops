@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/usermgt/dao
+END
+UserPrivilegeDAO_db2.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/usermgt/dao/UserPrivilegeDAO_db2.java
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/usermgt/dao/UserDAO.java
+END
+UserDAO_oracle.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/usermgt/dao/UserDAO_oracle.java
+END
+UserDAO_db2.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/usermgt/dao/UserDAO_db2.java
+END
+UserPrivilegeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/usermgt/dao/UserPrivilegeDAO.java
+END
+UserPrivilegeDAO_oracle.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/usermgt/dao/UserPrivilegeDAO_oracle.java
+END

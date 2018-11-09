@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF
+END
+struts-logic.tld
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/struts-logic.tld
+END
+struts-tiles.tld
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/struts-tiles.tld
+END
+struts-nested.tld
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/struts-nested.tld
+END
+issworkflow-operate.tld
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/issworkflow-operate.tld
+END
+struts-html.tld
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/struts-html.tld
+END
+struts-bean.tld
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/struts-bean.tld
+END
+validation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/validation.xml
+END
+jboss-web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/jboss-web.xml
+END
+validator-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/validator-rules.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/web.xml
+END
+tiles-defs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/tiles-defs.xml
+END

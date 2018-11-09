@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>sefc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<link rel="stylesheet" href="/sefc/css/style.css" type="text/css">
+<SCRIPT language=JavaScript>
+	function checkForm()
+	{
+		var frm=document.form1;
+		if (frm.UserName.value==""){
+			alert("请输入用户名");
+			frm.UserName.focus();
+			return false;
+		}
+		if (frm.Password.value==""){
+			alert("请输入密码");
+			frm.Password.focus();
+			return false;
+		}
+		frm.submit();
+	}
+</script>
+</head>
+
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" align="center">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+  <td><table width="531" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="loginBTop">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" valign="middle" class="loginBMiddle"><table width="247" border="0" cellpadding="3" cellspacing="2">
+        <form name="form1" method="post" action="LoginControl.jsp">
+			
+          <tr>
+            <td nowrap>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="68" nowrap><strong><font color="#000000">登 录 名：</font></strong></td>
+            <td width="122">
+              <input name="UserName" type="text" size="23" style="width:150px" maxlength="20">
+            </td>
+          </tr>
+          <tr>
+            <td nowrap><strong><font color="#000000">密　　码：</font></strong></td>
+            <td><input name="Password" type="password" size="23" style="width:150px" maxlength="20">
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td nowrap> <input type="hidden" name="currency" value="1">
+			  <input type="submit" name="Submit1" value="提交" onclick="javascript:return checkForm()">
+			  <input type="reset" name="Submit2" value="取消">
+            </td>
+          </tr>
+        </form>
+      </table></td>
+    </tr>
+    <tr>
+      <td valign="top" class="loginBBottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="50" align="center">&copy; 2002 - 2004 上海电气集团财务有限责任公司 版权所有.保留所有权利. </td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+</table>
+</body>
+<script language="javascript">
+	document.form1.UserName.focus();
+</script>
+</html>

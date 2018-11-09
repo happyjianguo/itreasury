@@ -1,0 +1,411 @@
+#===============================================#
+#            数据库设置                         #	
+#===============================================#
+db.type=oracle
+
+#数据库连接方式。可为jdbc或是type4。
+#如选type4，则以下的db.type4.name有效，db.ip等设置无效，数据库连接配置以服务器所配的type4为准
+#如选jdbc，以下的db.ip等设置有效
+db.conn.type=type4
+
+#type4的JNDI名称
+db.type4.name=jdbc/cpf/type4
+
+db.ip=10.10.10.30
+db.sid=db9i
+db.username=cpfdev
+db.password=cpfdev
+db.port=1521
+
+#===============================================#
+#            系统基础设置                       #	
+#===============================================#
+#客户名称
+client.name=\u00C9\u00CF\u00BA\u00A3\u00C6\u00D6\u00B6\u00AB\u00B7\u00A2\u00D5\u00B9\u00BC\u00AF\u00CD\u00C5\u00B2\u00C6\u00CE\u00F1\u00D3\u00D0\u00CF\u00DE\u00D4\u00F0\u00C8\u00CE\u00B9\u00AB\u00CB\u00BE
+
+#版权标识
+copyRight=\u00C8\u00ED\u00CD\u00A8\u00B6\u00AF\u00C1\u00A6
+
+#文件上传路径
+upload.file.path=/iplanet/sun_appserver7/domains/domain1/server-bankportal/docroot
+
+#用户管理接口
+interface.userimpl=com.iss.itreasury.bankportal.usermgt.userimpl.Product42ModuleUserImpl
+
+#当前应用服务器的默认工作路径
+bankportal.url=/NASApp/iTreasury-bankportal
+
+#登录页面，当系统显示需要重新登录的提示框，点击"返回按钮"时，将返回到此页面
+login.url=/NASApp/Index.jsp
+
+#账户属性一，二，三的显示名称
+fieldname.acctpropertyone=\u00D5\u00CB\u00BB\u00A7\u00CA\u00F4\u00D0\u00D4\u00D2\u00BB
+fieldname.acctpropertytwo=\u00D5\u00CB\u00BB\u00A7\u00CA\u00F4\u00D0\u00D4\u00B6\u00FE
+fieldname.acctpropertythree=\u00D5\u00CB\u00BB\u00A7\u00CA\u00F4\u00D0\u00D4\u00C8\u00FD
+
+#系统基础信息是否需要使用缓存
+isUseCache=false
+
+#交易ID的取值类型，是否取sequence
+transID.isSequence=true
+#指令日志ID的取值类型，是否取sequence
+bankInsLogID.isSequence=true
+
+#自动任务，自恢复时间，单位（分钟）
+autotask.resumetime=480
+
+#是否需要记录监控的访问业务日志
+isNeedAccessLog=true
+#监控的访问日志是否和结算等模块保存到一个表
+isaccesslogshare=true
+
+#账户销户时是否需要销户审核
+isNeedCheckWhenClosingAccount=false
+
+#账户修改,是否是谁新增谁修改
+AccountSetting.WhoInputWhoModify=true
+
+#===============================================#
+#            银企接口配置                       #	
+#===============================================#
+
+#当前系统中使用的直联银行
+#要使直联银行配置生效，还需在bank_service_config.xml配置上对应的直联银行
+directBankType=ICBC,\u00D6\u00D0\u00B9\u00FA\u00B9\u00A4\u00C9\u00CC\u00D2\u00F8\u00D0\u00D0;CCB,\u00D6\u00D0\u00B9\u00FA\u00BD\u00A8\u00C9\u00E8\u00D2\u00F8\u00D0\u00D0;BOC,\u00D6\u00D0\u00B9\u00FA\u00D2\u00F8\u00D0\u00D0,ABC,\u00D6\u00D0\u00B9\u00FA\u00C5\u00A9\u00D2\u00B5\u00D2\u00F8\u00D0\u00D0;
+
+#非直联银行
+#该配置在[数据维护]->[非直联账户]中用到
+importBankType=SCB,\u00D4\u00FC\u00B4\u00F2\u00D2\u00F8\u00D0\u00D0;
+
+#创建支付指令后是否自动发送到银行
+isautosend=false
+
+#指令发送时是否允许修改指令信息，如汇款速度等。
+isModifyInstrInfo=true
+
+#工行代理汇兑收款方网点
+recNetStation=1,\u00B1\u00B1\u00BE\u00A9,\u00B1\u00B1\u00BE\u00A9\u00B7\u00D6\u00D0\u00D0;2,\u00C9\u00CF\u00BA\u00A3,\u00C9\u00CF\u00BA\u00A3\u00B7\u00D6\u00D0\u00D0;3,\u00CE\u00F7\u00B0\u00B2,\u00CE\u00F7\u00B0\u00B2\u00B7\u00D6\u00D0\u00D0;
+
+#农行代理汇兑传送附言字段信息
+abc.postscriptRes=\u00B4\u00FA\u00C0\u00ED\u00BB\u00FA\u00B9\u00B9\u00A3\u00BAXX\u00B2\u00C6\u00CE\u00F1
+
+#指令状态下拉框中是否显示先拨后支的指令状态,true:显示;false:不显示，默认出false 
+isview.prepay.postpay.bankinststatus=false
+
+#是否在创建指令时进行重复可疑指令校验,默认true(进行校验)
+ischeck.creatInstr.repeat=false
+
+#校验重复指令的时间段，从指令生成的时间向前算，以日为单位，1为当日，2为当日及昨日，以此类推。配置0也为当日。
+check.instruction.time.quantum=7
+
+#金额组适用模块 格式：1;   0或不填(不使用)、1(指令维护)
+powerGroup.usedId=
+
+#===============================================#
+#            和结算等系统集成时的设置           #	
+#===============================================#
+
+#是否需要用户登陆认证处理# true:监控单独布署时使用
+# false:和结算等集成时使用
+isNeedCertificate=false
+
+#客户信息是否使用客户管理模块的设置
+#true:是。那么在监控模块中只能查询客户信息，不能作新增和修改
+#false:否。
+isclient=true
+
+#汇率设置
+israte=false
+#关联编号
+isrelationno=true
+#币种
+iscurrency=false
+
+#集成指令接口的服务端口
+integration.rmi.port=2005
+
+#当集成接口要求生成代理汇兑指令，但是代理行不支持代理汇兑时，使用此处指定的业务类型来生成指令
+#格式：银行类型,业务类型代码; 如：CIBICIB,8;(注：8代表先拨后支业务类型)
+integration.changeToOtherVirement=
+
+#资金监控在发送指令时，是否需要检查结算（或其它模块）存在对应的交易信息
+#格式：1;3; 0(资金监控)、1(结算系统)、2(网银系统)、3(SAP系统),如果为空,对于系统中指令发送，都不进行检查
+sendinstr.check.moduletypeID=
+
+#=================================================#
+#            监控功能设置                         #
+#=================================================#	
+
+#监控任务执行的最小时间间隔 单位为分钟
+monitortask.interval=10
+##--邮件服务器配置，使用了[监控功能]->[监控提醒设置]时需要配置
+#发邮件所用的smtp服务器
+remind.email.server=smtp.sina.com.cn
+#邮箱用户名
+remind.email.user=xinaomoney
+remind.email.pass=123456
+remind.email.from=xinaomoney@sina.com
+#提醒次数
+remind.email.remindnum=2
+
+#===============================================#
+#            自动入账设置                       #
+#===============================================#
+
+#是否启用自动入账功能。
+#true:启用;false:不启用
+notice.transnotice=false
+
+#不入账标记。当交易的摘要中存在下设字符时，该交易不入账
+notice.transnotice.flag=\u00A3\u00CE\u00A3\u00D4
+
+#如果不入账标记原来设置为##等特殊标识符，新上的中行因为摘要中不能含有特殊标记，不能使用此设置。
+#abc.notice.transflag=BOC,ＲＺ;ABC,ＴＥＳＴ;时，表示中行的入账标记为ＲＺ，农行入账标记为ＴＥＳＴ
+#默认为农行所用的不入账标记，如下面的设置（全角中文字符）
+#由于农行系统会过滤掉一些特殊字符，所以需要对其单独设置
+abc.notice.transflag=\u00A3\u00CE\u00A3\u00D4
+
+#通知结算自动入账的具体实现类，分项目设置
+#该类实现两个功能：
+#  1.判断哪些交易应该入账;
+#  2.将需要入账的交易,按照结算要求组织数据,并传给结算，由其进行入账
+notice.transnotice.impl=com.iss.itreasury.bankportal.notice.transnotice.impl.SettlementTransNoticeImpl
+
+#建行主动发送代理收款交易入账
+notice.agenttransnotice.impl=com.iss.itreasury.bankportal.notice.agenttransnotice.impl.NWAgentTransNoticeImpl
+
+#结算入账服务端所在的ip及port
+notice.transnotice.impl.param=10.10.19.164:3000
+
+#通知入账时，对交易按先借后贷排序（根据项目需要设置,默认为空）
+#true:贷方排序;false:借方排序;空  表示只按时间排序
+notice.transnotice.orderbyDebitFirst=
+
+
+#交易补录是否需要审核
+modifytransaction.isneedcheck=false
+
+#===============================================#
+#            资金划拨设置                       #
+#===============================================#
+
+#上划指令的摘要信息(包括手工上划及自动上划)
+gather.abstractinfo=\u00D7\u00CA\u00BD\u00F0\u00C9\u00CF\u00BB\u00AE
+
+#下拨指令的摘要信息(包括手工下拨及自动下拨)
+autotask.assign.abstractinfo=\u00D7\u00CA\u00BD\u00F0\u00CF\u00C2\u00B2\u00A6
+
+#划拨策略设置时，可选的下级账户的收支属性
+# 1,收入户;2.支出户;3.收支户;-1:任意;
+gather.inputoroutput=1
+
+#资金划拨的方式
+# 1.按客户的上下级关系归集;
+# 2.按账户的上下级;
+# 3.任意账户;
+gather.autogather.sourceofgatheraccount=2
+
+#划拨策略设置时，可选的上级账户的收支属性
+# 1,收入户;2.支出户;3.收支户;-1:任意;
+gather.upacct.inputoroutput=3
+
+#划拨指令是否自动发送.1,是;0,否
+gather.autogather.isautosend=1
+
+#系统中是否加急项为全局设置，可能会影响到结算手续费。按照下面说明可以按照不同银行进行配置
+#gatherInstructionIsPrior=ICBC,true;ABC,false;时，表示工行使用加急，农行使用普通
+#默认为设置为全局（所有银行加急或普通）
+#自动上划指令是否加急
+gatherInstructionIsPrior=false
+
+#系统中是否加急项为全局设置，可能会影响到结算手续费。按照下面说明可以按照不同银行进行配置
+#gatherInstructionIsPrior=ICBC,true;ABC,false;时，表示工行使用加急，农行使用普通
+#默认为设置为全局（所有银行加急或普通）
+#自动下拨指令是否加急
+assignInstructionIsPrior=false
+
+#资金下拨是否需要检查对应的内部账户的余额
+Assignfund.Ischeck.Settacctbalance=false
+
+#资金上划前，是否检查是否存在[已保存]，[处理中]，[未知]指令(防止透支)
+gather.ischeckprocessinginstruction=true
+
+#当银行接供上划下拨接口功能时，对于系统中的上划下拨指令需要使用银行接供的上划下拨接口(根据客户需求)
+#格式：银行类型,true或false; 如果为空,对于系统中上划下拨指令默认使用普通支付接口
+#如:ABC,false;(注:ABC代表对于农行的上划下拨指令都使用农行提供的上划下拨接口，false代表农行的先拨后支的先拨指令不使用下拨接口)
+#如:ABC,true;(注:ABC代表对于农行的上划下拨指令都使用农行提供的上划下拨接口，true代表农行的先拨后支的先拨指令使用下拨接口)
+isuse.gatherandprepay.bank=
+
+#上划下拨自动任务是否使用每日自增的摘要
+useAutoIncrementAbstract=false
+
+#===============================================#
+#            对私业务处理                       #
+#===============================================#
+
+#银行对私业务参数
+#1:招行代理清算
+#2:招行内部资金调拨
+#3:招行代发工资
+#4:招行代发其他
+#5:工行对私支付
+#6:交行对私
+#7:建行网银对私
+#false 只能通过手工设置参数信息
+#true  可以去银行同步参数信息
+bank.reimburse.param=1,true;2,true;3,true;4,true;5,false;6,false;7,false;
+
+#===============================================#
+#            人行行号配置                       #
+#===============================================#
+
+#是否使用银企平台的人行行号人工检索功能
+#true:使用平台的检索；false:不使用检索
+isuse.query.cnaps.funtion=false
+
+
+#===============================================#
+#              是否使用集群配置                       
+# 当bankportal部署在集群中时，对bankportal有影响的是系统中的定时任务，
+# 通过发布服务时定制的属性“isStartUpAutoTask”来判断，当前节点是否启动定时任务
+# 当isStartUpAutoTask的配置值为true时，表示当前节点启动定时任务，否则不启动
+# 当前集群配置只支持Websphere，其他中间件未测试
+#===============================================#
+#系统部署时是否采用集群
+#true:使用集群；false:不使用集群
+#不配置该项时，表示不使用集群
+isuse.cluster=false
+
+
+#===============================================#
+#            系统日志设置                       #
+#===============================================#
+
+#是否需要系统日志
+isNeedBpLog=true
+
+#系统日志实现类
+interface.bplogimpl=com.iss.itreasury.bankportal.logmgt.impl.BPLogDBImpl
+
+#日志异常栈输出文件路径
+exception.file.path=/iplanet/sun_appserver7/domains/domain1/server-bankportal/docroot/exceptionfile
+
+
+#===============================================#
+#            多办事处设置                       #
+#===============================================#
+
+#总部办事处的OfficeID
+#总部办事处能看到非总部办事处的所有数据。包括设置信息，银行账户的余额及交易等。
+# -1:所有办事处都是总部，都能看到其它办事处的数据
+# 0:分办事处，每个办事处只能看到自己的数据
+HQOfficeID=1
+
+#银行设置是否需要区分办事处
+hasBankOffice=false
+
+#客户是否需要区分办事处
+hasClientOffice=false
+
+#账户属性一,二,三是需要要区分办事处
+hasAccountPropertyOffice=true
+
+#自动导入及自动核对任务是否区分办事处
+hasAutoTaskOffice=false
+
+#是否需要校验数据权限，默认不需要
+isNeedDataPrivilege=false
+#用户登录时是否需要自动数据权限授权，默认不需要
+isNeedAutoAuthorize=false
+
+#===============================================#
+#            数据维护设置                       #
+#===============================================#
+#自动核对时，同一账户查询交易和查询余额之间的间隔时间，单位（秒）
+#现为农行使用
+autotask.checkinterval=ABC,10;
+#只核对余额，不核对交易的银行
+autotask.onlycheckbalance=CCB;BOC;
+#手工核对时，是否只允许单账户核对
+isCheckOnlyOneAcct=true
+#手工核对时，是否有日期限制(限制为一周)
+isCheckDateLimit=false
+
+
+#===============================================#
+#      监金监控是否使用安全证书设置             #
+#===============================================#
+#资金监控是否绑定结算使用的安全证书CN,默认为false
+cert.bankportal.isneed=false
+#结算使用证书的类型,只有当cert.subjectcommonname.isneeded=true时，才会使用下面的配置项(目前不支持加密传输)
+#(netSign:信安世纪证书认证系统;iTrus:天威诚信的证书认证系统;JIT:吉大正元的证书认证系统;)
+settlement.troy.name=
+
+
+#===============================================#
+#            东电项目特殊配置   session 超时结算控制         #
+#===============================================#
+#页面刷新时访问结算统一的URL地址 http://10.10.21.63:8080/toftmerge/test.jsp
+settlement.session.timeout.url=
+#页面刷新时访问结算统一的session超时时间(秒)
+sesslement.session.timeout.sec=180
+
+#===============================================#
+#            中油项目特殊配置                   #
+#===============================================#
+ldap.ip=10.211.12.21
+ldap.port=3389
+
+#===============================================#
+#            中钢一期特殊配置                   #
+#===============================================#
+#是否在进行指令发送时，使用CFCA认证
+isCertWhenSendInstruction=false
+
+#===============================================#
+#            其它项目特殊配置                   #
+#===============================================#
+#资金计划查询配置实现类
+interface.capitalplay.impl=com.iss.itreasury.bankportal.capitalplan.impl.CapitalPlanImpl
+#中核用，任意人都有可取消银行账户的审核状态
+AccountUncheck.Anyone=false
+#中交项目的先拨后支采用过渡账户方式 是否采用过渡账户,黙认为false(不用过渡方式)
+isbridgingaccount=false
+
+#===============================================#
+#            境外银行项目设置                   #
+#===============================================#
+language=zh
+
+#服务器所在地的UTC时间,单位（分钟）。
+#如果系统有和国外银行作直联，需要设置此项为480（此项为北京时区），否则，采用默认设置
+utc=0
+
+#基础折算币种，在做汇率转换时使用（目前仅中油使用）
+#如果设置为：USD（美元），强制要求系统中设置USD的币种信息
+currency=RMB
+
+#是否显示折算币种放大镜,当前实施的项目中仅中油需要折算币种功能。true:显示。false:不显示
+iscurrencymapping=false
+
+#指令导出路径
+exp.instruction.path=/iplanet/sun_appserver7/domains/domain1/server-bankportal/docroot/exp_instruction
+
+#是否需要支持多国，不设置时，默认值为true
+#作用：账户新增、修改时确定国家选项是否为必填。
+#false：新增（修改）帐户时国家选项不必填，该值从已有的国家设置中取。要求：国家设置中存在有效值
+isNeedCountry=true
+
+#创建指令的时候，是否需要考虑同行他行，目前境外银行还不考虑同行他行
+isNeedSameBank=true
+
+#指令明细页面是否显示成境外风格
+isForeignInstr=false
+
+#荷兰银行指令导出设置，名称=直联号+相应后缀
+ABNExpInstrFtpIP=127.0.0.1
+ABNExpInstrFtpPort=21
+ABNExpInstrFtpUser=user
+ABNExpInstrFtpPass=aa
+ABNExpInstrFtpPath=instrfile
+

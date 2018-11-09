@@ -1,0 +1,177 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+</head>
+<body>
+<table border="0" width="100%">
+<tr>
+<td width="5%"><IMG class="aFilter" title="保存" src="image/save.gif" width="20" height="20"></td>
+<td width="95%">保存当前编辑的打印模板。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="另存" src="image/lingcun.gif" width="21" height="20"></td>
+<td width="95%">将当前编辑的打印模板另存。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="打印预览" src="image/billpreview.gif" width="20" height="20"></td>
+<td width="95%">预览当前编辑的打印模板，预览的是保存了的修改，如果未保存则不能预览出来。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="复制" src="image/copy.gif" width="20" height="20"></td>
+<td width="95%">复制当前在页面中选中的元素到裁剪板，当选中多个元素时，则复制多个元素到裁剪板。在编辑打印模板的时候，用复制和粘贴功能可以快速画出多个类似的子元素。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="粘贴" src="image/paste.gif" width="20" height="20"></td>
+<td width="95%">将复制到裁剪板中的元素粘贴到当前编辑的打印模板中。粘贴出的元素位置与复制的原元素位置重叠，点击选中移动就可以了。用这个功能与复制功能组合，可以快速画出多个元素。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="撤消" src="image/undo.gif" width="20" height="19"></td>
+<td width="95%">撤销操作。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter"  title="重做" src="image/redo.gif" width="20" height="19"></td>
+<td width="95%">重复操作。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="对齐面板" src="image/align.gif" width="20" height="20"></td>
+<td width="95%">做多选元素的对齐功能。包括水平对齐，垂直对齐，调节子元素间距，子元素大小等等。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" src="image/front1.gif" title="前置" width="40" height="20"></td>
+<td width="95%">将当前选中的元素置前。就是当元素重叠时，将选中的元素位置放到最前面显示。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" src="image/back1.gif" title="后置" width="40" height="20"></td>
+<td width="95%">将当前选中的元素位置置后。就是当元素重叠时，将选中的元素位置放到和它重叠的其它元素的位置后面。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="页面设置" src="image/udf.gif" width="20" height="20"></td>
+<td width="95%">设置打印的纸张大小、宽度、高度、打印方向、页边距、页眉、页脚等等属性。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="自定义函数" src="image/userFun.gif" width="20" height="20"></td>
+<td width="95%">用户自定义函数的编辑窗口。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="能变色的自定义函数" src="image/userFunColor.gif" width="20" height="20"></td>
+<td width="95%">关键字能变色的用户自定义函数的编辑窗口。下载了codemax之后能变色。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="直接运行命令" src="image/run.gif" width="20" height="20"></td>
+<td width="95%">直接运行命令的窗口。比如运行用户自定义函数、查看当前打印模板页面元素的属性等等。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="显示/隐藏控件列表" src="image/searches.gif" width="20" height="20"></td>
+<td width="95%">当前打印模板的所有元素列表。运行后左边出现所有子元素的列表，点击列表子项可以选中相应的元素，点击del键，删除模板中相应的元素。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="band" src="image/div.gif" width="26" height="20"></td>
+<td width="95%">打印模板中可以设置的所有band列表。包括：报表标题、页头、主数据、明细头、明细数据、明细脚、页脚。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="memo"  src="image/text_area.gif" width="20" height="20"></td>
+<td width="95%">打印的标签和数据，支持标签和数据混排的格式；在属性的表达式编辑器中选择变量，选择字段等等，支持数字日期金额等的格式化。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="Shape" src="image/shape.gif" width="25" height="20"></td>
+<td width="95%">打印的方框，直线，带箭头的线等等。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="Image" src="image/image1.gif" width="20" height="20"></td>
+<td width="95%">打印的图像，图标等等。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"><img class="aFilter" title="插入字段向导" src="image/combobox.gif" width="25" height="20"></td>
+<td width="95%">插入字段的向导。用此快速生成打印的子元素。</td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%"></td>
+</tr>
+</table>
+</body>
+</html>

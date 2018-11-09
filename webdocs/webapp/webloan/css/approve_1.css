@@ -1,0 +1,46 @@
+body 
+{
+	font-family: "ËÎÌו", "arial", "helvetica", "helv"; font-size: 12px; color: #000000; background-color: #fbfbfb; margin-top: 2px;
+}
+td 
+{
+	font-family: ËÎÌו,arial,helvetica,helv; font-size: 12px
+}
+.itemtitle 
+{
+	height:25px;
+	
+	background:#D2E9FF;
+}
+.list_table 
+{
+	border-top:1px solid #DDDDDD;
+	border-left:1px solid #DDDDDD;
+}
+.list_table tbody
+{
+	border-top:1px solid #DDDDDD;
+	border-left:1px solid #DDDDDD;
+}
+.list_table tr
+{
+	border-top:1px solid #DDDDDD;
+	border-left:1px solid #DDDDDD;
+}
+.list_table td
+{
+	height:25px;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+}
+.list_table tr.even td
+{
+}
+.list_table tr.odd td
+{
+	background:#fff;
+}
+.list_table tr.over td
+{
+	background:#e7e8ed;
+}

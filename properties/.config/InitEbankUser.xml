@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="gb2312"?>
+<UserGroups>								<!-- 初始化用户权限组集合 -->
+
+	<UserGroup>								<!-- 初始化用户权限组 -->
+		<UserNumber>1</UserNumber>				<!-- 初始化用户序列号 用于区分不同的用户 不同用户序列号不能相同  数字类型 默认从1开始-->
+		<UserName>系统管理员</UserName>	        <!-- 用户名称 String -->
+		<GroupName>系统管理组</GroupName>		<!-- 用户权限组名称 String -->
+		<ModuleId>6</ModuleId>				<!-- 模块ID Num -->
+		<Privileges>			<!-- 该用户组的权限集合 -->
+			<Privilege>6-6</Privilege>
+			<Privilege>6-6-100</Privilege>	
+			<Privilege>6-6-100-101</Privilege>		<!-- 权限 对应菜单 -->
+			<Privilege>6-6-102</Privilege>
+			<Privilege>6-6-102-100</Privilege>
+			<Privilege>6-6-103</Privilege>
+			<Privilege>6-6-103-103</Privilege>
+			<Privilege>6-6-104</Privilege>
+			<Privilege>6-6-104-100</Privilege>
+		</Privileges>
+		<Status>1</Status>					<!-- 初始化用户权限组的状态 1有效；0无效；-->
+	</UserGroup>
+
+	<UserGroup>								<!-- 初始化用户权限组 -->
+		<UserNumber>2</UserNumber>					<!-- 初始化用户序列号 用于区分不同的用户 不同用户序列号不能相同  数字类型 默认从1开始-->
+		<UserName>系统安全员</UserName>		<!-- 用户名称 String -->
+		<GroupName>系统安全组</GroupName>		<!-- 用户权限组名称 String -->
+		<ModuleId>6</ModuleId>				<!-- 模块ID Num -->
+		<Privileges>						<!-- 该用户组的权限集合 -->
+			<Privilege>6-6</Privilege>			<!-- 权限 对应菜单--> 
+			<Privilege>6-6-102</Privilege>	
+			<Privilege>6-6-102-100</Privilege>	
+			<Privilege>6-6-103</Privilege>
+			<Privilege>6-6-103-100</Privilege>
+			<Privilege>6-6-103-101</Privilege>
+			<Privilege>6-6-103-102</Privilege>
+		</Privileges>
+		<Status>1</Status>					<!-- 初始化用户权限组的状态 1有效；0无效； -->
+	</UserGroup>
+
+	<UserGroup>								<!-- 初始化用户权限组 -->
+		<UserNumber>-1</UserNumber>					<!-- 序列号为-1时，只初始化用户组-->
+		<UserName></UserName>		<!-- 用户名称 String -->
+		<GroupName>查询组</GroupName>		<!-- 用户权限组名称 String -->
+		<ModuleId>6</ModuleId>				<!-- 模块ID Num -->
+		<Privileges>						<!-- 该用户组的权限集合 -->
+			<Privilege>6-1</Privilege>     <!-- 权限 对应菜单--> 
+			<Privilege>6-1-100</Privilege>
+			<Privilege>6-1-100-100</Privilege>	
+			<Privilege>6-1-101</Privilege>
+			<Privilege>6-1-101-100</Privilege>
+			<Privilege>6-1-101-101</Privilege>
+			<Privilege>6-1-104</Privilege>
+			<Privilege>6-1-104-100</Privilege>
+			<Privilege>6-2</Privilege>
+			<Privilege>6-2-100</Privilege>
+			<Privilege>6-2-100-105</Privilege>
+			<Privilege>6-2-101</Privilege>
+			<Privilege>6-2-101-107</Privilege>
+			<Privilege>6-6</Privilege>
+			<Privilege>6-6-102</Privilege>
+			<Privilege>6-6-102-100</Privilege>
+		</Privileges>
+		<Status>1</Status>					<!-- 初始化用户权限组的状态 1有效；0无效； -->
+	</UserGroup>	
+
+	<UserGroup>								<!-- 初始化用户权限组 -->
+		<UserNumber>-1</UserNumber>					<!-- 序列号为-1时，只初始化用户组-->
+		<UserName></UserName>		<!-- 用户名称 String -->
+		<GroupName>制单组</GroupName>		<!-- 用户权限组名称 String -->
+		<ModuleId>6</ModuleId>				<!-- 模块ID Num -->
+		<Privileges>			<!-- 该用户组的权限集合 -->
+			<Privilege>6-1</Privilege>             <!-- 权限 对应菜单--> 
+			<Privilege>6-1-100</Privilege>
+			<Privilege>6-1-100-100</Privilege>	
+			<Privilege>6-1-101</Privilege>
+			<Privilege>6-1-101-100</Privilege>
+			<Privilege>6-1-104</Privilege>
+			<Privilege>6-1-104-100</Privilege>
+			<Privilege>6-1-108</Privilege>
+			<Privilege>6-1-108-100</Privilege>
+			<Privilege>6-2</Privilege>
+			<Privilege>6-2-100</Privilege>
+			<Privilege>6-2-100-100</Privilege>
+			<Privilege>6-2-100-101</Privilege>
+			<Privilege>6-2-100-105</Privilege>
+			<Privilege>6-2-101</Privilege>
+			<Privilege>6-2-101-100</Privilege>
+            <Privilege>6-2-101-101</Privilege>
+            <Privilege>6-2-101-107</Privilege>
+			<Privilege>6-6</Privilege>
+			<Privilege>6-6-100</Privilege>
+			<Privilege>6-6-100-101</Privilege>
+			<Privilege>6-6-102</Privilege>
+			<Privilege>6-6-102-100</Privilege>
+			<Privilege>6-6-104</Privilege>
+			<Privilege>6-6-104-100</Privilege>
+		</Privileges>
+		<Status>1</Status>					<!-- 初始化用户权限组的状态 1有效；0无效； -->
+	</UserGroup>	
+
+	<UserGroup>								<!-- 初始化用户权限组 -->
+		<UserNumber>-1</UserNumber>					<!-- 序列号为-1时，只初始化用户组-->
+		<UserName></UserName>		<!-- 用户名称 String -->
+		<GroupName>复核组</GroupName>		<!-- 用户权限组名称 String -->
+		<ModuleId>6</ModuleId>				<!-- 模块ID Num -->
+		<Privileges>						<!-- 该用户组的权限集合 -->
+		    <Privilege>6-2</Privilege>	   <!-- 权限 对应菜单--> 
+			<Privilege>6-2-100</Privilege>
+			<Privilege>6-2-100-103</Privilege>    
+			<Privilege>6-2-100-105</Privilege>
+			<Privilege>6-2-101</Privilege>
+			<Privilege>6-2-101-102</Privilege>
+			<Privilege>6-2-101-105</Privilege>
+			<Privilege>6-2-101-107</Privilege>
+			<Privilege>6-6</Privilege>
+			<Privilege>6-6-102</Privilege>
+		    <Privilege>6-6-102-100</Privilege>
+		</Privileges>
+		<Status>1</Status>					<!-- 初始化用户权限组的状态 1有效；0无效； -->
+	</UserGroup>	
+
+	<UserGroup>								<!-- 初始化用户权限组 -->
+		<UserNumber>-1</UserNumber>					<!-- 序列号为-1时，只初始化用户组-->
+		<UserName></UserName>		<!-- 用户名称 String -->
+		<GroupName>授权组</GroupName>		<!-- 用户权限组名称 String -->
+		<ModuleId>6</ModuleId>				<!-- 模块ID Num -->
+		<Privileges>						<!-- 该用户组的权限集合 -->
+			<Privilege>6-2</Privilege>      <!-- 权限 对应菜单--> 
+		    <Privilege>6-2-100</Privilege>
+		    <Privilege>6-2-100-104</Privilege>    
+		    <Privilege>6-2-100-105</Privilege>
+		    <Privilege>6-2-101</Privilege>
+		    <Privilege>6-2-101-103</Privilege>
+		    <Privilege>6-2-101-106</Privilege>
+		    <Privilege>6-2-101-107</Privilege>
+		    <Privilege>6-6</Privilege>
+		    <Privilege>6-6-102</Privilege>
+		    <Privilege>6-6-102-100</Privilege>
+		</Privileges>
+		<Status>1</Status>					<!-- 初始化用户权限组的状态 1有效；0无效； -->
+	</UserGroup>	
+
+	<UserGroup>								<!-- 初始化用户权限组 -->
+		<UserNumber>-1</UserNumber>					<!-- 序列号为-1时，只初始化用户组-->
+		<UserName></UserName>		<!-- 用户名称 String -->
+		<GroupName>电子单据柜组</GroupName>		<!-- 用户权限组名称 String -->
+		<ModuleId>6</ModuleId>				<!-- 模块ID Num -->
+		<Privileges>						<!-- 该用户组的权限集合 -->
+			<Privilege>6-9</Privilege>		<!-- 权限 对应菜单--> 
+			<Privilege>6-9-100</Privilege>
+			<Privilege>6-9-100-100</Privilege>		
+			<Privilege>6-9-100-102</Privilege>
+		</Privileges>
+		<Status>1</Status>					<!-- 初始化用户权限组的状态 1有效；0无效； -->
+	</UserGroup>	
+</UserGroups>
+
+
+
+

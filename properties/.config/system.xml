@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes"?>
+<itreasury_configitems>
+
+	<itreasury_configitem >
+		<name>用户证书号码</name>
+		<namemap>system.addebankuser.isneedcert</namemap>
+		<type>boolean</type>
+		<desc>系统 证书是否必输，是为 true，否为false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>客户编号长度</name>
+		<namemap>system.userinfo.scode.length</namemap>
+		<type>int</type>
+		<desc>客户编号长度</desc>
+		<value>4</value>
+	</itreasury_configitem>
+
+</itreasury_configitems>
+
+<!--
+	itreasury_configitems                    ******xml文件根结点，其下可以有多个配置项
+		itreasury_configitem                          ******一个配置项
+-->

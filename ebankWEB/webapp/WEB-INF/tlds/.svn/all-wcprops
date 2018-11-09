@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/tlds
+END
+iss-fundplan-tags.tld
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/tlds/iss-fundplan-tags.tld
+END
+taglib.tld
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/tlds/taglib.tld
+END
+common-ebank.tld
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/tlds/common-ebank.tld
+END
+iss-safety.tld
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/tlds/iss-safety.tld
+END
+common.tld
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/WEB-INF/tlds/common.tld
+END

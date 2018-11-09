@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/util
+END
+JasperPrintUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/util/JasperPrintUtil.java
+END
+FontStyle.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/util/FontStyle.java
+END
+CommonJasperDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/util/CommonJasperDataSource.java
+END
+BoxStyle.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/util/BoxStyle.java
+END
+JasperReportInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/sysframe/jasperPrint/util/JasperReportInfo.java
+END

@@ -1,0 +1,12 @@
+#配置证书具体实现类:
+
+NetSignHard=com.iss.itreasury.safety.provider.imp.NetSignHardSecurityProvider
+
+iTrusSoft=com.iss.itreasury.safety.provider.imp.ITrusSoftSecurityProvider
+
+CFCAHard=com.iss.itreasury.safety.provider.imp.CFCAHardSecurityProvider
+
+CFCASoft=com.iss.itreasury.safety.provider.imp.CFCASoftSecurityProvider
+
+isoftstone=com.iss.itreasury.safety.provider.imp.NoSecurityProvider
+

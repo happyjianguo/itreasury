@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/reportlossorfreeze/dao
+END
+Sett_ReportLossOrFreezeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/reportlossorfreeze/dao/Sett_ReportLossOrFreezeDAO.java
+END
+QReportLossOrFreezeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/reportlossorfreeze/dao/QReportLossOrFreezeDao.java
+END
+QSubjectDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/reportlossorfreeze/dao/QSubjectDetailDAO.java
+END
+Sett_ReportLossOrFreezeQueryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/reportlossorfreeze/dao/Sett_ReportLossOrFreezeQueryDAO.java
+END

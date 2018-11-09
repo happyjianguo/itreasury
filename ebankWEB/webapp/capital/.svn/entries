@@ -1,0 +1,61 @@
+10
+
+dir
+43532
+https://10.24.16.98/svn/itreasury/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/capital
+https://10.24.16.98/svn/itreasury
+
+
+
+2013-04-26T06:32:38.155463Z
+39482
+zhouxiang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2934e90a-06d0-2947-8c99-299d1987327d
+
+fixed
+dir
+
+sign
+dir
+
+financeinstr
+dir
+
+notifyinform
+dir
+
+query
+dir
+
+captransfer
+dir
+
+notify
+dir
+
+plan
+dir
+
+setremind
+dir
+
+check
+dir
+
+loanrepayment
+dir
+

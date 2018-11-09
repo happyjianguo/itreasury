@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "../../dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<form-beans>
+
+		<form-bean name="FormCtrl" type="com.iss.inut.workflow.webmanage.web.FormCtrl" />
+		<form-bean name="WFCtrl" type="com.iss.inut.workflow.webmanage.web.WFControlCtrl" />
+		<form-bean name="TranOverCtrl" type="com.iss.inut.workflow.webmanage.web.TranOverCtrl" />
+
+	</form-beans>
+
+	<action-mappings>
+
+		<action path="/FormCtrl" type="com.iss.inut.web.BaseAction" name="FormCtrl" scope="request" parameter="operate" validate="false">
+			<forward name="FormList" path="/workflow/jsp/formconfig/formList.jsp" />
+			<forward name="FormAdd" path="/workflow/jsp/formconfig/formAdd.jsp" />
+			<forward name="FormEdit" path="/workflow/jsp/formconfig/elenemtList.jsp" />
+			<forward name="ElementList" path="/workflow/jsp/formconfig/elementList.jsp" />
+			<forward name="ElementAdd" path="/workflow/jsp/formconfig/elementEdit.jsp" />
+			<forward name="ElementEdit" path="/workflow/jsp/formconfig/elementEdit.jsp" />
+			<forward name="RefreshFormList" path="/FormCtrl.do" redirect="true" />
+		</action>
+
+		<action path="/WFCtrl" type="com.iss.inut.web.BaseAction" name="WFCtrl" scope="request" parameter="operate" validate="false">
+			<forward name="DefineList" path="/workflow/jsp/wfcontrol/ctlDefineList.jsp" />
+			<forward name="EntryList" path="/workflow/jsp/wfcontrol/ctlEntryList.jsp" />
+			<forward name="TraceStepList" path="/workflow/jsp/wfcontrol/traceStepList.jsp" />
+			<forward name="SelectUser" path="/workflow/jsp/wfcontrol/selectUser.jsp" />
+			<forward name="Refresh" path="/WFCtrl.do" redirect="true" />
+		</action>
+
+		<action path="/TranOverCtrl" type="com.iss.inut.web.BaseAction" name="TranOverCtrl" scope="request" parameter="operate" validate="false">
+			<forward name="StepList" path="/workflow/jsp/transactionover/overStepList.jsp" />
+		</action>
+
+	</action-mappings>
+	
+</struts-config>

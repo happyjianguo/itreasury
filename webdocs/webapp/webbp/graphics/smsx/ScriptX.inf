@@ -1,0 +1,80 @@
+; ========================= MeadCo's ScriptX ========================
+; Copyright (c) 1998-2002, Mead & Co Limited.
+
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.5
+
+[Add.Code]
+MCScripX.dll=MCScripX.dll
+MCPrintX.dll=MCPrintX.dll
+
+[MCScripX.dll]
+clsid={1663ed61-23eb-11d2-b92f-008048fdd814}
+FileVersion=6,1,429,14
+hook=ScriptX
+
+[MCPrintX.dll]
+clsid={1663ed6a-23eb-11d2-b92f-008048fdd814}
+FileVersion=6,1,429,14
+hook=TriPrint
+
+[ScriptX]
+InfFile=ScriptX.inf
+InfSection=WebInstall
+
+[TriPrint]
+InfFile=PrintX.inf
+
+; ========================= Win32 INF ========================
+
+[SourceDisksNames]
+1="MeadCo ScriptX","ScriptX.cab", 0
+
+[SourceDisksFiles]
+MCScripX.dll=1
+ScriptX.inf=1
+
+[WebInstall]
+RequiredEngine=Setupapi,%SetupApi%
+CopyFiles=CopyFiles, CopyInfFiles
+RegisterOCXs=RegisterFiles
+CustomDestination=CustomDestination
+
+[DefaultInstall]
+RequiredEngine=Setupapi,%SetupApi%
+CustomDestination=CustomDestination
+RunPostSetupCommands=InstallCommands
+
+[DefaultUninstall]
+RequiredEngine=Setupapi,%SetupApi%
+UnRegisterOCXs=RegisterFiles
+DelFiles=CopyFiles
+RunPostSetupCommands=UninstallCommands
+
+[InstallCommands]
+rundll32.exe advpack.dll,LaunchINFSection %49010%\PrintX.inf,DefaultInstall,1
+rundll32.exe advpack.dll,LaunchINFSection %49010%\ScriptX.inf,WebInstall,1
+
+[UninstallCommands]
+rundll32.exe advpack.dll,LaunchINFSection %17%\PrintX.inf,DefaultUninstall,1
+rundll32.exe advpack.dll,DelNodeRunDLL32 %17%\ScriptX.inf
+
+[CustomDestination]
+49010,49011,49012,49013=SourceDir
+
+[DestinationDirs]
+CopyFiles=11
+CopyInfFiles=17
+
+[CopyFiles] 
+MCScripX.dll,,,97
+
+[CopyInfFiles] 
+ScriptX.inf
+
+[RegisterFiles]
+%11%\MCScripX.dll
+
+[Strings]
+SetupApi="This setup program requires Win32 SetupAPI DLLs"

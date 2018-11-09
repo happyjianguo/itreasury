@@ -1,0 +1,30 @@
+/**
+ * created on Mar 13, 2008
+ */
+package com.iss.itreasury.ebank.obfinanceinstr.judgement;
+
+import com.iss.itreasury.ebank.obfinanceinstr.dao.OBFinanceInstrDao;
+import com.iss.itreasury.ebank.obfinanceinstr.dataentity.FinanceInfo;
+import com.iss.itreasury.ebank.obfinanceinstr.exp.RepeatedApplyCodeException;
+import com.iss.itreasury.util.IException;
+
+/**
+ * @author xintan
+ *
+ *  Õ¯“¯÷∏¡Ó…Í«Î÷–£¨“µŒÒ…Í«Î±‡∫≈ «∑Ò÷ÿ∏¥≈–∂œ∆˜°£
+ */
+public class IsRepeatedApplyCodeJudgement {
+
+    public static boolean judge(FinanceInfo financeInfo) throws IException
+    {
+        OBFinanceInstrDao financeInstrDAO = new OBFinanceInstrDao();
+        
+        try{
+            financeInstrDAO.CheckApplyCodeRepetition(financeInfo);
+        }catch(RepeatedApplyCodeException ex1){
+            return true;
+        }
+        
+        return false;
+    }
+}

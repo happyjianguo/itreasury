@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "../../dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+  <form-beans>
+    <form-bean name="currentstepCtrl" type="com.iss.inut.workflow.webmanage.web.CurrentStepCtrl"/>
+    <form-bean name="historystepCtrl" type="com.iss.inut.workflow.webmanage.web.HistoryStepCtrl"/>
+    <form-bean name="transrightCtrl" type="com.iss.inut.workflow.webmanage.web.TransRightCtrl"/>
+   
+  </form-beans>
+  
+  <action-mappings>
+    <action path="/currentStep" 
+    		type="com.iss.inut.web.BaseAction"
+    		name="currentstepCtrl"
+    		scope="request"
+    		parameter="operate"
+      		validate="false">
+      	<forward name="currentstepList" path="/workflow/jsp/webmanage/CurrentStepList.jsp"/>
+      
+		      		
+    </action>    
+    
+    <action path="/historyStep" 
+    		type="com.iss.inut.web.BaseAction"
+    		name="historystepCtrl"
+    		scope="request"
+    		parameter="operate"
+      		validate="false">
+      	<forward name="historystepList" path="/workflow/jsp/webmanage/HistoryStepList.jsp"/>
+    </action>  
+     
+    <action path="/transRight"
+    		type="com.iss.inut.web.BaseAction"
+    		name="transrightCtrl"
+    		scope="request"
+    		parameter="operate"
+    		validate="false">
+    	<forward name="transrightList" path="/workflow/jsp/webmanage/TransRightList.jsp"/>
+    	<forward name="toupdate" path="/workflow/jsp/webmanage/TransferEdit.jsp"/>
+    	<forward name="toadd" path="/workflow/jsp/webmanage/TransferAdd.jsp"/>
+    	<forward name="toselectuser" path="/workflow/jsp/webmanage/SelectUser.jsp"/>
+    	
+    </action>	
+      	
+    
+	</action-mappings>
+  	
+</struts-config>

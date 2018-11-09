@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/transferloancontract/transfernotice/dataentity
+END
+ContractAndNoticeDetialResultInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/transferloancontract/transfernotice/dataentity/ContractAndNoticeDetialResultInfo.java
+END
+TransPayNoticeDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/transferloancontract/transfernotice/dataentity/TransPayNoticeDetailInfo.java
+END
+TransferNoticeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/transferloancontract/transfernotice/dataentity/TransferNoticeInfo.java
+END
+NoticeQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/transferloancontract/transfernotice/dataentity/NoticeQueryInfo.java
+END
+TransferNoticeDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/transferloancontract/transfernotice/dataentity/TransferNoticeDetailInfo.java
+END
+ContractAndNoticeDetailConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/craftbrother/transferloancontract/transfernotice/dataentity/ContractAndNoticeDetailConditionInfo.java
+END

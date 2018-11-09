@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/webdocsWEB/webapp/safety/js/security
+END
+iTrusSecurityProvider.js
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/webdocsWEB/webapp/safety/js/security/iTrusSecurityProvider.js
+END
+NetSignSecurityProvider.js
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/webdocsWEB/webapp/safety/js/security/NetSignSecurityProvider.js
+END
+CFCASecurityProvider.js
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/webdocsWEB/webapp/safety/js/security/CFCASecurityProvider.js
+END
+NoSecurityProvider.js
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/webdocsWEB/webapp/safety/js/security/NoSecurityProvider.js
+END

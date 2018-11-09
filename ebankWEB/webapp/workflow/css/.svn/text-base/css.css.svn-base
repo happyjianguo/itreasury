@@ -1,0 +1,243 @@
+body,p,td {
+	font-size: 12px;
+	color: #000000;
+}
+input,textarea,select {
+	font-size:12px;
+	color:#000000;
+}
+a {
+	color:#0066CC;
+}
+a:link ,a:visited,a:hover ,a:active {
+	color:#000;
+	text-decoration:underline;
+}
+/*.navbar {
+	border-top:1px solid #000080;
+}
+.navbar td {
+	border-bottom:1px solid #000080;
+
+}*/
+.navbar a{
+	display:block;
+	height:35px;
+	line-height:35px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#666666;
+	padding-left:10px;
+}
+.navbar a:hover {
+	background:rgb(231,243,255);
+	border:1px solid rgb(173,195,239);
+	text-decoration:none;
+	color:#b60000;
+}
+.navbar a:link,.navbar a:visited{
+	background:rgb(231,243,255);
+	border:1px solid rgb(173,195,239);
+	text-decoration:none;
+	color:#666666;
+}
+.navbar_1{
+	padding-left:10px;
+	color:#666666;	
+	font-weight:bold;
+	text-decoration:none;
+	background:rgb(231,243,255);
+	border:1px solid rgb(173,195,239);
+	
+}
+.navbar_pad{
+	padding-left:10px;
+	color:#666666;	
+	font-weight:bold;
+	text-decoration:none;
+	
+}
+.border1 {
+	border: 1px solid #000080;
+}
+.textbox {
+	border:1px solid #B4B4B4;
+}
+.button {
+	border-top:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #ABA799;
+	border-bottom:1px solid #ABA799;
+	background:#ECE9D8;
+}
+
+.button1 {
+	font-size: 12px;
+	line-height: 150%;
+	color: #000000;
+	text-decoration: none;
+	background-image: url(../images/button_bg.gif);
+	background-repeat: repeat-x;
+	background-position: center center;
+	height: 20px;
+	border: 1px solid #989898;
+}
+.tblist {
+	background:#ffffff;
+	border:1px solid #B4B4B4;
+}
+.tblist .thead TD{
+	border-bottom:1px solid #DEDEDF;
+/*	border-right:1px solid #DEDEDF;*/
+	padding:3px;
+	padding-left:4px;
+	background:#F8F8F8;
+}
+.tbinput {
+	background:#ffffff;
+	border:1px solid #B4B4B4;
+}
+fieldset {
+	border:1px solid #bbb;
+}
+.ItemBody {
+	background:#fff;
+}
+.ItemBodyHover {
+	background:#f1f1f1;
+}
+optgroup {
+	font-style:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.cal a,.cal a:visited{
+	text-decoration:none;
+}
+.calarrow {
+	font-family:webdings;
+}
+.calhead {
+	border-bottom:1px solid #ccc;
+}
+.plan1left {
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background:#ddd;
+	font-size:22px;
+	text-align:right;
+	font-family:"Times New Roman", Times, serif;
+}
+.plan1left sup {
+	font-weight:normal;
+	font-size:16px;
+}
+.plan1t1 {
+	border-bottom:1px solid #F3E4B1;
+	background:#FFF4BC;
+}
+.plan1t2 {
+	border-bottom:1px solid #EAD098;
+	background:#FFF4BC;
+}
+.plan1t3 {
+	border-bottom:1px solid #FFEFC7;
+	background:#FFFFD5;
+}
+.plan1t4 {
+	border-bottom:1px solid #F6DBA2;
+	background:#FFFFD5;
+}
+.plan2 {
+	background:#FFFFD5;
+	border-bottom:1px solid #333;
+	border-right:1px solid #333;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+}
+.plan2a {
+	background:#FFF4BC;
+	border-bottom:1px solid #333;
+	border-right:1px solid #333;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+}
+.plan2title {
+	background:#ddd;
+	border-bottom:1px solid #ccc;
+	text-align:right;
+	padding:2px;
+}
+.optionbar {
+	margin-top:2px;
+	background:url(../images/workflow/011.gif) repeat-x bottom;
+}
+A.optionitem {
+	background:#F1F1EC;
+	border:1px solid #A3A398;
+	margin-right:1px;
+	display:block;
+	float:left;
+	line-height:17px;
+	width:60px;
+	text-align:center;
+	text-decoration:none;
+	color:#000000;
+}
+a.optionitem:visited {
+	text-decoration:none;
+	color:#000000;
+}
+A.optionitemsel {
+	background:#fff url(../images/workflow/011a.gif) repeat-x top;
+	border:1px solid #A3A398;
+	border-bottom:1px solid #fff;
+	margin-right:1px;
+	display:block;
+	float:left;
+	line-height:17px;
+	width:60px;
+	text-align:center;
+	text-decoration:none;
+	color:#000000;
+}
+a.optionitemsel:visited {
+	text-decoration:none;
+	color:#000000;
+}
+.optioncontent {
+	border:1px solid #A3A398;
+	border-top:0px;
+	padding:2px;
+}
+.sys {
+	font-family:"宋体";
+	font-size:12px;
+	color: #7D7D7D;
+	background-color: #f1f1f1;
+	filter: Alpha(Opacity=65);
+	border: 1px solid #7D7D7D;
+}
+a.syslink:link{
+	font-family:"宋体";
+	font-size:12px;
+	color: #7D7D7D;
+	text-decoration: none;
+}
+a.syslink:visited{
+	font-family:"宋体";
+	font-size:12px;
+	color: gray;
+	text-decoration: none;
+}
+a.syslink:hover{
+	font-family:"宋体";
+	font-size:12px;
+	color: red;
+	text-decoration: none;
+}
+a.syslink:active{
+	font-family:"宋体";
+	font-size:12px;
+	color: #7D7D7D;
+	text-decoration: none;
+}

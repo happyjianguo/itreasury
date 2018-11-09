@@ -1,0 +1,85 @@
+/* Easy Slider */
+#slider{
+	background-image: url(../graphics/menu_column.gif);
+}
+
+#slider ul, #slider li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+	
+#slider, #slider li{ 
+	/* 
+		define width and height of container element and list item (slide)
+		list items must be the same size as the slider area
+	*/ 
+	width:106px;
+	height:24px;
+	overflow:hidden; 
+}
+
+#slider div{
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size:12px;
+	width:105px;
+	height:24px;
+	line-height:210%;
+	text-align:center;
+	cursor:hand;
+}
+
+.menucol {
+	border-right: 1px solid #7d7d7d;
+}
+
+.menucol_tover {
+	border-right: 1px solid #7d7d7d;
+	color:red;
+	text-decoration: underline;
+	background-image: url(../graphics/menu_column_tover.gif);
+}
+
+.menucol_event {
+	border-right: 1px solid #7d7d7d;
+	color:#0000CC;
+	background-image: url(../graphics/menu_column_tover.gif);
+}
+
+.menunext {
+	margin:0;
+	padding:0;
+	height:24px;
+	cursor:hand; 
+	border-right: 1px solid #7d7d7d;
+	background-image: url(../graphics/menu_right.gif);	
+}
+
+.menunext_tover {
+	margin:0;
+	padding:0;
+	height:24px;
+	cursor:hand; 
+	border-right: 1px solid #7d7d7d;
+	background-image: url(../graphics/menu_right_tover.gif);
+}
+
+.menuprev {
+	margin:0;
+	padding:0;
+	height:24px;
+	cursor:hand; 
+	border-left: 1px solid #7d7d7d;
+	background-image: url(../graphics/menu_left.gif);
+}
+
+.menuprev_tover {
+	margin:0;
+	padding:0;
+	height:24px;
+	cursor:hand; 
+	border-left: 1px solid #7d7d7d;
+	background-image: url(../graphics/menu_left_tover.gif);
+}

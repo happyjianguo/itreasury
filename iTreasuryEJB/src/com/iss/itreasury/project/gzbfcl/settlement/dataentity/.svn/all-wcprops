@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/project/gzbfcl/settlement/dataentity
+END
+QueryFoundsdispatchDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/project/gzbfcl/settlement/dataentity/QueryFoundsdispatchDetailInfo.java
+END
+FD_OrganizationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/project/gzbfcl/settlement/dataentity/FD_OrganizationInfo.java
+END
+FoundsdispatchInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/project/gzbfcl/settlement/dataentity/FoundsdispatchInfo.java
+END
+FD_BankAccountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/project/gzbfcl/settlement/dataentity/FD_BankAccountInfo.java
+END
+FoundsdispatchDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/project/gzbfcl/settlement/dataentity/FoundsdispatchDetailInfo.java
+END

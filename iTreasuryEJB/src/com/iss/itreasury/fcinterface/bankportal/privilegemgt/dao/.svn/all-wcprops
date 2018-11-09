@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/privilegemgt/dao
+END
+DataPrivilegeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/privilegemgt/dao/DataPrivilegeDAO.java
+END
+DataPrivilegeDAO_oracle.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/fcinterface/bankportal/privilegemgt/dao/DataPrivilegeDAO_oracle.java
+END

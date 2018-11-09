@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transmargindeposit/dataentity
+END
+TransMarginInterestInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transmargindeposit/dataentity/TransMarginInterestInfo.java
+END
+TransMarginOpenInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transmargindeposit/dataentity/TransMarginOpenInfo.java
+END
+QueryByStatusConditionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transmargindeposit/dataentity/QueryByStatusConditionInfo.java
+END
+TransMarginWithdrawInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transmargindeposit/dataentity/TransMarginWithdrawInfo.java
+END

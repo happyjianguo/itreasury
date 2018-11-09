@@ -1,0 +1,304 @@
+form {
+	background:url(/itreasury/graphics/mainbodybg.png) repeat;
+	height:100%;
+	padding:10px;
+}
+body {
+	margin:0;
+	padding:0;
+	background:#FFFFFF;
+	font-family: "宋体", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	
+}
+td {
+	font-family: "宋体", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+
+}
+
+input {
+	font-size: 12px;
+	background:#FFF;
+}
+select {
+	font-size: 12px;
+	background:#FFF;
+}
+textarea {
+	background:#FFF;
+	font-size: 12px;
+}
+a {
+	font-size: 12px;
+	color: #000;
+}
+a:hover {
+	font-size: 12px;
+	color: #326DB2;
+}
+
+/*----------------------------------------*/
+/*财司系统样式整理 add by zhouxiang 20120724*/
+/*----------------------------------------*/
+
+/*主表单样式*/
+.main{
+	background:url(/itreasury/graphics/mainbodybg.png) repeat;
+	height:100%;
+	padding:10px;
+}
+
+/*主表格样式*/
+.top {
+	background:url(/itreasury/graphics/cardbg.png) repeat;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #e6e6e6;
+	border-right-color: #e6e6e6;
+	border-bottom-color: #e6e6e6;
+	border-left-color: #e6e6e6;
+	padding:10px;
+	font-family:"宋体","\5fae\8f6f\96c5\9ed1","Times New Roman",Tahoma,Helvetica, Arial,sans-serif;
+	font-size:12px;
+	color:#000;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+/*标题样式*/
+.FormTitle {
+	background:url(/itreasury/graphics/maintopbg.png) repeat-x;
+	height:31px;
+	font-family:"宋体","\5fae\8f6f\96c5\9ed1","Times New Roman",Tahoma,Helvetica, Arial,sans-serif;
+	font-size:12px;
+	color:#fff;
+	text-shadow: 1px 1px 0px #000;
+	padding:0px 0 0 70px;
+	width:2000px;
+}
+
+/*收付款资料边框*/
+.transTable{
+	border:1px solid #ccc;
+	padding:0 0 10px 10px;
+	margin:0 0 10px 0;
+}
+.transTable td{
+	line-height:30px;
+}
+
+/*收付款资料下方边框*/
+.transTable2{
+	padding:0 0 0px 10px;
+}
+
+/*收付款资料标题*/
+.transTabletitle{
+	/*background:url(/itreasury/graphics/transTabletitlebg.png) repeat-x;*/
+	font-family:"宋体","\5fae\8f6f\96c5\9ed1","Times New Roman",Tahoma,Helvetica, Arial,sans-serif;
+	font-size:12px;
+	color:#3D78BA;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #000;
+	text-decoration: none;
+}
+
+/*输入框样式*/
+.textbox{
+	width:192px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/*color:#817c7c;*/
+	height:18px;	
+	line-height:16px;
+	padding:3px;
+	border-top:1px solid #8d8e8d;
+	border-left:1px solid #8d8e8d;
+	border-right:1px solid #e0e1e0;
+	border-bottom:1px solid #e0e1e0;
+}
+
+/*日历样式*/
+.calendar_tab{
+	width:200px;
+	height:18px;
+	border-top:1px solid #8d8e8d;
+	border-left:1px solid #8d8e8d;
+	border-right:1px solid #e0e1e0;
+	border-bottom:1px solid #e0e1e0;
+	background:#fff;
+}
+.calendar_input{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/*color:#817c7c;*/
+	height:18px;	
+	line-height:18px;
+	padding:3px;
+	border:0;
+}
+.calendar_img{
+	width: 14px;
+	float: left;
+	height: 14px;
+	border:0;
+	margin-right: -2px;
+	background:url(/itreasury/graphics/calendar.gif);
+}
+
+/*金额样式*/
+.amount_tab{
+	width:200px;
+	height:18px;
+	border-top:1px solid #8d8e8d;
+	border-left:1px solid #8d8e8d;
+	border-right:1px solid #e0e1e0;
+	border-bottom:1px solid #e0e1e0;
+	background:#fff;
+}
+.amount_input{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/*color:#817c7c;*/
+	height:18px;	
+	line-height:18px;
+	padding:3px;
+	border:0;
+	TEXT-ALIGN: right
+}
+.amount_symbol{
+	/*color:#817c7c;*/
+	margin:0 0 0 3px;
+}
+
+/*放大镜样式*/
+.tab_search{
+	width:200px;
+	height:18px;
+	border-top:1px solid #8d8e8d;
+	border-left:1px solid #8d8e8d;
+	border-right:1px solid #e0e1e0;
+	border-bottom:1px solid #e0e1e0;
+	background:#fff;
+}
+.searchinput{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/*color:#817c7c;*/
+	height:18px;	
+	line-height:16px;
+	padding:3px;
+	border:0;
+	width:160px;
+	background:#fff;
+}
+.searchaction{
+	width: 17px;
+	float: left;
+	height: 14px;
+	border: 0px;
+	margin-right: 0px;
+	cursor: pointer;
+	background: url(/itreasury/graphics/searchbtn.png);
+}
+
+/*放大镜样式(文本域)*/
+.searchtextarea{
+	overflow:auto;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/*color:#817c7c;*/
+	line-height:16px;
+	padding:3px;
+	border:0;
+}
+.textareaaction{
+	cursor: pointer;
+	background: url(/itreasury/graphics/searchbtn.png) no-repeat;
+	padding:0 2px 0 0;
+	width:16px;
+	height:16px;
+	float: left;
+}
+
+/*输入框样式(文本域)*/
+.textarea{
+	width:192px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/*color:#817c7c;*/
+	height:18px;	
+	line-height:16px;
+	padding:3px;
+	border-top:1px solid #8d8e8d;
+	border-left:1px solid #8d8e8d;
+	border-right:1px solid #e0e1e0;
+	border-bottom:1px solid #e0e1e0;	
+}
+
+/*按钮样式*/
+.button{
+	background:url(/itreasury/graphics/btnbg.png) repeat-x;
+	height:24px;
+	border:1px solid #767676;
+	font-family:"宋体","\5fae\8f6f\96c5\9ed1","Times New Roman",Tahoma,Helvetica, Arial,sans-serif;
+	font-size:12px;
+	color:#000000;
+	padding:0 20px;
+	margin:0 10px;
+	outline:none;
+	cursor:pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow:0px 1px 3px #aaa;
+	-webkit-box-shadow:0px 1px 3px #aaa;
+	box-shadow:0px 1px 3px #aaa;
+}
+.button:hover{
+	background:url(/itreasury/graphics/btnbg_hover.png) repeat-x;
+	height:24px;
+	border:1px solid #00132b;
+	font-family:"宋体","\5fae\8f6f\96c5\9ed1","Times New Roman",Tahoma,Helvetica, Arial,sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+	padding:0 20px;
+	outline:none;
+	cursor:pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow:0px 1px 3px #aaa;
+	-webkit-box-shadow:0px 1px 3px #aaa;
+	box-shadow:0px 1px 3px #aaa;
+}
+
+/*下拉框样式*/
+.select{
+	width:200px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	vertical-align:bottom;
+	margin:0 0 1px 0;
+	/*color:#817c7c;*/
+	height:26px;	
+	line-height:16px;
+	padding:3px;
+	border-top:1px solid #8d8e8d;
+	border-left:1px solid #8d8e8d;
+	border-right:1px solid #e0e1e0;
+	border-bottom:1px solid #e0e1e0;
+}

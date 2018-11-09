@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE></TITLE>
+<script src="../js/fcpub.js"></script>
+<script src="../js/fcbasecont.js"></script>
+
+<script>
+function window_onresize() {
+	select1.style.width =document.body.offsetWidth
+	select1.style.height =document.body.offsetHeight 
+
+}
+function window_onload(){
+	window_onresize()
+
+}
+/**
+选中控件
+*@date 2005-03-29
+**/
+function selectit(){
+	//var djsn=event.srcElement.value
+	//parent.design.location.assign("../dj/"+djsn+".htm")
+
+}
+/**
+*增加控件
+parent.objlist.select1 SelectAddOption(id,"")
+**/
+function objlist_add(sid,CtrlType) {
+	var addoption = document.createElement('option');
+    addoption.text = sid ;
+    addCtrlType = CtrlType;
+    select1.options.add(addoption);
+}
+//删除界面中没有而select1中有的控件
+//sid:控件id
+function objlist_del(sid) {
+	var l = select1.options.length ;
+	for(var i=0; i<l; i++) {
+		if(select1.options(i).text == sid) {
+			select1.options.remove(i)
+			l = l-1;
+		}
+	}
+}
+/*
+*修改控件id
+*/
+function objlist_edit(oldid,sid){
+	//alert(oldid)
+	var l = select1.options.length ;
+	for(var i=0; i<l; i++) {
+		if(select1.options(i).text == oldid ){
+			select1.options(i).text = sid;
+		}
+	}
+}
+/*
+*选择select1中的值中选中控件
+*/
+function objlist_change() {
+	parent.topic.SelectObj(select1.options(select1.selectedIndex).text,0)
+}
+
+/*
+*双击出选中控件的属性框
+*/
+function objlist_dblclick() {
+	if(select1.selectedIndex >= 0){
+		var sid = select1.options(select1.selectedIndex).text
+		parent.topic.execScript("main_ondblclick("+sid+")")
+		//main_ondblclick(eval("parent.topic."+sid))
+	}
+}
+</script>
+</HEAD>
+<BODY onresize=window_onresize() onload=window_onload() >
+<SELECT size=2 id=select1 style="position:absolute;left:0;top:0;" ondblclick="objlist_dblclick()" onclick=selectit() NAME="select1" onchange="objlist_change()">
+</SELECT>
+</BODY>
+</HTML>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="gb2312"?>
+<itreasury_configitems>
+	<itreasury_configitem >
+		<name>打印模板元素常量设置</name>
+		<namemap>sett_PrintTemplate_Setting</namemap>
+		<type>String</type>
+		<desc>打印模板元素常量设置</desc>
+		<value>PrintTemplateSetting.xml</value>
+	</itreasury_configitem>
+   
+    <itreasury_configitem>
+		<name>银行付款-拨子账户是否生成分录</name>
+		<namemap>settlement_createsubject_paysubaccount</namemap>
+		<type>boolean</type>
+		<desc>默认是true</desc>
+		<value>true</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>结算贷款贴现凭证新增配置项－汇票是否用票据模块数据</name>
+		<namemap>settlement.settlement_loan.draftIsFromBill</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>结算定期存款是否自动续存配置项——是否显示是否自动续存功能模块</name>
+		<namemap>settlement.settlement_tran.fixed.IsAutoContinue</namemap>
+		<type>boolean</type>
+		<desc>false:不显示;true:显示</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>是否有自动定时提醒</name>
+		<namemap>settlement_inform_autotime</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否有银行头寸和活期余额比例提醒</name>
+		<namemap>settlement_inform_bankcash</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否有冲账需求功能</name>
+		<namemap>settlement_special_strikebalance</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否有新旧帐户对照</name>
+		<namemap>sett_account_isoldaccount</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否可以打印定期开立、通知开立已删除凭证</name>
+		<namemap>sett_transfixed_delvoucherprint</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否有结算交易手续费的收取</name>
+		<namemap>sett_transcommission</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>定期存单号是否可以修改</name>
+		<namemap>sett_fixedno_canmodify</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>true</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>贷款结算合同号是否由手工录入</name>
+		<namemap>sett_settloan_contractno_manual</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>网银指令在结算系统是否自动复核</name>
+		<namemap>sett_obinstruction_autocheck</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>结算系统中油总帐接口收入现金流向对应编号</name>
+		<namemap>sett_oracleforcpf_multicodeforincome</namemap>
+		<type>String</type>
+		<desc>收入现金流向对应编号</desc>
+		<value>107</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>结算系统，中油总帐接口支出现金流向对应编号</name>
+		<namemap>sett_oracleforcpf_multicodeforpayout</namemap>
+		<type>String</type>
+		<desc>支出现金流向对应编号</desc>
+		<value>407</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否有委托付款凭证功能</name>
+		<namemap>sett_has_consignvouncher</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否自动导入帐户余额</name>
+		<namemap>sett_has_importaccountbalance</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>自动导入帐户余额的时间</name>
+		<namemap>sett_time_importaccountbalance</namemap>
+		<type>string</type>
+		<desc>自动导入帐户余额的时间(只给出时分秒)</desc>
+		<value>18:00:00</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>用款计划自动拨付的时间</name>
+		<namemap>sett_time_budgetautotask</namemap>
+		<type>string</type>
+		<desc>用款计划自动拨付的时间(只给出时分秒)</desc>
+		<value>09:00:00</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否需要选择还款通知单</name>
+		<namemap>sett_has_repaynote</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>交易记录查询是否有存在有补打凭证的功能</name>
+		<namemap>sett_has_repair_printVoucher</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>开户行编号设置是否显示单边账</name>
+		<namemap>settlement_branch_issingleaccount</namemap>
+		<type>String</type>
+		<desc>是:true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>日结科目汇总查询是否滤空</name>
+		<namemap>settlement_dailyGLQuery_IsLeaching</namemap>
+		<type>String</type>
+		<desc>是:true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>计算利息,是按每月30天计算,还是按实际天数计算</name>
+		<namemap>settlement_interestIntervalDays_IsFact</namemap>
+		<type>String</type>
+		<desc>是(按每月30天计算):true,不是(按实际天数计算):false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>活期利率</name>
+		<namemap>currency_interest_rate</namemap>
+		<type>double</type>
+		<desc>默认是0.98</desc>
+		<value>0.98</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>结算业务审批后是否自动复核</name>
+		<namemap>sett_transapproval_autocheck</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>开户行科目类型</name>
+		<namemap>sett_branch_bankSubjectType</namemap>
+		<type>long</type>
+		<desc>默认是1 正常科目,2 过渡科目</desc>
+		<value>1</value>
+	</itreasury_configitem>
+
+	 <itreasury_configitem>
+		<name>通知入账对应的特殊业务子类型编号</name>
+		<namemap>sett_specialOperation_converge_number</namemap>
+		<type>long</type>
+		<desc>此编号需要在特殊业务类型设置中设置,如果没有设置此编号,在做"通知入账时将会报异常"</desc>
+		<value>1003</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>设置在开机时是否自动导入科目余额</name>
+		<namemap>sett_auto_import_glsubject_balance</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>设置业务复核后是否需要打印的提示</name>
+		<namemap>settlement_checked_isprint</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置定期存款来源是否受客户限制</name>
+		<namemap>settlement_fixedDepoistSource_byClient</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false,默认是false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置通知存款来源是否受客户限制</name>
+		<namemap>settlement_notifyDepoistSource_byClient</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false,默认是false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置结算业务提醒是否显示0笔的业务信息</name>
+		<namemap>settlement_remind</namemap>
+		<type>boolean</type>
+		<desc>显示：true;不显示：false;默认显示：true</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置结算导账摘要信息长度</name>
+		<namemap>settlement_U850_Abstractlength</namemap>
+		<type>int</type>
+		<desc></desc>
+		<value>30</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置结算导账接收编码</name>
+		<namemap>settlement_U850_ecoding</namemap>
+		<type>String</type>
+		<desc>默认：gb2312</desc>
+		<value>gb2312</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>关机时是否强行校验账户体系是否存在透支账户</name>
+		<namemap>sett_closesystem_isforceverifyaccountsystem</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>是否只提示当天未处理的网银指令</name>
+		<namemap>settlement_remind_instruction</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>关机时是否强行检查银行指令</name>
+		<namemap>sett_closesystem_isforceverifybankdictate</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+			<name>是否生成客户编号辅助核算项</name>
+			<namemap>settlement_needclientassistant</namemap>
+			<type>boolean</type>
+			<desc></desc>
+			<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>网银指令在结算系统是否修改交易起息日为结算系统开机日</name>
+		<namemap>sett_obinstruction_modifyinterestDate</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>委托存款账户类型编号</name>
+		<namemap>settlement_WTDeposit_AccountTypeCode</namemap>
+		<type>String</type>
+		<desc></desc>
+		<value>2</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>更新会计账科目时检查并更新科目上下级关级</name>
+		<namemap>settlement.glsubjectdefinition.convert</namemap>
+		<type>String</type>
+		<desc>value值输入每一级科目的科目级，并用'|'分隔，例如：4|6|8|11|13</desc>
+		<value>0</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>网银银行付款指令自动复核交易取消复核时自动修改网银指令状态</name>
+		<namemap>sett_cancelcheckbankpayoption</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+        <name>协定存款利率</name>
+        <namemap>settlement_Negotiation_Rate</namemap>
+        <type>double</type>
+        <desc>默认是1.17</desc>
+        <value>1.17</value>
+    </itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>组装银行指令时付款方是工行户设置汇款速度是否加急</name>
+		<namemap>settlement_BankInstruction_RemitPriority</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否登录页面需要验证码</name>
+		<namemap>settlement_isRequireCheckcode</namemap>
+		<type>boolean</type>
+		<desc>true:需要 false：不需要</desc>
+		<value></value>
+	</itreasury_configitem>
+	
+		<itreasury_configitem>
+		<name>系统发起的指令摘要标识（电子辅助对账专用）</name>
+		<namemap>settlement.bankabstract.sign</namemap>
+		<type>String</type>
+		<desc></desc>
+		<value>ＣＷ</value>
+	</itreasury_configitem>
+
+        <itreasury_configitem>
+		<name>结算关机处理结束委托合同方式:是否（本金+利息）全部收回为标准</name>
+		<namemap>settlement_finish_WT_contract</namemap>
+		<type>String</type>
+		<desc>是：(本金+利息)全部收回为标准，否：(本金+利息+担保费+手续费+复利+罚息)                </desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+		<itreasury_configitem>
+		<name>过滤已经授权的电子签章客户的交易</name>
+		<namemap>filter.electronic.signature</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>true</value>
+		</itreasury_configitem>	
+
+		<itreasury_configitem>
+		<name>平均余额分析天数计算方法</name>
+		<namemap>Average.date.type</namemap>
+		<type>boolean</type>
+		<desc>true:按查询区间和开户日期综合查询;false:只按查询区间查询</desc>
+		<value>false</value>
+		</itreasury_configitem>
+		
+	<itreasury_configitem>
+		<name>是否支持加密</name>
+		<namemap>sett.can.encrypt</namemap>
+		<type>boolean</type>
+		<desc>默认是false</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem>
+		<name>用户密码加密方式</name>
+		<namemap>sett.encrypt.type</namemap>
+		<type>int</type>
+		<desc>加密方式: 1:大字段形式加密; 2:md5形式加密</desc>
+		<value>2</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>定期提前部分支付是否生成新的存单号</name>
+		<namemap>sett.fixeddraw.createnewbook</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>客户信息所存表名</name>
+		<namemap>settlement.client.tablename</namemap>
+		<type>String</type>
+		<desc>结算-机构编号设置 新增时往客户表中插入 机构客户，航天科工客户信息 保存在 client 表中，产品 保存在 client_clientinfo 表中   </desc>
+		<value>client_clientinfo</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>委托贷款支付手续费账户配置项</name>
+		<namemap>loan.consign.handingChargeAccount</namemap>
+		<type>boolean</type>
+		<desc>委托贷款模块，支付手续费账户号是否包含委托方活期账号</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>是否是航天科工项目</name>
+		<namemap>settlement_HTKG</namemap>
+		<type>boolean</type>
+		<desc>默认为 false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>结算关机是否自动导帐</name>
+		<namemap>sett.closesystem.autopostglvoucher</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>远程调用贷款模块IP</name>
+		<namemap>loan.remotecall.ip</namemap>
+		<type>String</type>
+		<desc>远程调用贷款模块IP</desc>
+		<value>127.0.0.1</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>远程调用贷款模块端口</name>
+		<namemap>loan.remotecall.port</namemap>
+		<type>String</type>
+		<desc>默认为：2809</desc>
+		<value>2809</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>会计分录设置是否需要复核</name>
+		<namemap>settlement_GlentryDefinition_IsNeedCheck</namemap>
+		<type>boolean</type>
+		<desc>false:不需要复核;true:需要复核</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置是否显示金额单位条件</name>
+		<namemap>settlement_isshow_amountunit</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置是否显示指定账户编号查询条件</name>
+		<namemap>settlement_isshow_appointAccount</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>NC接口同步科目和科目余额的实现方式（报文还是中间表）</name>
+		<namemap>sett_nc_import_model</namemap>
+		<type>long</type>
+		<desc>1：报文;2:中间表</desc>
+		<value>1</value>
+	</itreasury_configitem>
+
+</itreasury_configitems>
+
+
+

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer
+END
+TransferImpForTRF_LoanContractPlan.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_LoanContractPlan.java
+END
+TransferImpForTRF_DiscountAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_DiscountAccount.java
+END
+TransferImpForTRF_Notify.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_Notify.java
+END
+TransferImpForTRF_ExtendDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_ExtendDetail.java
+END
+TransferImpForTRF_ConsignLoan.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_ConsignLoan.java
+END
+TransferImpForTRF_LoanContractForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_LoanContractForm.java
+END
+TransferImpForTRF_CustomFieldSetting.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_CustomFieldSetting.java
+END
+TransferImpForTRF_Client.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_Client.java
+END
+TransferImpForTRF_AssureAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_AssureAccount.java
+END
+TransferImpForTRF_LoanDiscountContractForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_LoanDiscountContractForm.java
+END
+TransferImpForTRF_LoanPayForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_LoanPayForm.java
+END
+TransferImpForTRF_Currency.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_Currency.java
+END
+TransferImpForTRF_TrustLoan.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_TrustLoan.java
+END
+IExcelBeanDataTranser.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/IExcelBeanDataTranser.java
+END
+TransferImpForTRF_LoanAssureContractForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_LoanAssureContractForm.java
+END
+TransferImpForTRF_Fixed.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToTRF/bizlogic/datatransfer/TransferImpForTRF_Fixed.java
+END

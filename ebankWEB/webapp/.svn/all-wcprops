@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp
+END
+ShowMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/ShowMessage.jsp
+END
+LoginMain.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/LoginMain.html
+END
+NetSign.dll
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/NetSign.dll
+END
+remindAutoTaskFail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/remindAutoTaskFail.jsp
+END
+pagenavigator.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/pagenavigator.jsp
+END
+Home.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Home.jsp
+END
+Validate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Validate.jsp
+END
+index_nosign.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/index_nosign.html
+END
+index_sign.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/index_sign.html
+END
+ShowConfirmMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/ShowConfirmMessage.jsp
+END
+sefcLogin.htm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/sefcLogin.htm
+END
+noLogin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/noLogin.jsp
+END
+Login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Login.jsp
+END
+ChangePassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/ChangePassword.jsp
+END
+Logout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Logout.jsp
+END
+LoginControl.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/LoginControl.jsp
+END
+Init_signature_iTrus.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Init_signature_iTrus.jsp
+END
+bulletinCue.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/bulletinCue.jsp
+END
+PasswordValidate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/PasswordValidate.jsp
+END
+Authenticate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Authenticate.jsp
+END
+AttachFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/AttachFrame.jsp
+END
+VerifyAttachedSign.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/VerifyAttachedSign.jsp
+END
+Init_signature.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Init_signature.jsp
+END
+ebankMain.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/ebankMain.jsp
+END
+fingerprintControl.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/fingerprintControl.jsp
+END
+InitMenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/InitMenu.jsp
+END
+Header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Header.jsp
+END
+Init_iTrus.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Init_iTrus.jsp
+END
+notice.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/notice.html
+END
+S521.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/S521.jsp
+END
+NoticeNew.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/NoticeNew.jsp
+END
+Init_CFCASignature.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Init_CFCASignature.jsp
+END
+noticeLogin1.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/noticeLogin1.html
+END
+Init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Init.jsp
+END
+NextMenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/NextMenu.jsp
+END
+Login.htm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Login.htm
+END
+Index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Index.jsp
+END
+HistoryOpinionFrame.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/HistoryOpinionFrame.jsp
+END
+Init_signature_NetSign.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/Init_signature_NetSign.jsp
+END
+CheckCodeImage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/CheckCodeImage.jsp
+END
+pagecontrol.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/pagecontrol.jsp
+END
+notice.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/notice.jsp
+END
+noticeLogin.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/ebankWEB/webapp/noticeLogin.html
+END

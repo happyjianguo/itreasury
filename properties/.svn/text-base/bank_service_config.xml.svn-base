@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="gb2312"?>
+<bank_service_set>
+	<bank_service>
+		<alias_name>ICBC</alias_name>
+		<factory>com.iss.itreasury.bs.icbc.ICBCBankServiceFactory</factory>
+		<parameter_set>
+			<parameter>
+				<name>sp.icbc.nc.ip</name>
+				<value>10.10.10.179</value>
+			</parameter>
+			<parameter>
+				<name>sp.icbc.nc.https.port</name>
+				<value>448</value>
+			</parameter>
+			<parameter>
+				<name>sp.icbc.nc.sign.port</name>
+				<value>449</value>
+			</parameter>
+			<parameter>
+				<name>sp.icbc.corporation.no</name>
+				<value>cs021101.d.0200</value>
+			</parameter>
+			<parameter>
+				<name>sp.icbc.charset</name>
+				<value>gb2312</value>
+			</parameter>
+			<parameter>
+				<name>sp.icbc.distance.time</name>
+				<value>0</value>
+			</parameter>
+		</parameter_set>		
+	</bank_service>
+	<bank_service>
+		<alias_name>CCB</alias_name>
+		<factory>com.iss.itreasury.bs.ccb.CCBBankServiceFactory</factory>
+		<parameter_set>
+			<parameter>
+				<name>sp.ccb.server.version</name>
+				<value>1.0</value>
+			</parameter>
+			<parameter>
+				<name>sp.ccb.server.ip</name>
+				<value>192.168.0.103</value>
+			</parameter>
+			<parameter>
+				<name>sp.ccb.server.port</name>
+				<value>8002</value>
+			</parameter>
+			<parameter>
+				<name>sp.ccb.user.host.id</name>
+				<value>0110302000000000</value>
+			</parameter>
+			<parameter>
+				<name>sp.ccb.user.id</name>
+				<value>0110000000000020</value>
+			</parameter>
+            		<parameter>
+				<name>sp.ccb.user.node.id</name>
+				<value>0110000000000020</value>
+			</parameter>
+            		<parameter>
+				<name>sp.ccb.user.subcenter.id</name>
+				<value>0110</value>
+			</parameter>
+			<parameter>
+				<name>sp.ccb.local.encrypt.mode</name>
+				<value>N</value>
+			</parameter>
+            		<parameter>
+				<name>sp.ccb.server.distance.time</name>
+				<value>0</value>
+			</parameter>    
+			<parameter>
+				<name>sp.ccb.autotask.interval</name>
+				<value>2</value>
+			</parameter>            
+		</parameter_set>		
+	</bank_service>
+</bank_service_set>
+
+<!--
+	bank_service_set                    ******xml文件根结点，银行服务配置集，其下可以有多个服务配置
+		bank_service                          ******一个银行服务的配置
+			alias_name                              ******当前服务的别名，程序中可以通过此别名访问该配置
+			factory                                 ******当前服务的创建工程类的全限定类名
+			parameter_set                           ******当前服务实例的配置参数集，可以有多个配置参数
+				parameter                                 ******一个配置参数
+					name                                  ******配置参数的参数名
+					value                                 ******配置参数的参数值
+
+-->

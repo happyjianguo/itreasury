@@ -1,0 +1,42 @@
+<SCRIPT LANGUAGE=javascript>
+
+function NoVerifySign() 
+
+{
+
+	form1.submit();
+
+	return true;
+
+}       
+
+</SCRIPT>
+
+
+
+<HTML>
+
+<BODY bgcolor="ffffff"> 
+
+<form  name="form1" method="post" action="https://service.hnf.com.cn/NASApp/iTreasury-ebank/Login.jsp">
+
+<input type="hidden" name="certdn" >
+
+<input type="hidden" name="signature"  value="need not sign">
+
+<SCRIPT LANGUAGE=javascript>
+
+	NoVerifySign();
+
+</SCRIPT>
+
+
+
+</form>
+
+
+
+</BODY>
+
+</HTML>
+

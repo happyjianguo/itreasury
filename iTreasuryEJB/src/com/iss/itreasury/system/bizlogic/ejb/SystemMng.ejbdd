@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar>
+  <enterprise-beans>
+    <session>
+      <!--
+
+This file contains metadata for a component in Sun One Studio
+You should not edit this file directly unless you are attempting to resolve
+a merge conflict after updating this object from a source code management system.
+
+A DTD file which describes the structure of this XML document can be found
+in the docs/dtd directory of the Sun One Studio installation in a file called
+ejb-jar_2_0.dtd
+This file describes the structure of a single EJB.
+It is merged with other deployment descriptors by an EJB Module.
+
+-->
+      <display-name>SystemMng</display-name>
+      <ejb-name>SystemMng</ejb-name>
+      <home>com.iss.itreasury.system.bizlogic.ejb.SystemMngHome</home>
+      <remote>com.iss.itreasury.system.bizlogic.ejb.SystemMng</remote>
+      <ejb-class>com.iss.itreasury.system.bizlogic.ejb.SystemMngEJB</ejb-class>
+      <session-type>Stateless</session-type>
+      <transaction-type>Container</transaction-type>
+      <resource-ref>
+        <res-ref-name>jdbc/cpf/type4</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+      </resource-ref>
+    </session>
+  </enterprise-beans>
+</ejb-jar>

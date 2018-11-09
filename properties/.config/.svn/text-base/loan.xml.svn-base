@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="gb2312"?>
+<itreasury_configitems>
+<!--
+	<itreasury_configitem >
+		<name>自营短期贷款</name>
+		<namemap>loan.loantype.ZYDQ</namemap>
+		<type>boolean</type>
+		<desc>信贷 贷款类型 需要那种给那种贷款类型,客户需要那种就设为 true</desc>
+		<value>false</value>
+	</itreasury_configitem>
+-->
+
+	<itreasury_configitem >
+		<name>贷款综合授信额度检查报告</name>
+		<namemap>loan.credit.checkreport</namemap>
+		<type>boolean</type>
+		<desc>贷款模块是否有贷款综合授信额度检查报告，有：true,没有:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>是否显示客户"贷款调查表""财务情况统计表""损益表""现金流量表"</name>
+		<namemap>loan.client.report</namemap>
+		<type>boolean</type>
+		<desc>信贷管理模块是否显示上述四个报表，有: true,没有：false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>贷款综合授信业务</name>
+		<namemap>loan.credit.integrationcredit</namemap>
+		<type>boolean</type>
+		<desc>贷款模块是否有贷款综合授信业务，有：true,没有:false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>未参与授信设置的客户是否提示</name>
+		<namemap>credit.iscreditprompt</namemap>
+		<type>boolean</type>
+		<desc>未参与授信设置的客户是否提示，提示：true, 不提示：false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>是否判断贷款申请的结束日期</name>
+		<namemap>loan.credit.isapplyenddate</namemap>
+		<type>boolean</type>
+		<desc>是：true,否:false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+    
+    <itreasury_configitem >
+		<name>是否打印贷款合同文件</name>
+		<namemap>loan.contract.print</namemap>
+		<type>boolean</type>
+		<desc>是：true,否:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+<!-- 当输入开始日期2008-1-1，贷款期限12月，结束日期自动算出为2008-1-1，京能应该是2008-12-31 所以增加以下配置 add by xfma 2008-12-29 -->
+	<itreasury_configitem >
+		<name>贷款期限特殊配置</name>
+		<namemap>loan.JNTerm</namemap>
+		<type>boolean</type>
+		<desc>信贷 贷款申请 京能配置：京能的贷款期限和其他的公司设置不一样，如果设置了该项为true，就是京能的贷款期限</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem >
+		<name>信用评级配置项</name>
+		<namemap>loan.creditrating.fixvalue</namemap>
+		<type>boolean</type>
+		<desc>信用评级模块指标体系取值方式为手工选择，在评级时定值描述后是否显示实际分数，true为显示，false为不显示</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem >
+		<name>信用评级配置项</name>
+		<namemap>loan.creditrating.checkSameRatingDate</namemap>
+		<type>boolean</type>
+		<desc>信用评级模块，做信用评级时校验是否时间能有重复</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem >
+		<name>授信校验方式（自营贷款）</name>
+		<namemap>loan.credit.check</namemap>
+		<type>int</type>
+		<desc>信贷模块，授信校验方式（自营贷款），1.放款通知单申请时校验,2.贷款申请时校验，默认为1</desc>
+		<value>1</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>融资租赁保证金金额为多少期租金</name>
+		<namemap>loan.finance.marginAmount</namemap>
+		<type>int</type>
+		<desc>信贷模块，国机项目组要求等额本息的合同的保证金金额为3期的租金，默认为3</desc>
+		<value>3</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem>
+		<name>贷款提醒合同前是否需要显示客户简称</name>
+		<namemap>loan.awake.isshowsimplename</namemap>
+		<type>boolean</type>
+		<desc>信贷模块，新奥项目组要求贷款模块滚动条提醒的合同号前增加客户简称，默认为false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>自营贷款.放款单中选择的活期账户是否默认为借款人的活期账户</name>
+		<namemap>global.loantype.zydk</namemap>
+		<type>boolean</type>
+		<desc>自营贷款.是,true;否,false</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem >
+		<name>委托贷款.放款单中选择的活期账户是否默认为借款人的活期账户</name>
+		<namemap>global.loantype.wtdk</namemap>
+		<type>boolean</type>
+		<desc>委托贷款.是,true;否,false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>银团贷款.放款单中选择的活期账户是否默认为借款人的活期账户</name>
+		<namemap>global.loantype.ytdk</namemap>
+		<type>boolean</type>
+		<desc>银团贷款.是,true;否,false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>贴现.放款单中选择的活期账户是否默认为借款人的活期账户</name>
+		<namemap>global.loantype.tx</namemap>
+		<type>boolean</type>
+		<desc>贴现.是,true;否,false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>担保.放款单中选择的活期账户是否默认为借款人的活期账户</name>
+		<namemap>global.loantype.db</namemap>
+		<type>boolean</type>
+		<desc>担保.是,true;否,false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>融资租赁.放款单中选择的活期账户是否默认为借款人的活期账户</name>
+		<namemap>global.loantype.rzzl</namemap>
+		<type>boolean</type>
+		<desc>融资租赁.是,true;否,false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>付保证金账户编号.收款单中选择的账户编号是否默认为合同所关联的账户</name>
+		<namemap>global.account.paypro</namemap>
+		<type>boolean</type>
+		<desc>付保证金账户编号.是,true;否,false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	<itreasury_configitem >
+		<name>收保证金账户编号.收款单中选择的账户编号是否默认为合同所关联的账户</name>
+		<namemap>global.account.revpro</namemap>
+		<type>boolean</type>
+		<desc>收保证金账户编号.是,true;否,false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	<itreasury_configitem >
+		<name>付手续费账户编号.收款单中选择的账户编号是否默认为合同所关联的账户</name>
+		<namemap>global.account.payhan</namemap>
+		<type>boolean</type>
+		<desc>付手续费账户编号.是,true;否,false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>审批成功后,是否提示打印</name>
+		<namemap>loan.print.prompt</namemap>
+		<type>boolean</type>
+		<desc>提示.是,true;否,false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>贷款模块是否需要审批流提醒</name>
+		<namemap>loan.approval.message</namemap>
+		<type>boolean</type>
+		<desc>是,true;否,false</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem >
+		<name>自营贷款还款提醒方式</name>
+		<namemap>loan.payoff.type</namemap>
+		<type>String</type>
+		<desc>还款计划,plan;放款通知单,notice</desc>
+		<value>plan</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem >
+		<name>放款通知单打印是否显示固定的经办人部门负责人</name>
+		<namemap>loan.payform.print</namemap>
+		<type>boolean</type>
+		<desc>是,true;否,false</desc>
+		<value>true</value>
+	</itreasury_configitem>
+	<itreasury_configitem >
+		<name>放款通知单打印固定经办人常量设置</name>
+		<namemap>loan.payform.print.inputuser</namemap>
+		<type>String</type>
+		<desc>放款通知单打印固定经办人常量设置</desc>
+		<value>黄佼佼</value>
+	</itreasury_configitem>
+	<itreasury_configitem >
+		<name>放款通知单打印固定部门负责人常量设置</name>
+		<namemap>loan.payform.print.manager</namemap>
+		<type>String</type>
+		<desc>放款通知单打印固定部门负责人常量设置</desc>
+		<value>胡求春</value>
+	</itreasury_configitem>
+	<itreasury_configitem >
+		<name>放款通知单打印内部活期户开户行名称常量设置</name>
+		<namemap>loan.payform.print.openbankname</namemap>
+		<type>String</type>
+		<desc>放款通知单打印内部活期户开户行名称常量设置</desc>
+		<value>厦门海翼集团财务有限公司</value>
+	</itreasury_configitem>
+		
+</itreasury_configitems>
+
+<!--
+	itreasury_configitems                    ******xml文件根结点，其下可以有多个配置项
+		itreasury_configitem                          ******一个配置项
+-->

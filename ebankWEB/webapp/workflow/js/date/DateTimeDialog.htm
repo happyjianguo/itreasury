@@ -1,0 +1,433 @@
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<HTML>
+<HEAD>
+<TITLE>日期时间</TITLE>
+<!--------------//注意修改文件路径---------------->
+<LINK href="style.css" type="text/css" rel="stylesheet">
+<link href="DateTimeDialog.css" rel="stylesheet" type="text/css">
+
+<script language="JavaScript" src="../control.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var g_bIsIE = (navigator.appVersion.indexOf("MSIE") > -1) ? true : false;
+var g_strResult = null;//as control selected result string.
+var g_nYearSelected = 2000;//selected year
+var g_nMonthSelected = 10;//selected month
+var g_nDateSelected = 1;//selected date
+var g_myObj=window.dialogArguments;
+var g_opener=g_myObj.WindowRef;
+var g_bTimeAvailable =g_myObj.TimeAvailable;
+
+function formatDate( day, bZeroPrefix )
+{
+	if( bZeroPrefix == null ) bZeroPrefix = true ;
+    if ( ( "" + day ).length == 1)
+    {
+        day = (bZeroPrefix ? "0" : " ") + day;
+    }
+    return day;
+}
+
+function setOpenerDate()
+{
+	g_opener.setDateFieldValue( g_nYearSelected + "-" + formatDate( g_nMonthSelected + 1 ) + "-" + formatDate( g_nDateSelected )
+						+ ( g_bTimeAvailable ?
+						( " " + formatDate( document.CalendarCtrl.textHour.value ) + ":"
+						+ formatDate( document.CalendarCtrl.textMinutes.value ) + ":"
+						+ formatDate( document.CalendarCtrl.textSecond.value ) ) : "" ) );
+}
+
+function btn_onfocus(srcElement)
+{
+	if( g_bIsIE )
+	{
+//		srcElement.style.color ="lime";
+//		srcElement.style.backgroundColor="mediumblue";
+//change by xiexinping , using clasName instead style name
+		srcElement.className = 'dtDateButtonSelect';
+	}
+	if( srcElement.value == " " ) return ;
+	g_nDateSelected = parseInt( srcElement.value );
+	setOpenerDate();
+}
+
+function btn_onblur(srcElement)
+{
+	if( g_bIsIE )
+	{
+//		srcElement.style.color ="";
+//		srcElement.style.backgroundColor="";
+//change by xiexinping , using clasName instead style name
+		srcElement.className = 'dtDateButton';
+	}
+}
+
+function setYear( srcElement )
+{
+    g_nDateSelected   = 1;
+    if( srcElement.name == "nextYear" )
+		g_nYearSelected++;
+	else 
+		g_nYearSelected--;
+    document.CalendarCtrl.year.value = g_nYearSelected;
+
+    displayCalendar();
+}
+
+function selectMonth()
+{
+    g_nDateSelected   = 1;
+    g_nMonthSelected = document.CalendarCtrl.month.selectedIndex;
+
+	displayCalendar();
+}
+
+function parseDate( strDate )
+{
+	var nIndex = g_strResult.indexOf( '-' );
+	if ( g_strResult =="" || nIndex == -1 ) return new Date();
+	var nHours = 0;
+    var nMinutes = 0;
+    var nSeconds = 0;
+    var nPreIndex = 0;
+	g_nYearSelected = parseInt( g_strResult.substring( 0, nIndex ) );
+	nPreIndex = nIndex + 1;
+	nIndex = g_strResult.indexOf( '-', nPreIndex );
+	g_nMonthSelected = parseInt( g_strResult.substring( nPreIndex, nIndex ) ) - 1;
+	nPreIndex = nIndex + 1;
+	nIndex = g_strResult.length;
+	g_nDateSelected = parseInt( g_strResult.substring( nPreIndex, nIndex) );
+	if( g_strResult.length > 10 )
+    {
+		nPreIndex = g_strResult.indexOf( ' ', nPreIndex ) + 1;
+		nIndex = g_strResult.indexOf( ':', nPreIndex );
+		nHours = parseInt( g_strResult.substring( nPreIndex, nIndex) );
+
+		nPreIndex = nIndex + 1;
+		nIndex = g_strResult.indexOf( ':', nPreIndex );
+		nMinutes = parseInt( g_strResult.substring( nPreIndex, nIndex) );
+    
+		nPreIndex = nIndex + 1;
+		nIndex = g_strResult.length;
+		nSeconds = parseInt( g_strResult.substring( nPreIndex, nIndex) );
+		g_bTimeAvailable = true;
+	}
+	if (g_nYearSelected < 100)
+	{
+		g_nYearSelected += 1900;
+	}
+	return new Date(g_nYearSelected, g_nMonthSelected, g_nDateSelected, nHours, nMinutes, nSeconds);
+}
+
+function initDate()
+{
+    g_strResult = g_opener.getDateFieldValue();//g_opener.dateField;
+	if(!checkDate(g_strResult)&&!checkDateHHMMSS(g_strResult))
+	{
+	    var dateInit = parseDate(g_strResult);	
+	}
+	else
+	{
+		var strCheckDate = "";
+		for(var i=0;i<=g_strResult.length-1;i++)
+		{
+			if(g_strResult.charAt(i)=="-" || g_strResult.charAt(i)=="/")
+			{
+				strCheckDate=strCheckDate+"/";
+			}
+			else
+			{
+					strCheckDate=strCheckDate+g_strResult.charAt(i);	
+			}
+		}			
+		var dateInit = new Date(strCheckDate);
+	}
+	g_nDateSelected   = dateInit.getDate();
+	g_nMonthSelected = dateInit.getMonth();
+	g_nYearSelected  = dateInit.getFullYear();
+	
+    document.CalendarCtrl.month.selectedIndex = g_nMonthSelected;
+    document.CalendarCtrl.year.value          = g_nYearSelected;
+   	document.CalendarCtrl.textHour.value = dateInit.getHours();
+	document.CalendarCtrl.textMinutes.value = dateInit.getMinutes();
+	document.CalendarCtrl.textSecond.value =  dateInit.getSeconds();
+	displayCalendar();
+	document.CalendarCtrl.cbxSelectTime.checked = g_bTimeAvailable ;
+	if( g_bIsIE)
+	{
+		document.CalendarCtrl.textHour.disabled = !g_bTimeAvailable;
+		document.CalendarCtrl.textMinutes.disabled = !g_bTimeAvailable;
+		document.CalendarCtrl.textSecond.disabled = !g_bTimeAvailable;
+	}
+	else
+	{
+		document.CalendarCtrl.textHour.onfocus = time_onfocus;
+		document.CalendarCtrl.textMinutes.onfocus = time_onfocus;
+		document.CalendarCtrl.textSecond.onfocus = time_onfocus;
+	}
+}
+
+function setToday()
+{
+    var now   = new Date();
+    //set global variable for selected date .
+    g_nDateSelected   = now.getDate();
+    g_nMonthSelected = now.getMonth();
+    g_nYearSelected  = now.getFullYear();
+    document.CalendarCtrl.month.selectedIndex = g_nMonthSelected;
+    document.CalendarCtrl.year.value          = g_nYearSelected;
+    displayCalendar();
+}
+
+function setNow()
+{
+    var now   = new Date();
+    document.CalendarCtrl.textHour.value = now.getHours();
+	document.CalendarCtrl.textMinutes.value = now.getMinutes();
+	document.CalendarCtrl.textSecond.value =  now.getSeconds();
+}
+
+function displayCalendar()
+{
+    var i   = 0;
+    var days         = getDaysInMonth(g_nMonthSelected + 1,g_nYearSelected);
+    var firstOfMonth = new Date (g_nYearSelected, g_nMonthSelected, 1);
+    var startingPos  = firstOfMonth.getDay();
+    days += startingPos;
+	for (i = 0; i < 42; i++)
+	{
+		if( i >= startingPos && i < days )
+		{
+			if( g_bIsIE ) eval( "document.CalendarCtrl.btnDay" + i + ".style.visibility='visible';" );
+			eval( "document.CalendarCtrl.btnDay" + i + ".value=i-startingPos+1;" );
+		}
+		else
+			eval( "document.CalendarCtrl.btnDay" + i + ( g_bIsIE ? ".style.visibility='hidden';":".value=' '") );
+	}
+    eval( "document.CalendarCtrl.btnDay" + ( g_nDateSelected + startingPos - 1 ) + ".focus();" );
+}
+
+function getDaysInMonth(month,year)
+{
+    var days = 31;
+    if (month==4 || month==6 || month==9 || month==11)
+    {
+		days=30;
+	}
+    else if (month==2)
+    {
+		days=28;
+        if (((year % 4)==0) && ((year % 100)!=0) || ((year % 400)==0))
+        {
+            days=29;
+        }
+    }
+    return (days);
+}
+
+function returnDate(inDay)
+{
+	if ( inDay == "emptyIt" )
+	{		
+		g_opener.setDateFieldValue("");
+	}
+	else 
+	{
+		if ( inDay == "cancel" )
+		g_opener.setDateFieldValue( g_strResult );
+		setOpenerDate();
+	}
+	window.close();
+}
+
+function showCalentdarHeader()
+{
+	var i = 0;
+	var strLine = "<TR class='dtDateHead' align='middle'><FONT FACE='Arial,Helv,Helvetica'>";
+	var sDay = new Array("日","一","二","三","四","五","六");
+	for(; i < 7; i++ )
+	{
+		strLine += "<TH>" + sDay[i] + "</TH>";
+	}
+	strLine += "</FONT></TR>";
+	document.writeln( strLine );
+}
+
+/*
+function showDateSelecter()
+{
+	var i = 0;
+	var strLine = "<TR class='dtHead'><TD COLSPAN=7><SELECT name='month' onchange='selectMonth()' class='dtOption'>";
+	var sMonths = new Array("一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月");
+	for(; i < 12; i++ )
+	{
+		strLine += "<OPTION>" + sMonths[i] + "</OPTION>";
+	}
+	strLine += "</SELECT>"
+			+ "<INPUT maxLength='4' name='year' onkeyup='ValideData(event,this,0,2100)' size='6' class='dtText'>"
+			+ "<INPUT name='previousYear' onclick='setYear(this)' type='button' value='▼' class='dtButton'>"
+			+ "<INPUT name='nextYear' onclick='setYear(this)'type='button' value='▲' class='dtButton'>"
+			+ "</TD></TR>";
+	document.writeln( strLine );
+}
+*/
+/**
+ * modified for ss100_scm
+ * 
+ * author:      bingli@isoftstone.com
+ * date:        2005-04-27
+ */
+function showDateSelecter()
+{
+	var i = 0;
+    var strLine = "<TR class='dtHead'><TD COLSPAN=7>"
+    			+ "<INPUT maxLength='4' name='year' onkeyup='ValideData(event,this,0,2100)' size='6' class='dtText'>"
+    			+ "<INPUT name='previousYear' onclick='setYear(this)' type='button' value='▼' class='dtButton'>"
+    			+ "<INPUT name='nextYear' onclick='setYear(this)'type='button' value='▲' class='dtButton'>"
+                + "<SELECT name='month' onchange='selectMonth()' class='dtOption'>";
+    var sMonths = new Array("一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月");
+	for(; i < 12; i++ )
+	{
+		strLine += "<OPTION>" + sMonths[i] + "</OPTION>";
+	}
+	strLine += "</SELECT>"
+			+ "</TD></TR>";
+	document.writeln( strLine );
+}
+
+
+function showCalendarPanel()
+{
+	showDateSelecter();
+	showCalentdarHeader();
+	var i, j;
+	var strLine ="";
+	var nCount = 0 ;
+	var strStyle = g_bIsIE ? "style='HEIGHT:23px;WIDTH:28px'" : "width='28px'";		//设置日历高度与宽度
+	for( i = 0; i < 6; i++ )
+	{
+		strLine += "<TR class='dtDate'>";
+		for( j = 0; j< 7; j++ )
+		{
+			strLine += "<TD><INPUT TYPE='button' NAME='btnDay" + nCount +"' onblur='btn_onblur(this)' onfocus='btn_onfocus(this)' onClick='window.close()'" + strStyle + " class='dtDateButton'></TD>";
+			nCount++;
+		}
+		strLine += "</TR>";
+	}
+	document.writeln( strLine );
+}
+
+function time_onfocus( e )
+{
+	if( !g_bTimeAvailable )	document.CalendarCtrl.CurTime.focus();
+}
+
+function checkbox_onchange()
+{
+	document.CalendarCtrl.cbxSelectTime.checked = g_bTimeAvailable ;
+}
+
+function ValideData( event, srcElement, nMin, nMax )
+{
+	var i, cChar ;
+	var bUpdateValue = false; 
+	var strName = srcElement.name;
+	var nValue = srcElement.value ;
+	var nKey = g_bIsIE ? event.keyCode : event.witch ;
+	for( i = 0; i < nValue.length; i++ )
+	{
+		cChar = nValue.charAt( i );
+		if( cChar < '0' || cChar > '9' ) break;
+	}
+	nValue = ( i == nValue.length ) ? parseInt( nValue ) : nMin-1;
+	if( nKey == 38 )//up
+	{
+		if( --nValue < 0 )
+			nValue = nMax;
+		bUpdateValue = true;
+	}
+	else if( nKey == 40 )//down
+	{
+		nValue++;
+		nValue %= (nMax+1);
+		bUpdateValue = true;
+	}
+	else if( isNaN( nValue) || nValue<nMin||nValue>nMax )
+	{
+		var now   = new Date();
+	    switch( strName )
+	    {
+	    case "textHour" :
+			nValue = now.getHours();
+			break;
+	    case "textMinutes" :
+			nValue = now.getMinutes();
+			break;
+	    case "textSecond" :
+			nValue = now.getSeconds();
+			break;
+	    case "year" :
+			nValue = now.getYear();
+			break;
+		}
+	    bUpdateValue = true;
+	}
+	if( bUpdateValue == true ) srcElement.value = nValue;
+	setOpenerDate();
+	displayCalendar();
+	if( strName == "year" )
+	{
+		g_nYearSelected = nValue;
+		document.CalendarCtrl.year.focus();
+	}
+	else
+	{
+		srcElement.focus();
+	}
+}
+// -->
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"></HEAD>
+<BODY ONLOAD="initDate()" bottomMargin='0' leftMargin='0' rightMargin='0' topMargin='0'>
+<CENTER>
+<FORM NAME="CalendarCtrl" ID="CalendarCtrl">
+<TABLE ID='tabCalendar' NAME='tabCalendar' CELLPADDING='0' CELLSPACING='0' BORDER='0'>
+<SCRIPT LANGUAGE="JavaScript">showCalendarPanel();</SCRIPT>
+</table>
+<span id="showOrHidden" style="display:none;scrolling:no;">	
+	<table>
+		<tr>
+			<td>
+				<INPUT id='cbxSelectTime' name='cbxSelectTime' type='checkbox'  onclick='checkbox_onchange()'>
+				<INPUT id='textHour' name='textHour' maxlength='2' size='2'  onkeyup="ValideData(event,this,0,23)" class="dtButton">时
+				<INPUT id='textMinutes' name='textMinutes' maxlength='2' size='2'  onkeyup="ValideData(event,this,0,59)" class="dtButton">分
+				<INPUT id='textSecond' name='textSecond' maxlength='2' size ='2'  onkeyup="ValideData(event,this,0,59)" class="dtButton">秒
+			</td>
+		</tr>
+	</table>
+</span>	
+<TABLE width="100%" ID='tabCalendar' NAME='tabCalendar' CELLPADDING='0' CELLSPACING='0' BORDER='0'>	
+	<TR class="dtAction" height="20">
+		<TD align='center'>
+		    <INPUT TYPE="button"  NAME="ok" value="确定" onClick ="returnDate( 'ok')" class="dtButton">
+			<INPUT type='button' name='today' value="今天" onclick='setToday()' class="dtButton">	
+			<script>
+			if(g_bTimeAvailable)		
+			document.write("<INPUT type='button' name='CurTime' value='现在' onclick='setNow()' class='dtButton'>");
+			</script>
+			<INPUT TYPE="button" NAME="cancel" value="取消" onClick="returnDate( 'cancel' )" class="dtButton">
+			<INPUT TYPE="button" NAME="emptyIt" value="清空" onClick="returnDate( 'emptyIt' )" class="dtButton">			
+		</TD>
+	</TR>
+</TABLE>   
+</FORM>
+</CENTER>
+<script>	
+	if(g_bTimeAvailable)
+		showOrHidden.style.display='block';
+	else
+		showOrHidden.style.display='none';	
+</script>
+</BODY>
+</HTML>

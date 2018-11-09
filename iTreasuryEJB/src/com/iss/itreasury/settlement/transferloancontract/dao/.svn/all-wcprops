@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transferloancontract/dao
+END
+Sett_TransferLoanContractDepositDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transferloancontract/dao/Sett_TransferLoanContractDepositDAO.java
+END
+TransferLoanAmountDetailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transferloancontract/dao/TransferLoanAmountDetailDao.java
+END
+Sett_TransferLoanContractDetailDepositDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/transferloancontract/dao/Sett_TransferLoanContractDetailDepositDAO.java
+END

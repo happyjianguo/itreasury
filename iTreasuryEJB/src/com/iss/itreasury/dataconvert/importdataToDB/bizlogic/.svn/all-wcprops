@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic
+END
+ImportTRF_NotifyInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_NotifyInfoBiz.java
+END
+ImportTRF_ExtendDetailInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_ExtendDetailInfoBiz.java
+END
+ImportTRF_AssureAccountInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_AssureAccountInfo.java
+END
+ImportTRF_LoanContractFormInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_LoanContractFormInfoBiz.java
+END
+AbstractImportBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/AbstractImportBiz.java
+END
+ImportTRF_LoanAssureContractForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_LoanAssureContractForm.java
+END
+ImportTRF_ClientInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_ClientInfoBiz.java
+END
+ImportTRF_TrustInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_TrustInfoBiz.java
+END
+ImportTRF_LoanDiscountContractFormInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_LoanDiscountContractFormInfoBiz.java
+END
+ImportTRF_LoanContractPlanBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_LoanContractPlanBiz.java
+END
+ImportTRF_LoanPayFormInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_LoanPayFormInfoBiz.java
+END
+ImportTRF_CurrencyInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_CurrencyInfoBiz.java
+END
+ImportTRF_FixedInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_FixedInfoBiz.java
+END
+ImportTRF_ConsignInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_ConsignInfoBiz.java
+END
+IImportBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/IImportBiz.java
+END
+ImportTRF_DiscountAccountInfoBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/bizlogic/ImportTRF_DiscountAccountInfoBiz.java
+END

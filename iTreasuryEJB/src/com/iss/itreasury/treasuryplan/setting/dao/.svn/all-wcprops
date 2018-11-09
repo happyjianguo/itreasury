@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao
+END
+Trea_OtherIndustryItemDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao/Trea_OtherIndustryItemDAO.java
+END
+Trea_OtherIndustryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao/Trea_OtherIndustryDAO.java
+END
+Trea_TPForecastDataDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao/Trea_TPForecastDataDAO.java
+END
+Trea_SystemParameterDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao/Trea_SystemParameterDAO.java
+END
+Trea_DepartmentPopedomDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao/Trea_DepartmentPopedomDAO.java
+END
+Trea_UserInfoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao/Trea_UserInfoDAO.java
+END
+Trea_TPTemplateItemDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao/Trea_TPTemplateItemDAO.java
+END
+Trea_TPTemplateDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dao/Trea_TPTemplateDAO.java
+END

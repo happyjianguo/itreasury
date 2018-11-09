@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PrintTemplate>
+	<DepositPrintTemplateType>
+		<TemplateTypeName>存款</TemplateTypeName>
+		<TemplateTypeID>1</TemplateTypeID>
+		<TemplateDetails>
+			<Name>交易年</Name>
+			<Code>01</Code>
+			<Variable>Year</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>交易月</Name>
+			<Code>02</Code>
+			<Variable>Month</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>交易日</Name>
+			<Code>03</Code>
+			<Variable>Day</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>付款人全称</Name>
+			<Code>04</Code>
+			<Variable>PayAccountName</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>付款人帐号</Name>
+			<Code>05</Code>
+			<Variable>PayAccountNo</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>付款人开户银行</Name>
+			<Code>06</Code>
+			<Variable>PayBankName</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款人全称</Name>
+			<Code>07</Code>
+			<Variable>ReceiveAccountName</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款人帐号</Name>
+			<Code>08</Code>
+			<Variable>ReceiveAccountNo</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款人开户银行</Name>
+			<Code>09</Code>
+			<Variable>ReceiveBankName</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>大写金额</Name>
+			<Code>10</Code>
+			<Variable>ChineseAmount</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>小写金额</Name>
+			<Code>11</Code>
+			<Variable>Amount</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>票据种类</Name>
+			<Code>12</Code>
+			<Variable>BillType</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>票据张数</Name>
+			<Code>13</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>票据号码</Name>
+			<Code>14</Code>
+			<Variable>DiscountBillNo</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>备注</Name>
+			<Code>15</Code>
+			<Variable>Abstract</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇出省市</Name>
+			<Code>16</Code>
+			<Variable>PayProvince</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇出市县</Name>
+			<Code>17</Code>
+			<Variable>PayCity</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇出行名称</Name>
+			<Code>18</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇入省市</Name>
+			<Code>19</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇入市县</Name>
+			<Code>20</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇入行名称</Name>
+			<Code>21</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇款人全称</Name>
+			<Code>22</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇款人帐号</Name>
+			<Code>23</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇款用途</Name>
+			<Code>24</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>兑付省市</Name>
+			<Code>25</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>兑付市县</Name>
+			<Code>26</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>兑付行名称</Name>
+			<Code>27</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>对方科目</Name>
+			<Code>28</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>记帐</Name>
+			<Code>29</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>制单</Name>
+			<Code>30</Code>
+			<Variable>InputUser</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>复核</Name>
+			<Code>31</Code>
+			<Variable>CheckUser</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>会计</Name>
+			<Code>32</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>主管</Name>
+			<Code>33</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>经办</Name>
+			<Code>34</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>公司签章</Name>
+			<Code>35</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>户名</Name>
+			<Code>36</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>帐号</Name>
+			<Code>37</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>科目</Name>
+			<Code>38</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>年利率</Name>
+			<Code>39</Code>
+			<Variable>Rate</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>货币</Name>
+			<Code>40</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>起息日</Name>
+			<Code>41</Code>
+			<Variable>InterestStartDate</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>到期日</Name>
+			<Code>42</Code>
+			<Variable>EndDate</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>期限</Name>
+			<Code>43</Code>
+			<Variable>FixedDepositTerm</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款方省市</Name>
+			<Code>44</Code>
+			<Variable>ReceiveProvince</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款方市县</Name>
+			<Code>45</Code>
+			<Variable>ReceiveCity</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款行名称</Name>
+			<Code>46</Code>
+			<Variable>ReceiveBankName</Variable>
+		</TemplateDetails>
+		
+	</DepositPrintTemplateType>
+	
+	
+	<DepositPrintTemplateType>
+	<TemplateTypeName>贷款</TemplateTypeName>
+	<TemplateTypeID>2</TemplateTypeID>
+		<TemplateDetails>
+			<Name>交易年</Name>
+			<Code>01</Code>
+			<Variable>Year</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>交易月</Name>
+			<Code>02</Code>
+			<Variable>Month</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>交易日</Name>
+			<Code>03</Code>
+			<Variable>Day</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>到期年</Name>
+			<Code>04</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>到期月</Name>
+			<Code>05</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>到期日</Name>
+			<Code>06</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>起始年</Name>
+			<Code>07</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>起始月</Name>
+			<Code>08</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>起始日</Name>
+			<Code>09</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款人开户银行</Name>
+			<Code>10</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款人全称</Name>
+			<Code>11</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>收款人帐号</Name>
+			<Code>12</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>付款人开户银行</Name>
+			<Code>13</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>付款人全称</Name>
+			<Code>14</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>付款人帐号</Name>
+			<Code>15</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>付款人/出票人/汇款人/申请人全称</Name>
+			<Code>16</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>付款人/出票人/汇款人/申请人帐号</Name>
+			<Code>17</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>借方科目</Name>
+			<Code>18</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>借款单位</Name>
+			<Code>19</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>贷方科目</Name>
+			<Code>20</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>贷款合同编号</Name>
+			<Code>21</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>贷款金额（大写）</Name>
+			<Code>22</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>贷款金额（小写）</Name>
+			<Code>23</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>贷款期限</Name>
+			<Code>24</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>贷款用途</Name>
+			<Code>25</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>贷款帐号</Name>
+			<Code>26</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>大写金额</Name>
+			<Code>27</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>小写金额</Name>
+			<Code>28</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>放款通知单编号</Name>
+			<Code>29</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>放款种类</Name>
+			<Code>30</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>利率</Name>
+			<Code>31</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>年利率</Name>
+			<Code>32</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>票据种类</Name>
+			<Code>33</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>转贴现利息</Name>
+			<Code>34</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>转贴现种类</Name>
+			<Code>35</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>实付贴现金额</Name>
+			<Code>36</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>实付转贴现金额</Name>
+			<Code>37</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>贴现利息</Name>
+			<Code>38</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>委托方名称</Name>
+			<Code>39</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>委托方帐号</Name>
+			<Code>40</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>委托收款凭据名称</Name>
+			<Code>41</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>会计/记账</Name>
+			<Code>42</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>经办</Name>
+			<Code>43</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>复核</Name>
+			<Code>44</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>部门负责人</Name>
+			<Code>45</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>主管</Name>
+			<Code>46</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>附寄单证张数</Name>
+			<Code>47</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>含手续费率</Name>
+			<Code>48</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>号码</Name>
+			<Code>49</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>合同编号</Name>
+			<Code>50</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>合同号</Name>
+			<Code>51</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>单位负责人</Name>
+			<Code>52</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>单位邮编</Name>
+			<Code>53</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>地址</Name>
+			<Code>54</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>电话号码</Name>
+			<Code>55</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>汇出行名称</Name>
+			<Code>56</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>行号</Name>
+			<Code>57</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>备注</Name>
+			<Code>58</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>备注/信贷员</Name>
+			<Code>59</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>原因或用途</Name>
+			<Code>60</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>此款汇到</Name>
+			<Code>61</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>款项内容</Name>
+			<Code>62</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>款项收妥年度</Name>
+			<Code>63</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>款项收妥日</Name>
+			<Code>64</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>款项收妥月份</Name>
+			<Code>65</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>还款日期1</Name>
+			<Code>66</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>还款日期2</Name>
+			<Code>67</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>还款日期3</Name>
+			<Code>68</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>还款日期4</Name>
+			<Code>69</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>偿还金额1</Name>
+			<Code>70</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>偿还金额2</Name>
+			<Code>71</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>偿还金额3</Name>
+			<Code>72</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>偿还金额4</Name>
+			<Code>73</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>交易年度</Name>
+			<Code>74</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+		<TemplateDetails>
+			<Name>交易月份</Name>
+			<Code>75</Code>
+			<Variable>noVariable</Variable>
+		</TemplateDetails>
+		
+	</DepositPrintTemplateType>
+</PrintTemplate>

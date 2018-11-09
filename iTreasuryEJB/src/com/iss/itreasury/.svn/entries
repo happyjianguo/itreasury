@@ -1,0 +1,142 @@
+10
+
+dir
+43532
+https://10.24.16.98/svn/itreasury/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury
+https://10.24.16.98/svn/itreasury
+
+
+
+2013-06-17T03:13:22.633753Z
+40903
+hanaijun
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2934e90a-06d0-2947-8c99-299d1987327d
+
+clientcenter
+dir
+
+ebank
+dir
+
+glinterface
+dir
+
+encrypt
+dir
+
+servlet
+dir
+
+settlement
+dir
+
+system
+dir
+
+loan
+dir
+
+treasuryplan
+dir
+
+codingrule
+dir
+
+tags
+dir
+
+custommenu
+dir
+
+archivesmanagement
+dir
+
+configtool
+dir
+
+dao
+dir
+
+project
+dir
+
+dataentity
+dir
+
+audit
+dir
+
+fcinterface
+dir
+
+budget
+dir
+
+credit
+dir
+
+report
+dir
+
+command
+dir
+
+securities
+dir
+
+creditrating
+dir
+
+evoucher
+dir
+
+integratedCredit
+dir
+
+bill
+dir
+
+craftbrother
+dir
+
+clientmanage
+dir
+
+common
+dir
+
+safety
+dir
+
+print
+dir
+
+managerquery
+dir
+
+itreasuryinfo
+dir
+
+dataconvert
+dir
+
+closesystem
+dir
+
+util
+dir
+

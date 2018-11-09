@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--
+来源 = 1
+运用 = 2
+
+       活期     =   1 
+       定期     =   2 
+       通知     =   3
+       自营，   =   8
+       委托，   =   9 
+       贴现     =   10
+
+ -->
+<prefixs>
+    <!-- 1上海华虹（集团）有限公司-->
+    <clientType clientTypeId="8">
+              <prefix prefixString="005_001_001" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_001" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_001" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_001" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_001" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_001" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_001" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 2夏新电子有限公司-->
+    <clientType clientTypeId="10">
+	      <prefix prefixString="005_001_002" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_002" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_002" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_002" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_002" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_002" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_002" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 3武汉中原电子集团有限公司-->
+    <clientType clientTypeId="7">
+	      <prefix prefixString="005_001_003" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_003" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_003" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_003" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_003" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_003" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_003" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 4中国电子进出口总公司-->
+    <clientType clientTypeId="11">
+	      <prefix prefixString="005_001_004" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_004" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_004" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_004" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_004" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_004" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_004" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    
+    <!-- 5中国电子器材总公司-->
+    <clientType clientTypeId="2">
+	      <prefix prefixString="005_001_005" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_005" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_005" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_005" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_005" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_005" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_005" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 6中国华大集成电路设计中心-->
+    <clientType clientTypeId="1">
+	      <prefix prefixString="005_001_006" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_006" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_006" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_006" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_006" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_006" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_006" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    <!-- 7深圳桑达电子总公司-->
+    <clientType clientTypeId="12">
+	      <prefix prefixString="005_001_007" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_007" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_007" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_007" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_007" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_007" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_007" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    <!-- 8中国电子物资总公司-->
+    <clientType clientTypeId="9">
+	      <prefix prefixString="005_001_008" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_008" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_008" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_008" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_008" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_008" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_008" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    
+    <!-- 9中国电子系统工程总公司-->
+    <clientType clientTypeId="5">
+	      <prefix prefixString="005_001_009" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_009" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_009" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_009" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_009" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_009" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_009" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 10中国电子为华实业发展公司-->
+    <clientType clientTypeId="3">
+	      <prefix prefixString="005_001_010" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_010" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_010" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_010" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_010" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_010" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_010" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 11 建设综合勘察研究设计院-->
+    <clientType clientTypeId="4">
+	      <prefix prefixString="005_001_011" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_011" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_011" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_011" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_011" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_011" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_011" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 12 中软网络技术股份有限公司-->
+    <clientType clientTypeId="6">
+	      <prefix prefixString="005_001_012" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_012" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_012" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_012" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_012" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_012" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_012" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 13  中国电子财务有限责任公司-->
+    <clientType clientTypeId="14">
+	      <prefix prefixString="005_001_013" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_013" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_013" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_013" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_013" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_013" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_013" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 14中国电子基础产品装备公司-->
+    <clientType clientTypeId="15">
+	      <prefix prefixString="005_001_014" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_014" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_014" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_014" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_014" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_014" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_014" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+    
+    <!-- 15 其他-->
+    <clientType clientTypeId="13">
+	      <prefix prefixString="005_001_015" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_015" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_015" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_015" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_015" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_015" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_015" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+
+    <!-- 16中国电子深圳总公司-->
+    <clientType clientTypeId="16">
+	      <prefix prefixString="005_001_016" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_016" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_016" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_016" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_016" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_016" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_016" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+
+    <!-- 17中电广通股份有限公司-->
+    <clientType clientTypeId="17">
+	      <prefix prefixString="005_001_017" fromOrTo = "1">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="005_002_017" fromOrTo = "1">
+	         <accountType>4</accountType>
+	      </prefix>
+	      <prefix prefixString="005_004_017" fromOrTo = "1">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="005_005_017" fromOrTo = "1">
+	         <accountType>10</accountType>
+	      </prefix>
+	      
+	      <prefix prefixString="006_001_017" fromOrTo = "2">
+	         <accountType>1</accountType>
+	         <accountType>2</accountType>
+	         <accountType>3</accountType>
+	      </prefix>
+	      <prefix prefixString="006_003_017" fromOrTo = "2">
+	         <accountType>8</accountType>
+	         <accountType>9</accountType>
+	      </prefix>
+	      <prefix prefixString="006_004_017" fromOrTo = "2">
+	         <accountType>10</accountType>
+	      </prefix>
+    </clientType>
+</prefixs>

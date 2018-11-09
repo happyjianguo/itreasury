@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity
+END
+DepositRelatedBankBillInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/DepositRelatedBankBillInfo.java
+END
+BankAllowedBillTypeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/BankAllowedBillTypeInfo.java
+END
+QueryCondition_Sett_Others_DepositBankBill.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/QueryCondition_Sett_Others_DepositBankBill.java
+END
+BankBillDailyReportInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/BankBillDailyReportInfo.java
+END
+QueryCondition_Sett_BankBill.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/QueryCondition_Sett_BankBill.java
+END
+Sett_DailyReportInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/Sett_DailyReportInfo.java
+END
+BankBillInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/BankBillInfo.java
+END
+BankBillTypeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/BankBillTypeInfo.java
+END
+QueryCondition_Sett_Others_BankBill.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankbill/dataentity/QueryCondition_Sett_Others_BankBill.java
+END

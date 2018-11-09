@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity
+END
+SystemParameterInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity/SystemParameterInfo.java
+END
+Trea_UserInfoInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity/Trea_UserInfoInfo.java
+END
+Trea_TPTemplateItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity/Trea_TPTemplateItemInfo.java
+END
+Trea_TPTemplateInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity/Trea_TPTemplateInfo.java
+END
+Trea_OtherIndustryItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity/Trea_OtherIndustryItemInfo.java
+END
+Trea_OtherIndustryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity/Trea_OtherIndustryInfo.java
+END
+Trea_TPForecastDataInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity/Trea_TPForecastDataInfo.java
+END
+Trea_DepartmentPopedomInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/treasuryplan/setting/dataentity/Trea_DepartmentPopedomInfo.java
+END

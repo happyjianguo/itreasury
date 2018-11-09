@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao
+END
+Sett_CorpAccountMappingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_CorpAccountMappingDAO.java
+END
+Sett_BankInstructionDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_BankInstructionDAO.java
+END
+Sett_BranchDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_BranchDAO.java
+END
+Sett_BankInstructionLogDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_BankInstructionLogDAO.java
+END
+Sett_ImportBankAccountHisDataSettingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_ImportBankAccountHisDataSettingDAO.java
+END
+Sett_TransInfoOfBankAccountDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_TransInfoOfBankAccountDAO.java
+END
+Sett_BalanceOfBankAccountDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_BalanceOfBankAccountDAO.java
+END
+Sett_BankAccountOffilialeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_BankAccountOffilialeDAO.java
+END
+Sett_BankAccountMappingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_BankAccountMappingDAO.java
+END
+Sett_HisTransInfoOfBankAccountDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_HisTransInfoOfBankAccountDAO.java
+END
+Sett_ImportBankAccountCurDataSettingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_ImportBankAccountCurDataSettingDAO.java
+END
+Bs_BankAccountInfoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Bs_BankAccountInfoDAO.java
+END
+Sett_ImputBankTransDataLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement/bankinterface/dao/Sett_ImputBankTransDataLog.java
+END

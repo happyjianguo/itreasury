@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config
+END
+ebank.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/ebank.xml
+END
+global.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/global.xml
+END
+SafetyConfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/SafetyConfig.xml
+END
+InitEbankUser.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/InitEbankUser.xml
+END
+integration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/integration.xml
+END
+settlement.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/settlement.xml
+END
+system.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/system.xml
+END
+PrintTemplateSetting.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/PrintTemplateSetting.xml
+END
+itreasury.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/itreasury.xml
+END
+loan.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/loan.xml
+END
+codingrule_paralist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/codingrule_paralist.xml
+END
+codingrule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/codingrule.xml
+END
+SecurityProvider.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/properties/.config/SecurityProvider.properties
+END

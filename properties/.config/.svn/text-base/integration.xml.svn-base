@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="gb2312"?>
+<itreasury_configitems>
+	<itreasury_configitem >
+		<name>是否有银企接口</name>
+		<namemap>integration.service.isvalid</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>true</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>银行交易结算入账操作类</name>
+		<namemap>integration.bankinterface_settlement.ImportAccountClass</namemap>
+		<type>string</type>
+		<desc></desc>
+		<value>com.iss.itreasury.settlement.bankinstruction.instructionbean.ImportAccountBean_Product</value>
+	</itreasury_configitem>
+	<itreasury_configitem >
+		<name>结算形成银行指令操作类</name>
+		<namemap>integration.bankinterface_settlement.InstructionClass</namemap>
+		<type>string</type>
+		<desc></desc>
+		<value>com.iss.itreasury.settlement.bankinstruction.instructionbean.InstructionBean_Product</value>
+	</itreasury_configitem>
+	<itreasury_configitem >
+		<name>银企接口配置文件</name>
+		<namemap>integration.service.config.file</namemap>
+		<type>string</type>
+		<desc></desc>
+		<value>bank_service_config.xml</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>银企接口日至保存的目录名称</name>
+		<namemap>integration.service.log.path</namemap>
+		<type>string</type>
+		<desc></desc>
+		<value></value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+	  <name>银企接口日至级别</name> 
+	  <namemap>integration.service.log.level</namemap> 
+	  <type>string</type> 
+	  <desc></desc> 
+	  <value>all</value> 
+	</itreasury_configitem>
+
+
+	<itreasury_configitem >
+		<name>网银系统业务信息属性</name>
+		<namemap>integration.ebank_settlement.FinanceInfo</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>true</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem >
+		<name>结算系统与银企接口集成-结算系统银行指令信息属性</name>
+		<namemap>integration.settlement_bankinterface.BankInstructionInfo</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>true</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem >
+		<name>银企接口与结算系统集成-银企接口转帐结果信息属性</name>
+		<namemap>integration.bankinterface_settlement.VirementResultInfo</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>true</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem >
+		<name>银企接口与结算系统集成-银企接口交易信息属性</name>
+		<namemap>integration.bankinterface_settlement.BankAccountTransInfo</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>true</value>
+	</itreasury_configitem>	
+
+	
+	<itreasury_configitem >
+		<name>银行交易文件导出路径</name>
+		<namemap>integration.service.exportfile.path</namemap>
+		<type>string</type>
+		<desc></desc>
+		<value>exportfile/</value>
+	</itreasury_configitem>	
+	<itreasury_configitem >
+		<name>需要发送指令的银行类型</name>
+		<namemap>integration.service.tosendbankinstruction.banktype</namemap>
+		<type>integer</type>
+		<desc></desc>
+		<value>1|2</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem >
+		<name>需要自动入账的银行类型</name>
+		<namemap>integration.service.toturnin.banktype</namemap>
+		<type>integer</type>
+		<desc></desc>
+		<value>1,2</value>
+	</itreasury_configitem>	
+
+
+	<itreasury_configitem >
+		<name>自动导余额间隔时间</name>
+		<namemap>integration.service.config.interval</namemap>
+		<type>integer</type>
+		<desc></desc>
+		<value>12</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem >
+		<name>自动同步当日交易的类名</name>
+		<namemap>integration.service.RecieveBankTransInfoToTurnIn.class</namemap>
+		<type>string</type>
+		<value>com.iss.itreasury.settlement.bankinterface.autotask.CasicRecieveBankTransInfo</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem >
+		<name>是否启用银行账户收款交易提醒任务</name>
+		<namemap>integration.service.RemindBankAccountTransInfoTask.isvalid</namemap>
+		<type>boolean</type>
+		<value>false</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem >
+		<name>是否启用银行账户余额提醒任务</name>
+		<namemap>integration.service.RemindBankAccountBalanceTask.isvalid</namemap>
+		<type>boolean</type>
+		<value>false</value>
+	</itreasury_configitem>	
+	
+
+	<itreasury_configitem >
+		<name>结算服务IP（目前针对结算与资金监控的接口）</name>
+		<namemap>integration.service.SettServiceIP</namemap>
+		<type>string</type>
+		<value>127.0.0.1</value>
+	</itreasury_configitem>	
+	<itreasury_configitem >
+		<name>结算服务端口（目前针对结算与资金监控的接口）</name>
+		<namemap>integration.service.SettServicePort</namemap>
+		<type>string</type>
+		<value>2005</value>
+	</itreasury_configitem>	
+
+	<itreasury_configitem >
+		<name>资金监控接口</name>
+		<namemap>integration.service.BPServiceIP</namemap>
+		<type>string</type>
+		<value>127.0.0.1</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>资金监控接口</name>
+		<namemap>integration.service.BPServicePort</namemap>
+		<type>string</type>
+		<value>2005</value>
+	</itreasury_configitem>
+</itreasury_configitems>
+
+
+<!--
+	itreasury_configitems                    ******xml文件根结点，其下可以有多个配置项
+		itreasury_configitem                          ******一个配置项
+-->

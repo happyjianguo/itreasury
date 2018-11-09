@@ -1,0 +1,2350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>itreasuryEJB</display-name>
+	<enterprise-beans>
+		<session id="SystemMng">
+			<ejb-name>SystemMng</ejb-name>
+			<home>com.iss.itreasury.system.bizlogic.ejb.SystemMngHome</home>
+			<remote>com.iss.itreasury.system.bizlogic.ejb.SystemMng</remote>
+			<ejb-class>com.iss.itreasury.system.bizlogic.ejb.SystemMngEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009524784">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Account">
+			<ejb-name>Account</ejb-name>
+			<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+			<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+			<ejb-class>com.iss.itreasury.settlement.account.bizlogic.AccountEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293007514706">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="AccountBook">
+			<ejb-name>AccountBook</ejb-name>
+			<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+			<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+			<ejb-class>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293010532557">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293010670374">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293010739422">
+				<description>
+				</description>
+				<ejb-ref-name>GeneralLedgerHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedgerHome</home>
+				<remote>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedger</remote>
+				<ejb-link>GeneralLedger</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293007788771">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="BankBill">
+			<ejb-name>BankBill</ejb-name>
+			<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+			<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+			<ejb-class>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008611375">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="CompatibilityAccountBook">
+			<ejb-name>CompatibilityAccountBook</ejb-name>
+			<home>com.iss.itreasury.settlement.compatibilityaccountbook.bizlogic.CompatibilityAccountBookHome</home>
+			<remote>com.iss.itreasury.settlement.compatibilityaccountbook.bizlogic.CompatibilityAccountBook</remote>
+			<ejb-class>com.iss.itreasury.settlement.compatibilityaccountbook.bizlogic.CompatibilityAccountBookEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293010907802">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293010907819">
+				<description>
+				</description>
+				<ejb-ref-name>GeneralLedgerHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedgerHome</home>
+				<remote>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedger</remote>
+				<ejb-link>GeneralLedger</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293008611385">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="CompoundInterestSetting">
+			<ejb-name>CompoundInterestSetting</ejb-name>
+			<home>com.iss.itreasury.settlement.interest.bizlogic.CompoundInterestSettingHome</home>
+			<remote>com.iss.itreasury.settlement.interest.bizlogic.CompoundInterestSetting</remote>
+			<ejb-class>com.iss.itreasury.settlement.interest.bizlogic.CompoundInterestSettingEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008611395">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="ConsignVoucher">
+			<ejb-name>ConsignVoucher</ejb-name>
+			<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+			<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+			<ejb-class>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008611402">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="GeneralLedger">
+			<ejb-name>GeneralLedger</ejb-name>
+			<home>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedgerHome</home>
+			<remote>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedger</remote>
+			<ejb-class>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedgerEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008878293">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OffBalance">
+			<ejb-name>OffBalance</ejb-name>
+			<home>com.iss.itreasury.settlement.offbalance.bizlogic.OffBalanceHome</home>
+			<remote>com.iss.itreasury.settlement.offbalance.bizlogic.OffBalance</remote>
+			<ejb-class>com.iss.itreasury.settlement.offbalance.bizlogic.OffBalanceEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011019035">
+				<description>
+				</description>
+				<ejb-ref-name>OffBalanceRegisterHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.offbalanceregister.bizlogic.OffBalanceRegisterHome</home>
+				<remote>com.iss.itreasury.settlement.offbalanceregister.bizlogic.OffBalanceRegister</remote>
+				<ejb-link>OffBalanceRegister</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009082201">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OffBalanceRegister">
+			<ejb-name>OffBalanceRegister</ejb-name>
+			<home>com.iss.itreasury.settlement.offbalanceregister.bizlogic.OffBalanceRegisterHome</home>
+			<remote>com.iss.itreasury.settlement.offbalanceregister.bizlogic.OffBalanceRegister</remote>
+			<ejb-class>com.iss.itreasury.settlement.offbalanceregister.bizlogic.OffBalanceRegisterEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009132270">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="SettAdjustInterestRate">
+			<ejb-name>SettAdjustInterestRate</ejb-name>
+			<home>com.iss.itreasury.settlement.settadjustinterestrate.bizlogic.SettAdjustInterestRateHome</home>
+			<remote>com.iss.itreasury.settlement.settadjustinterestrate.bizlogic.SettAdjustInterestRate</remote>
+			<ejb-class>com.iss.itreasury.settlement.settadjustinterestrate.bizlogic.SettAdjustInterestRateEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009386543">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="SettContract">
+			<ejb-name>SettContract</ejb-name>
+			<home>com.iss.itreasury.settlement.settcontract.bizlogic.SettContractHome</home>
+			<remote>com.iss.itreasury.settlement.settcontract.bizlogic.SettContract</remote>
+			<ejb-class>com.iss.itreasury.settlement.settcontract.bizlogic.SettContractEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009386557">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="SettPayNotice">
+			<ejb-name>SettPayNotice</ejb-name>
+			<home>com.iss.itreasury.settlement.settpaynotice.bizlogic.SettPayNoticeHome</home>
+			<remote>com.iss.itreasury.settlement.settpaynotice.bizlogic.SettPayNotice</remote>
+			<ejb-class>com.iss.itreasury.settlement.settpaynotice.bizlogic.SettPayNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009386566">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransAbatement">
+			<ejb-name>TransAbatement</ejb-name>
+			<home>com.iss.itreasury.settlement.transabatement.bizlogic.TransAbatementHome</home>
+			<remote>com.iss.itreasury.settlement.transabatement.bizlogic.TransAbatement</remote>
+			<ejb-class>com.iss.itreasury.settlement.transabatement.bizlogic.TransAbatementEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011126041">
+				<description>
+				</description>
+				<ejb-ref-name>CompatibilityAccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.compatibilityaccountbook.bizlogic.CompatibilityAccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.compatibilityaccountbook.bizlogic.CompatibilityAccountBook</remote>
+				<ejb-link>CompatibilityAccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011126059">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009524799">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransCompatibility">
+			<ejb-name>TransCompatibility</ejb-name>
+			<home>com.iss.itreasury.settlement.transcompatibility.bizlogic.TransCompatibilityHome</home>
+			<remote>com.iss.itreasury.settlement.transcompatibility.bizlogic.TransCompatibility</remote>
+			<ejb-class>com.iss.itreasury.settlement.transcompatibility.bizlogic.TransCompatibilityEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011252755">
+				<description>
+				</description>
+				<ejb-ref-name>CompatibilityAccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.compatibilityaccountbook.bizlogic.CompatibilityAccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.compatibilityaccountbook.bizlogic.CompatibilityAccountBook</remote>
+				<ejb-link>CompatibilityAccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011252772">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011252784">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011831465">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009524811">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransCurrentDeposit">
+			<ejb-name>TransCurrentDeposit</ejb-name>
+			<home>com.iss.itreasury.settlement.transcurrentdeposit.bizlogic.TransCurrentDepositHome</home>
+			<remote>com.iss.itreasury.settlement.transcurrentdeposit.bizlogic.TransCurrentDeposit</remote>
+			<ejb-class>com.iss.itreasury.settlement.transcurrentdeposit.bizlogic.TransCurrentDepositEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011831482">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011831497">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011831506">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011942127">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009565105">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransDiscount">
+			<ejb-name>TransDiscount</ejb-name>
+			<home>com.iss.itreasury.settlement.transdiscount.bizlogic.TransDiscountHome</home>
+			<remote>com.iss.itreasury.settlement.transdiscount.bizlogic.TransDiscount</remote>
+			<ejb-class>com.iss.itreasury.settlement.transdiscount.bizlogic.TransDiscountEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011942144">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011942154">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011942163">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011942172">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009565120">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransFee">
+			<ejb-name>TransFee</ejb-name>
+			<home>com.iss.itreasury.settlement.transfee.bizlogic.TransFeeHome</home>
+			<remote>com.iss.itreasury.settlement.transfee.bizlogic.TransFee</remote>
+			<ejb-class>com.iss.itreasury.settlement.transfee.bizlogic.TransFeeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293012039940">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012039958">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012039968">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012039977">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009636873">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransFixedDeposit">
+			<ejb-name>TransFixedDeposit</ejb-name>
+			<home>com.iss.itreasury.settlement.transfixeddeposit.bizlogic.TransFixedDepositHome</home>
+			<remote>com.iss.itreasury.settlement.transfixeddeposit.bizlogic.TransFixedDeposit</remote>
+			<ejb-class>com.iss.itreasury.settlement.transfixeddeposit.bizlogic.TransFixedDepositEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293012106313">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012106331">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012106342">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012130163">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009746410">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransMarginDeposit">
+			<ejb-name>TransMarginDeposit</ejb-name>
+			<home>com.iss.itreasury.settlement.transmargindeposit.bizlogic.TransMarginDepositHome</home>
+			<remote>com.iss.itreasury.settlement.transmargindeposit.bizlogic.TransMarginDeposit</remote>
+			<ejb-class>com.iss.itreasury.settlement.transmargindeposit.bizlogic.TransMarginDepositEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293012214673">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012214689">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012214698">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012214708">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009814824">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransGeneralLedger">
+			<ejb-name>TransGeneralLedger</ejb-name>
+			<home>com.iss.itreasury.settlement.transgeneralledger.bizlogic.TransGeneralLedgerHome</home>
+			<remote>com.iss.itreasury.settlement.transgeneralledger.bizlogic.TransGeneralLedger</remote>
+			<ejb-class>com.iss.itreasury.settlement.transgeneralledger.bizlogic.TransGeneralLedgerEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293012330267">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012330285">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012330301">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012330310">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009746424">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransInterest">
+			<ejb-name>TransInterest</ejb-name>
+			<home>com.iss.itreasury.settlement.transinterest.bizlogic.TransInterestHome</home>
+			<remote>com.iss.itreasury.settlement.transinterest.bizlogic.TransInterest</remote>
+			<ejb-class>com.iss.itreasury.settlement.transinterest.bizlogic.TransInterestEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293012356314">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012383821">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012405511">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012436124">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009746436">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransLoan">
+			<ejb-name>TransLoan</ejb-name>
+			<home>com.iss.itreasury.settlement.transloan.bizlogic.TransLoanHome</home>
+			<remote>com.iss.itreasury.settlement.transloan.bizlogic.TransLoan</remote>
+			<ejb-class>com.iss.itreasury.settlement.transloan.bizlogic.TransLoanEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293012463486">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012475947">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012505913">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012505929">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009746444">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransSpecial">
+			<ejb-name>TransSpecial</ejb-name>
+			<home>com.iss.itreasury.settlement.transspecial.bizlogic.TransSpecialHome</home>
+			<remote>com.iss.itreasury.settlement.transspecial.bizlogic.TransSpecial</remote>
+			<ejb-class>com.iss.itreasury.settlement.transspecial.bizlogic.TransSpecialEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013057373">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013057393">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013057408">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013057418">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009814851">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransCommission">
+			<ejb-name>TransCommission</ejb-name>
+			<home>com.iss.itreasury.settlement.transcommission.bizlogic.TransCommissionHome</home>
+			<remote>com.iss.itreasury.settlement.transcommission.bizlogic.TransCommission</remote>
+			<ejb-class>com.iss.itreasury.settlement.transcommission.bizlogic.TransCommissionEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013112167">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013112184">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009524818">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransFinance">
+			<ejb-name>TransFinance</ejb-name>
+			<home>com.iss.itreasury.settlement.transfinance.bizlogic.TransFinanceHome</home>
+			<remote>com.iss.itreasury.settlement.transfinance.bizlogic.TransFinance</remote>
+			<ejb-class>com.iss.itreasury.settlement.transfinance.bizlogic.TransFinanceEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013190750">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013190821">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013190831">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013190845">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009746451">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="ReportLossOrFreeze">
+			<ejb-name>ReportLossOrFreeze</ejb-name>
+			<home>com.iss.itreasury.settlement.reportlossorfreeze.bizlogic.ReportLossOrFreezeHome</home>
+			<remote>com.iss.itreasury.settlement.reportlossorfreeze.bizlogic.ReportLossOrFreeze</remote>
+			<ejb-class>com.iss.itreasury.settlement.reportlossorfreeze.bizlogic.ReportLossOrFreezeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009255612">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransAdjustInterest">
+			<ejb-name>TransAdjustInterest</ejb-name>
+			<home>com.iss.itreasury.settlement.transadjustinterest.bizlogic.TransAdjustInterestHome</home>
+			<remote>com.iss.itreasury.settlement.transadjustinterest.bizlogic.TransAdjustInterest</remote>
+			<ejb-class>com.iss.itreasury.settlement.transadjustinterest.bizlogic.TransAdjustInterestEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009524825">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="CurrencySetting">
+			<ejb-name>CurrencySetting</ejb-name>
+			<home>com.iss.itreasury.settlement.setting.ejb.CurrencySettingHome</home>
+			<remote>com.iss.itreasury.settlement.setting.ejb.CurrencySetting</remote>
+			<ejb-class>com.iss.itreasury.settlement.setting.ejb.CurrencySettingEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008738694">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransFinancialMargin">
+			<ejb-name>TransFinancialMargin</ejb-name>
+			<home>com.iss.itreasury.settlement.transfinancialmargin.bizlogic.TransFinancialMarginHome</home>
+			<remote>com.iss.itreasury.settlement.transfinancialmargin.bizlogic.TransFinancialMargin</remote>
+			<ejb-class>com.iss.itreasury.settlement.transfinancialmargin.bizlogic.TransFinancialMarginEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009746459">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="AheadRepayNotice">
+			<ejb-name>AheadRepayNotice</ejb-name>
+			<home>com.iss.itreasury.loan.aheadrepaynotice.bizlogic.AheadRepayNoticeHome</home>
+			<remote>com.iss.itreasury.loan.aheadrepaynotice.bizlogic.AheadRepayNotice</remote>
+			<ejb-class>com.iss.itreasury.loan.aheadrepaynotice.bizlogic.AheadRepayNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293007815443">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="AttornmentApply">
+			<ejb-name>AttornmentApply</ejb-name>
+			<home>com.iss.itreasury.loan.attornmentapply.bizlogic.AttornmentApplyHome</home>
+			<remote>com.iss.itreasury.loan.attornmentapply.bizlogic.AttornmentApply</remote>
+			<ejb-class>com.iss.itreasury.loan.attornmentapply.bizlogic.AttornmentApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293007930815">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Contract">
+			<ejb-name>Contract</ejb-name>
+			<home>com.iss.itreasury.loan.contract.bizlogic.ContractHome</home>
+			<remote>com.iss.itreasury.loan.contract.bizlogic.Contract</remote>
+			<ejb-class>com.iss.itreasury.loan.contract.bizlogic.ContractEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008611408">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="ContractStatus">
+			<ejb-name>ContractStatus</ejb-name>
+			<home>com.iss.itreasury.loan.contractstatus.bizlogic.ContractStatusHome</home>
+			<remote>com.iss.itreasury.loan.contractstatus.bizlogic.ContractStatus</remote>
+			<ejb-class>com.iss.itreasury.loan.contractstatus.bizlogic.ContractStatusEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008738706">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Discount">
+			<ejb-name>Discount</ejb-name>
+			<home>com.iss.itreasury.loan.discount.bizlogic.DiscountHome</home>
+			<remote>com.iss.itreasury.loan.discount.bizlogic.Discount</remote>
+			<ejb-class>com.iss.itreasury.loan.discount.bizlogic.DiscountEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008790918">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="ExtendApply">
+			<ejb-name>ExtendApply</ejb-name>
+			<home>com.iss.itreasury.loan.extendapply.bizlogic.ExtendApplyHome</home>
+			<remote>com.iss.itreasury.loan.extendapply.bizlogic.ExtendApply</remote>
+			<ejb-class>com.iss.itreasury.loan.extendapply.bizlogic.ExtendApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008878306">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="FreeApply">
+			<ejb-name>FreeApply</ejb-name>
+			<home>com.iss.itreasury.loan.freeapply.bizlogic.FreeApplyHome</home>
+			<remote>com.iss.itreasury.loan.freeapply.bizlogic.FreeApply</remote>
+			<ejb-class>com.iss.itreasury.loan.freeapply.bizlogic.FreeApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008878316">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="LoanApply">
+			<ejb-name>LoanApply</ejb-name>
+			<home>com.iss.itreasury.loan.loanapply.bizlogic.LoanApplyHome</home>
+			<remote>com.iss.itreasury.loan.loanapply.bizlogic.LoanApply</remote>
+			<ejb-class>com.iss.itreasury.loan.loanapply.bizlogic.LoanApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013295627">
+				<description>
+				</description>
+				<ejb-ref-name>LoanCommonSettingHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.loan.loancommonsetting.bizlogic.LoanCommonSettingHome</home>
+				<remote>com.iss.itreasury.loan.loancommonsetting.bizlogic.LoanCommonSetting</remote>
+				<ejb-link>LoanCommonSetting</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013295647">
+				<description>
+				</description>
+				<ejb-ref-name>RepayPlanHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.loan.repayplan.bizlogic.RepayPlanHome</home>
+				<remote>com.iss.itreasury.loan.repayplan.bizlogic.RepayPlan</remote>
+				<ejb-link>RepayPlan</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293008878323">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="LoanAssure">
+			<ejb-name>LoanAssure</ejb-name>
+			<home>com.iss.itreasury.loan.loanassure.bizlogic.LoanAssureHome</home>
+			<remote>com.iss.itreasury.loan.loanassure.bizlogic.LoanAssure</remote>
+			<ejb-class>com.iss.itreasury.loan.loanassure.bizlogic.LoanAssureEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008899534">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="LoanCommonSetting">
+			<ejb-name>LoanCommonSetting</ejb-name>
+			<home>com.iss.itreasury.loan.loancommonsetting.bizlogic.LoanCommonSettingHome</home>
+			<remote>com.iss.itreasury.loan.loancommonsetting.bizlogic.LoanCommonSetting</remote>
+			<ejb-class>com.iss.itreasury.loan.loancommonsetting.bizlogic.LoanCommonSettingEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009038698">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="LoanDrawNotice">
+			<ejb-name>LoanDrawNotice</ejb-name>
+			<home>com.iss.itreasury.loan.loandrawnotice.bizlogic.LoanDrawNoticeHome</home>
+			<remote>com.iss.itreasury.loan.loandrawnotice.bizlogic.LoanDrawNotice</remote>
+			<ejb-class>com.iss.itreasury.loan.loandrawnotice.bizlogic.LoanDrawNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009038710">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="LoanFunc">
+			<ejb-name>LoanFunc</ejb-name>
+			<home>com.iss.itreasury.loan.loanfunc.bizlogic.LoanFuncHome</home>
+			<remote>com.iss.itreasury.loan.loanfunc.bizlogic.LoanFunc</remote>
+			<ejb-class>com.iss.itreasury.loan.loanfunc.bizlogic.LoanFuncEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009038722">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="LoanInterestSetting">
+			<ejb-name>LoanInterestSetting</ejb-name>
+			<home>com.iss.itreasury.loan.loaninterestsetting.bizlogic.LoanInterestSettingHome</home>
+			<remote>com.iss.itreasury.loan.loaninterestsetting.bizlogic.LoanInterestSetting</remote>
+			<ejb-class>com.iss.itreasury.loan.loaninterestsetting.bizlogic.LoanInterestSettingEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009038729">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="LoanPayNotice">
+			<ejb-name>LoanPayNotice</ejb-name>
+			<home>com.iss.itreasury.loan.loanpaynotice.bizlogic.LoanPayNoticeHome</home>
+			<remote>com.iss.itreasury.loan.loanpaynotice.bizlogic.LoanPayNotice</remote>
+			<ejb-class>com.iss.itreasury.loan.loanpaynotice.bizlogic.LoanPayNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009038735">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OBInterface">
+			<ejb-name>OBInterface</ejb-name>
+			<home>com.iss.itreasury.loan.obinterface.bizlogic.OBInterfaceHome</home>
+			<remote>com.iss.itreasury.loan.obinterface.bizlogic.OBInterface</remote>
+			<ejb-class>com.iss.itreasury.loan.obinterface.bizlogic.OBInterfaceEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009056411">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="OverDueApply">
+			<ejb-name>OverDueApply</ejb-name>
+			<home>com.iss.itreasury.loan.overdueapply.bizlogic.OverDueApplyHome</home>
+			<remote>com.iss.itreasury.loan.overdueapply.bizlogic.OverDueApply</remote>
+			<ejb-class>com.iss.itreasury.loan.overdueapply.bizlogic.OverDueApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009132285">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="RepayPlan">
+			<ejb-name>RepayPlan</ejb-name>
+			<home>com.iss.itreasury.loan.repayplan.bizlogic.RepayPlanHome</home>
+			<remote>com.iss.itreasury.loan.repayplan.bizlogic.RepayPlan</remote>
+			<ejb-class>com.iss.itreasury.loan.repayplan.bizlogic.RepayPlanEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009255626">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="RiskLevel">
+			<ejb-name>RiskLevel</ejb-name>
+			<home>com.iss.itreasury.loan.risklevel.bizlogic.RiskLevelHome</home>
+			<remote>com.iss.itreasury.loan.risklevel.bizlogic.RiskLevel</remote>
+			<ejb-class>com.iss.itreasury.loan.risklevel.bizlogic.RiskLevelEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009255634">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransDiscountApply">
+			<ejb-name>TransDiscountApply</ejb-name>
+			<home>com.iss.itreasury.loan.transdiscountapply.bizlogic.TransDiscountApplyHome</home>
+			<remote>com.iss.itreasury.loan.transdiscountapply.bizlogic.TransDiscountApply</remote>
+			<ejb-class>com.iss.itreasury.loan.transdiscountapply.bizlogic.TransDiscountApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013351887">
+				<description>
+				</description>
+				<ejb-ref-name>DraftHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.bill.draft.bizlogic.DraftHome</home>
+				<remote>com.iss.itreasury.bill.draft.bizlogic.Draft</remote>
+				<ejb-link>Draft</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009617538">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransDiscountContract">
+			<ejb-name>TransDiscountContract</ejb-name>
+			<home>com.iss.itreasury.loan.transdiscountcontract.bizlogic.TransDiscountContractHome</home>
+			<remote>com.iss.itreasury.loan.transdiscountcontract.bizlogic.TransDiscountContract</remote>
+			<ejb-class>com.iss.itreasury.loan.transdiscountcontract.bizlogic.TransDiscountContractEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013400590">
+				<description>
+				</description>
+				<ejb-ref-name>TransDiscountApplyHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.loan.transdiscountapply.bizlogic.TransDiscountApplyHome</home>
+				<remote>com.iss.itreasury.loan.transdiscountapply.bizlogic.TransDiscountApply</remote>
+				<ejb-link>TransDiscountApply</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009617552">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransDiscountCredence">
+			<ejb-name>TransDiscountCredence</ejb-name>
+			<home>com.iss.itreasury.loan.transdiscountcredence.bizlogic.TransDiscountCredenceHome</home>
+			<remote>com.iss.itreasury.loan.transdiscountcredence.bizlogic.TransDiscountCredence</remote>
+			<ejb-class>com.iss.itreasury.loan.transdiscountcredence.bizlogic.TransDiscountCredenceEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013443090">
+				<description>
+				</description>
+				<ejb-ref-name>TransDiscountContractHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.loan.transdiscountcontract.bizlogic.TransDiscountContractHome</home>
+				<remote>com.iss.itreasury.loan.transdiscountcontract.bizlogic.TransDiscountContract</remote>
+				<ejb-link>TransDiscountContract</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009617563">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="AssureChargeNotice">
+			<ejb-name>AssureChargeNotice</ejb-name>
+			<home>com.iss.itreasury.loan.assurechargenotice.bizlogic.AssureChargeNoticeHome</home>
+			<remote>com.iss.itreasury.loan.assurechargenotice.bizlogic.AssureChargeNotice</remote>
+			<ejb-class>com.iss.itreasury.loan.assurechargenotice.bizlogic.AssureChargeNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293007885292">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="AssureManagementNotice">
+			<ejb-name>AssureManagementNotice</ejb-name>
+			<home>com.iss.itreasury.loan.assuremanagementnotice.bizlogic.AssureManagementNoticeHome</home>
+			<remote>com.iss.itreasury.loan.assuremanagementnotice.bizlogic.AssureManagementNotice</remote>
+			<ejb-class>com.iss.itreasury.loan.assuremanagementnotice.bizlogic.AssureManagementNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293007930828">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="LeaseholdNotice">
+			<ejb-name>LeaseholdNotice</ejb-name>
+			<home>com.iss.itreasury.loan.leasehold.bizlogic.LeaseholdNoticeHome</home>
+			<remote>com.iss.itreasury.loan.leasehold.bizlogic.LeaseholdNotice</remote>
+			<ejb-class>com.iss.itreasury.loan.leasehold.bizlogic.LeaseholdNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008878329">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="RecognizanceNotice">
+			<ejb-name>RecognizanceNotice</ejb-name>
+			<home>com.iss.itreasury.loan.recognizancenotice.bizlogic.RecognizanceNoticeHome</home>
+			<remote>com.iss.itreasury.loan.recognizancenotice.bizlogic.RecognizanceNotice</remote>
+			<ejb-class>com.iss.itreasury.loan.recognizancenotice.bizlogic.RecognizanceNoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009255640">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Venture">
+			<ejb-name>Venture</ejb-name>
+			<home>com.iss.itreasury.bill.venture.bizlogic.VentureHome</home>
+			<remote>com.iss.itreasury.bill.venture.bizlogic.Venture</remote>
+			<ejb-class>com.iss.itreasury.bill.venture.bizlogic.VentureEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009859115">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Draft">
+			<ejb-name>Draft</ejb-name>
+			<home>com.iss.itreasury.bill.draft.bizlogic.DraftHome</home>
+			<remote>com.iss.itreasury.bill.draft.bizlogic.Draft</remote>
+			<ejb-class>com.iss.itreasury.bill.draft.bizlogic.DraftEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008790930">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="BlankVoucher">
+			<ejb-name>BlankVoucher</ejb-name>
+			<home>com.iss.itreasury.bill.blankvoucher.bizlogic.BlankVoucherHome</home>
+			<remote>com.iss.itreasury.bill.blankvoucher.bizlogic.BlankVoucher</remote>
+			<ejb-class>com.iss.itreasury.bill.blankvoucher.bizlogic.BlankVoucherEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008611413">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Apply">
+			<ejb-name>Apply</ejb-name>
+			<home>com.iss.itreasury.securities.apply.bizlogic.ApplyHome</home>
+			<remote>com.iss.itreasury.securities.apply.bizlogic.Apply</remote>
+			<ejb-class>com.iss.itreasury.securities.apply.bizlogic.ApplyEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013498376">
+				<description>
+				</description>
+				<ejb-ref-name>DeliveryOrderServiceHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderServiceHome</home>
+				<remote>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderService</remote>
+				<ejb-link>DeliveryOrderService</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293007859584">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="DeliveryOrder">
+			<ejb-name>DeliveryOrder</ejb-name>
+			<home>com.iss.itreasury.securities.deliveryorder.bizlogic.DeliveryOrderHome</home>
+			<remote>com.iss.itreasury.securities.deliveryorder.bizlogic.DeliveryOrder</remote>
+			<ejb-class>com.iss.itreasury.securities.deliveryorder.bizlogic.DeliveryOrderEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013539063">
+				<description>
+				</description>
+				<ejb-ref-name>DeliveryOrderServiceHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderServiceHome</home>
+				<remote>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderService</remote>
+				<ejb-link>DeliveryOrderService</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293008738713">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="DeliveryOrderService">
+			<ejb-name>DeliveryOrderService</ejb-name>
+			<home>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderServiceHome</home>
+			<remote>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderService</remote>
+			<ejb-class>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderServiceEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013579107">
+				<description>
+				</description>
+				<ejb-ref-name>RegisterHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.register.bizlogic.RegisterHome</home>
+				<remote>com.iss.itreasury.securities.register.bizlogic.Register</remote>
+				<ejb-link>Register</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013609906">
+				<description>
+				</description>
+				<ejb-ref-name>SecuritiesAccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.securitiesaccount.bizlogic.SecuritiesAccountHome</home>
+				<remote>com.iss.itreasury.securities.securitiesaccount.bizlogic.SecuritiesAccount</remote>
+				<ejb-link>SecuritiesAccount</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013637497">
+				<description>
+				</description>
+				<ejb-ref-name>SecuritiesGeneralLedgerHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.securitiesgeneralledger.bizlogic.SecuritiesGeneralLedgerHome</home>
+				<remote>com.iss.itreasury.securities.securitiesgeneralledger.bizlogic.SecuritiesGeneralLedger</remote>
+				<ejb-link>SecuritiesGeneralLedger</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013665208">
+				<description>
+				</description>
+				<ejb-ref-name>StockHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.stock.bizlogic.StockHome</home>
+				<remote>com.iss.itreasury.securities.stock.bizlogic.Stock</remote>
+				<ejb-link>Stock</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293008738718">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="EndProcess">
+			<ejb-name>EndProcess</ejb-name>
+			<home>com.iss.itreasury.securities.endprocess.bizlogic.EndProcessHome</home>
+			<remote>com.iss.itreasury.securities.endprocess.bizlogic.EndProcess</remote>
+			<ejb-class>com.iss.itreasury.securities.endprocess.bizlogic.EndProcessEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013724015">
+				<description>
+				</description>
+				<ejb-ref-name>DeliveryOrderServiceHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderServiceHome</home>
+				<remote>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderService</remote>
+				<ejb-link>DeliveryOrderService</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013724035">
+				<description>
+				</description>
+				<ejb-ref-name>SecuritiesAccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.securitiesaccount.bizlogic.SecuritiesAccountHome</home>
+				<remote>com.iss.itreasury.securities.securitiesaccount.bizlogic.SecuritiesAccount</remote>
+				<ejb-link>SecuritiesAccount</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293013744631">
+				<description>
+				</description>
+				<ejb-ref-name>StockHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.stock.bizlogic.StockHome</home>
+				<remote>com.iss.itreasury.securities.stock.bizlogic.Stock</remote>
+				<ejb-link>Stock</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293008790941">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Notice">
+			<ejb-name>Notice</ejb-name>
+			<home>com.iss.itreasury.securities.notice.bizlogic.NoticeHome</home>
+			<remote>com.iss.itreasury.securities.notice.bizlogic.Notice</remote>
+			<ejb-class>com.iss.itreasury.securities.notice.bizlogic.NoticeEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293013786139">
+				<description>
+				</description>
+				<ejb-ref-name>DeliveryOrderServiceHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderServiceHome</home>
+				<remote>com.iss.itreasury.securities.deliveryorderservice.bizlogic.DeliveryOrderService</remote>
+				<ejb-link>DeliveryOrderService</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009038741">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Register">
+			<ejb-name>Register</ejb-name>
+			<home>com.iss.itreasury.securities.register.bizlogic.RegisterHome</home>
+			<remote>com.iss.itreasury.securities.register.bizlogic.Register</remote>
+			<ejb-class>com.iss.itreasury.securities.register.bizlogic.RegisterEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009255646">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="SecuritiesAccount">
+			<ejb-name>SecuritiesAccount</ejb-name>
+			<home>com.iss.itreasury.securities.securitiesaccount.bizlogic.SecuritiesAccountHome</home>
+			<remote>com.iss.itreasury.securities.securitiesaccount.bizlogic.SecuritiesAccount</remote>
+			<ejb-class>com.iss.itreasury.securities.securitiesaccount.bizlogic.SecuritiesAccountEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009255652">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="SecuritiesContract">
+			<ejb-name>SecuritiesContract</ejb-name>
+			<home>com.iss.itreasury.securities.securitiescontract.bizlogic.SecuritiesContractHome</home>
+			<remote>com.iss.itreasury.securities.securitiescontract.bizlogic.SecuritiesContract</remote>
+			<ejb-class>com.iss.itreasury.securities.securitiescontract.bizlogic.SecuritiesContractEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009386573">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="SecuritiesContractPlan">
+			<ejb-name>SecuritiesContractPlan</ejb-name>
+			<home>com.iss.itreasury.securities.securitiescontractplan.bizlogic.SecuritiesContractPlanHome</home>
+			<remote>com.iss.itreasury.securities.securitiescontractplan.bizlogic.SecuritiesContractPlan</remote>
+			<ejb-class>com.iss.itreasury.securities.securitiescontractplan.bizlogic.SecuritiesContractPlanEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009386580">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="SecuritiesGeneralLedger">
+			<ejb-name>SecuritiesGeneralLedger</ejb-name>
+			<home>com.iss.itreasury.securities.securitiesgeneralledger.bizlogic.SecuritiesGeneralLedgerHome</home>
+			<remote>com.iss.itreasury.securities.securitiesgeneralledger.bizlogic.SecuritiesGeneralLedger</remote>
+			<ejb-class>com.iss.itreasury.securities.securitiesgeneralledger.bizlogic.SecuritiesGeneralLedgerEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009386586">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Setting">
+			<ejb-name>Setting</ejb-name>
+			<home>com.iss.itreasury.securities.setting.bizlogic.SettingHome</home>
+			<remote>com.iss.itreasury.securities.setting.bizlogic.Setting</remote>
+			<ejb-class>com.iss.itreasury.securities.setting.bizlogic.SettingEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009524833">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Stock">
+			<ejb-name>Stock</ejb-name>
+			<home>com.iss.itreasury.securities.stock.bizlogic.StockHome</home>
+			<remote>com.iss.itreasury.securities.stock.bizlogic.Stock</remote>
+			<ejb-class>com.iss.itreasury.securities.stock.bizlogic.StockEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293009524839">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="CreditRating">
+			<ejb-name>CreditRating</ejb-name>
+			<home>com.iss.itreasury.creditrating.creditrating.bizlogic.CreditRatingHome</home>
+			<remote>com.iss.itreasury.creditrating.creditrating.bizlogic.CreditRating</remote>
+			<ejb-class>com.iss.itreasury.creditrating.creditrating.bizlogic.CreditRatingEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008738723">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Crert_CreditRatingRevalued">
+			<ejb-name>Crert_CreditRatingRevalued</ejb-name>
+			<home>com.iss.itreasury.creditrating.creditevalution.bizlogic.Crert_CreditRatingRevaluedHome</home>
+			<remote>com.iss.itreasury.creditrating.creditevalution.bizlogic.Crert_CreditRatingRevalued</remote>
+			<ejb-class>com.iss.itreasury.creditrating.creditevalution.bizlogic.Crert_CreditRatingRevaluedEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008738728">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="Crert_CreditRatingCancel">
+			<ejb-name>Crert_CreditRatingCancel</ejb-name>
+			<home>com.iss.itreasury.creditrating.becominginvalid.bizlogic.Crert_CreditRatingCancelHome</home>
+			<remote>com.iss.itreasury.creditrating.becominginvalid.bizlogic.Crert_CreditRatingCancel</remote>
+			<ejb-class>com.iss.itreasury.creditrating.becominginvalid.bizlogic.Crert_CreditRatingCancelEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293008738734">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransferLoanContractDeposit">
+			<ejb-name>TransferLoanContractDeposit</ejb-name>
+			<home>com.iss.itreasury.settlement.transferloancontract.bizlogic.TransferLoanContractDepositHome</home>
+			<remote>com.iss.itreasury.settlement.transferloancontract.bizlogic.TransferLoanContractDeposit</remote>
+			<ejb-class>com.iss.itreasury.settlement.transferloancontract.bizlogic.TransferLoanContractDepositEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1293014600649">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransSecurities">
+			<ejb-name>TransSecurities</ejb-name>
+			<home>com.iss.itreasury.settlement.transsecurities.bizlogic.TransSecuritiesHome</home>
+			<remote>com.iss.itreasury.settlement.transsecurities.bizlogic.TransSecurities</remote>
+			<ejb-class>com.iss.itreasury.settlement.transsecurities.bizlogic.TransSecuritiesEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293014981654">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293014981674">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293014981686">
+				<description>
+				</description>
+				<ejb-ref-name>BankBillHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.bankbill.bizlogic.BankBillHome</home>
+				<remote>com.iss.itreasury.settlement.bankbill.bizlogic.BankBill</remote>
+				<ejb-link>BankBill</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293014995015">
+				<description>
+				</description>
+				<ejb-ref-name>ConsignVoucherHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucherHome</home>
+				<remote>com.iss.itreasury.settlement.consignvoucher.bizlogic.ConsignVoucher</remote>
+				<ejb-link>ConsignVoucher</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293015029971">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="ClientManage">
+			<ejb-name>ClientManage</ejb-name>
+			<home>com.iss.itreasury.settlement.clientmanage.bizlogic.ClientManageHome</home>
+			<remote>com.iss.itreasury.settlement.clientmanage.bizlogic.ClientManage</remote>
+			<ejb-class>com.iss.itreasury.settlement.clientmanage.bizlogic.ClientManageEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<resource-ref id="ResourceRef_1294132936939">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransInternalLend">
+			<ejb-name>TransInternalLend</ejb-name>
+			<home>com.iss.itreasury.settlement.transinternallend.bizlogic.TransInternalLendHome</home>
+			<remote>com.iss.itreasury.settlement.transinternallend.bizlogic.TransInternalLend</remote>
+			<ejb-class>com.iss.itreasury.settlement.transinternallend.bizlogic.TransInternalLendEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293012463487">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293012475948">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1294132936940">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="TransBakReserve">
+			<ejb-name>TransBakReserve</ejb-name>
+			<home>com.iss.itreasury.settlement.transbakreserve.bizlogic.TransBakReserveHome</home>
+			<remote>com.iss.itreasury.settlement.transbakreserve.bizlogic.TransBakReserve</remote>
+			<ejb-class>com.iss.itreasury.settlement.transbakreserve.bizlogic.TransBakReserveEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011831486">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011831498">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009565106">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+
+		<session id="TransReserve">
+			<ejb-name>TransReserve</ejb-name>
+			<home>com.iss.itreasury.settlement.transreserve.bizlogic.TransReserveHome</home>
+			<remote>com.iss.itreasury.settlement.transreserve.bizlogic.TransReserve</remote>
+			<ejb-class>com.iss.itreasury.settlement.transreserve.bizlogic.TransReserveEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011831487">
+				<description>
+				</description>
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<ejb-ref id="EjbRef_1293011831499">
+				<description>
+				</description>
+				<ejb-ref-name>AccountHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.account.bizlogic.AccountHome</home>
+				<remote>com.iss.itreasury.settlement.account.bizlogic.Account</remote>
+				<ejb-link>Account</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009565107">
+				<description>
+				DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+
+                <session id="TransNoteAcceptance">
+			<display-name>TransNoteAcceptance</display-name>
+			<ejb-name>TransNoteAcceptance</ejb-name>
+			<home>com.iss.itreasury.settlement.transnoteacceptance.bizlogic.TransNoteAcceptanceHome</home>
+			<remote>com.iss.itreasury.settlement.transnoteacceptance.bizlogic.TransNoteAcceptance</remote>
+			<ejb-class>com.iss.itreasury.settlement.transnoteacceptance.bizlogic.TransNoteAcceptanceEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011831488">
+				<ejb-ref-name>AccountBookHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBookHome</home>
+				<remote>com.iss.itreasury.settlement.accountbook.bizlogic.AccountBook</remote>
+				<ejb-link>AccountBook</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009565108">
+				<description>DataSource Resource</description>
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+		    </resource-ref>
+		</session>
+		
+		<session id="TransCraftbrother">
+			<display-name>TransCraftbrother</display-name>
+			<ejb-name>TransCraftbrother</ejb-name>
+			<home>com.iss.itreasury.settlement.craftbrother.bizlogic.TransCraftbrotherHome</home>
+			<remote>com.iss.itreasury.settlement.craftbrother.bizlogic.TransCraftbrother</remote>
+			<ejb-class>com.iss.itreasury.settlement.craftbrother.bizlogic.TransCraftbrotherEJB</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref id="EjbRef_1293011831489">
+				<ejb-ref-name>GeneralLedgerHome</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedgerHome</home>
+				<remote>com.iss.itreasury.settlement.generalledger.bizlogic.GeneralLedger</remote>
+				<ejb-link>GeneralLedger</ejb-link>
+			</ejb-ref>
+			<resource-ref id="ResourceRef_1293009565109">
+				<res-ref-name>jdbc/cpf/type4</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+			</resource-ref>
+		</session>
+		
+	</enterprise-beans>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>Account</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>AccountBook</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>AheadRepayNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Apply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>AssureChargeNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>AssureManagementNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>AttornmentApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>BankBill</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>BlankVoucher</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CompatibilityAccountBook</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CompoundInterestSetting</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>ConsignVoucher</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Contract</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>ContractStatus</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CreditRating</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Crert_CreditRatingCancel</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Crert_CreditRatingRevalued</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CurrencySetting</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>DeliveryOrder</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>DeliveryOrderService</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Discount</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Draft</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>EndProcess</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>ExtendApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>FreeApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>GeneralLedger</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>LeaseholdNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>LoanApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>LoanAssure</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>LoanCommonSetting</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>LoanDrawNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>LoanFunc</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>LoanInterestSetting</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>LoanPayNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Notice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OBInterface</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OffBalance</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OffBalanceRegister</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>OverDueApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>RecognizanceNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Register</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>RepayPlan</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>ReportLossOrFreeze</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>RiskLevel</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>SecuritiesAccount</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>SecuritiesContract</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>SecuritiesContractPlan</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>SecuritiesGeneralLedger</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>SettAdjustInterestRate</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>SettContract</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>SettPayNotice</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Setting</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Stock</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>SystemMng</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransAbatement</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransAdjustInterest</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransCommission</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransCompatibility</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransCurrentDeposit</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransDiscount</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransDiscountApply</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransDiscountContract</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransDiscountCredence</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransFee</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransFinance</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransFinancialMargin</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransFixedDeposit</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransGeneralLedger</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransInterest</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransLoan</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransMarginDeposit</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransSecurities</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransSpecial</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransferLoanContractDeposit</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>Venture</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>ClientManage</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransInternalLend</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransBakReserve</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransReserve</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransNoteAcceptance</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TransCraftbrother</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+</ejb-jar>

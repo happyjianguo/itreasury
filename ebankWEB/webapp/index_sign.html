@@ -1,0 +1,112 @@
+<SCRIPT LANGUAGE=javascript>
+
+window.open("notice.html",'notice', 'width=400,height=250,scrollbars=1,resizable=0,menubar=0,toolbar=0,locations=0,directories=0, screenX=0,screenY=0,left=0,top=0');
+
+function Verify_DigitalSign_Attached() 
+
+{
+
+	
+
+	InfoSecNetSign1.NSSetPlainText("please sign.");
+
+
+
+	
+
+	if(InfoSecNetSign1.errorNum!=0)
+
+	{
+
+		alert("返回值〔"+InfoSecNetSign1.errorNum+"〕\n"+InfoSecNetSign1.errMsg);
+
+		return false;
+
+	}
+
+	
+
+	else	
+
+	{	
+
+		form1.signature.value =InfoSecNetSign1.NSAttachedSign("");
+
+		//
+
+		form1.certdn.value = InfoSecNetSign1.NSGetSignerCertInfo(1);
+
+		if(InfoSecNetSign1.errorNum!=0)
+
+		{
+
+			alert("返回值〔"+InfoSecNetSign1.errorNum+"〕\n"+InfoSecNetSign1.errMsg);
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			if(InfoSecNetSign1.errorNum!=0)
+
+			{
+
+				alert("返回值〔"+InfoSecNetSign1.errorNum+"〕\n"+InfoSecNetSign1.errMsg);
+
+				return false;
+
+			}
+
+			form1.submit();
+
+			return true;
+
+		}
+
+
+
+	}  
+
+}       
+
+</SCRIPT>
+
+
+
+
+
+<HTML>
+
+<BODY bgcolor="ffffff"> 
+
+<OBJECT id=InfoSecNetSign1 codeBase=netsign.dll#version=1,8,20,1 data=DATA:application/x-oleobject;BASE64,xDi5YpBBN0+M8KkrCpHMdwADAACgRwAA/wIAAA== classid=clsid:62B938C4-4190-4F37-8CF0-A92B0A91CC77 VIEWASTEXT width="693" height="29"></OBJECT> 
+
+
+
+
+
+<!--  验证数字签名-->
+
+<form  name="form1" method="post" action="https://service.hnf.com.cn/NASApp/iTreasury-ebank/VerifyAttachedSign.jsp">
+
+<input type="hidden" name="certdn" >
+
+<input type="hidden" name="signature"  value="need not sign">
+
+<SCRIPT LANGUAGE=javascript>
+
+	Verify_DigitalSign_Attached();
+
+</SCRIPT>
+
+
+
+</form>
+
+</BODY>
+
+</HTML>
+

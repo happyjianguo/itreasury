@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="gb2312"?>
+<itreasury_configitems>
+<!--
+	<itreasury_configitem >
+		<name>机组容量</name>
+		<namemap>ebank.show.generatorCapacity</namemap>
+		<type>boolean</type>
+		<desc></desc>
+		<value>false</value>
+	</itreasury_configitem>
+-->
+	<itreasury_configitem >
+		<name>网银可以打印的打印凭证</name>
+		<namemap>ebank_trans_processvoucherprint</namemap>
+		<type>array</type>
+		<desc> 5 已完成 </desc>
+		<value>5</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>初始网银用户配置文件名</name>
+		<namemap>ebank_inituser_xmlname</namemap>
+		<type>String</type>
+		<desc>初始网银用户配置文件名</desc>
+		<value>InitEbankUser.xml</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>网银业务审批后是否自动复核</name>
+		<namemap>ebank_transapproval_autocheck</namemap>
+		<type>boolean</type>
+		<desc>是：true,不是:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem >
+		<name>是否去掉编号[存单号/客户编号/账户编号]"-"</name>
+		<namemap>ebank_depositno_noline</namemap>
+		<type>boolean</type>
+		<desc>去掉:true, 不去掉:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置业务是否需要打印的提示</name>
+		<namemap>ebank_isprint</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>设置下属单位账户余额查询(是否查询本单位信息)</name>
+		<namemap>ebank_isQueryClient</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>网银和结算不同服务器,网银访问结算服务器</name>
+		<namemap>settlement_machine_indexUrl</namemap>
+		<type>String</type>
+		<desc></desc>
+		<value>http://localhost:8080</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>多级资金管理网银审批是否判断账户体系</name>
+		<namemap>ebank_isneedaccountsystem</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>网银登录页面是否需要验证码</name>
+		<namemap>ebank_isRequireCheckcode</namemap>
+		<type>boolean</type>
+		<desc>需要：true,不需要:false</desc>
+		<value></value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>是否支持加密</name>
+		<namemap>ebank.can.encrypt</namemap>
+		<type>boolean</type>
+		<desc>默认是false</desc>
+		<value>true</value>
+	</itreasury_configitem>	
+	
+	<itreasury_configitem>
+		<name>用户密码加密方式</name>
+		<namemap>ebank.encrypt.type</namemap>
+		<type>int</type>
+		<desc>加密方式: 1:大字段形式加密; 2:md5形式加密</desc>
+		<value>2</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>网银签认人是否区分活期与定期</name>
+		<namemap>ebank.sign.distinct</namemap>
+		<type>boolean</type>
+		<desc>默认是false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+	
+	<itreasury_configitem>
+		<name>网银上级单位是否管理下级单位（新奥）</name>
+		<namemap>ebank.manage.childClient</namemap>
+		<type>boolean</type>
+		<desc>默认是false</desc>
+		<value>false</value>
+	</itreasury_configitem>
+
+	<itreasury_configitem>
+		<name>网银使用证书验签时提醒方式</name>
+		<namemap>ebank.certificate.remind</namemap>
+		<type>1</type>
+		<desc>1:刚性   2:柔性</desc>
+		<value>2</value>
+	</itreasury_configitem>	
+</itreasury_configitems>
+
+<!--
+	itreasury_configitems                    ******xml文件根结点，其下可以有多个配置项
+		itreasury_configitem                          ******一个配置项
+-->

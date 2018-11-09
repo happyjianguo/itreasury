@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity
+END
+LoanPingFen.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanPingFen.java
+END
+CreditFrameInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/CreditFrameInfo.java
+END
+LoanCreditgradeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanCreditgradeInfo.java
+END
+LoanClientInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanClientInfo.java
+END
+LoanAccountreceivableinfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanAccountreceivableinfo.java
+END
+LoanAssureoracceptsynopsis.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanAssureoracceptsynopsis.java
+END
+LoanReceivefundsonaccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanReceivefundsonaccount.java
+END
+LoanExternalliabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanExternalliabilities.java
+END
+FinancialTargetInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/FinancialTargetInfo.java
+END
+LoanCreditgradedetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanCreditgradedetail.java
+END
+LoanGroupinsidecontact.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanGroupinsidecontact.java
+END
+LoanFinanceitemdetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanFinanceitemdetail.java
+END
+CreditGradeQueryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/CreditGradeQueryInfo.java
+END
+ClientOtherShareInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/ClientOtherShareInfo.java
+END
+LoanManageanalyse.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanManageanalyse.java
+END
+LoanBankliabilitiesdetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanBankliabilitiesdetail.java
+END
+LoanBankrecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanBankrecord.java
+END
+LoanReceiveaccountage.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanReceiveaccountage.java
+END
+LoanCreditgrade.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanCreditgrade.java
+END
+LoanFinanceanalyse.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/LoanFinanceanalyse.java
+END
+ClientInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/loan/integratedCredit/customerfeedback/dataentity/ClientInfo.java
+END

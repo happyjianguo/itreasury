@@ -1,0 +1,6 @@
+database_driver=com.microsoft.jdbc.sqlserver.SQLServerDriver
+database_ip=127.0.0.1
+database_port=9004
+database_name=CA
+database_user=sa
+database_pass=123456

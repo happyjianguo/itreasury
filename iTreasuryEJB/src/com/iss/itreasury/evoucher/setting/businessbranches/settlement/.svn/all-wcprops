@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/evoucher/setting/businessbranches/settlement
+END
+TransInternalLendDateEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/evoucher/setting/businessbranches/settlement/TransInternalLendDateEntity.java
+END
+TransReservePrintDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/evoucher/setting/businessbranches/settlement/TransReservePrintDataEntity.java
+END
+TransBakPrintDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/evoucher/setting/businessbranches/settlement/TransBakPrintDataEntity.java
+END
+TransInterestFeePaymentDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/evoucher/setting/businessbranches/settlement/TransInterestFeePaymentDataEntity.java
+END
+transJGBakAndReserveAndLendingPrintDataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/evoucher/setting/businessbranches/settlement/transJGBakAndReserveAndLendingPrintDataEntity.java
+END

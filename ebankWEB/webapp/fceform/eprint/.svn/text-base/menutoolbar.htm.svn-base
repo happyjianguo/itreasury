@@ -1,0 +1,164 @@
+<HTML xmlns:fc>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script src="../js/fcpub.js"></script>
+<script src="../js/design.js"></script>
+<script src="../js/fctoolbar.js"></script>
+<script src="../../fceformext/js/usertb.js"></script>
+<link rel="stylesheet" type="text/css" href="menu.css">
+<STYLE> .userData{behavior:url(#default#userData);}
+.aFilter{filter:alpha(opacity=80);}
+.over{BORDER-TOP: #D5D5D6 1px solid; BORDER-LEFT: #D5D5D6 1px solid;BORDER-RIGHT:#676869 1px solid;BORDER-BOTTOM: #676869 1px solid;filter:changestrength(strength=800) alpha(opacity=90) dropshadow(color=#8BBCC5,offx=1,offy=1);}
+.down{BORDER-TOP: #676869 1px solid; BORDER-LEFT:  #676869 1px solid; BORDER-RIGHT:#D5D5D6 1px solid;BORDER-BOTTOM: #D5D5D6 1px solid;filter:changestrength(strength=800) alpha(opacity=100,color=#8BBCC5) dropshadow(color=#8BBCC5,offx=1,offy=1);}
+</STYLE>
+<script>
+function SetToolBarClass(sTag){
+var curTD=event.srcElement 
+if(curTD.tagName=="IMG"){
+switch (sTag){
+case "onmousedown" : 
+curTD.className="down"
+break
+case "onmouseup" :
+curTD.className="over"
+break					
+case "onmouseout" :
+curTD.className="aFilter"
+break				
+case "onmouseover" :
+curTD.className="over"
+break
+}
+}	
+}
+function tbr1_onmousedown() {
+SetToolBarClass("onmousedown")
+}
+function tbr1_onmouseup() {
+SetToolBarClass("onmouseup")
+}
+function tbr1_onmouseout() {
+SetToolBarClass("onmouseout")
+}
+function tbr1_onmouseover() {
+SetToolBarClass("onmouseover")
+}
+function Add(name){
+parent.topic.execScript("Addobj('"+name+"')");
+}
+function Addeprint(name,bandtype){
+parent.topic.execScript("Addeprint('"+name+"','"+bandtype+"')");
+}
+function opensystemdj(djsn){
+window.open("opendj.htm?djsn="+djsn)
+}
+function RunCommand() {
+var s1=LoadPubData("historycommand")
+if(isSpace(s1)) s1=""
+var sRet=window.showModalDialog("dsncommand.htm",s1,"center:yes;status:no;scroll:no;dialogHeight:340px;dialogWidth:695px;") 
+if(isSpace(sRet) == false ){
+SavePubData("historycommand",sRet)
+parent.topic.execScript(sRet)
+}
+}
+function tohref(djsn) {
+window.open('rundj.htm?djsn='+djsn)
+}
+function runsupport() {
+if(fcpubdata.databaseTypeName == "mysql"){
+alert("在mysql数据库下无法使用此功能!")
+}else{
+tohref('support')
+}
+}
+function showobjlist() {
+if(parent.main1.cols == "11%,89%"){
+parent.main1.cols = "0,100%"
+} else {
+parent.main1.cols = "11%,89%"
+}
+}
+function check_contid() {
+var sRun = "if(TooContXml()){openobjlist();alert('OK!')}"
+parent.topic.execScript(sRun)
+}
+function runproc() {
+var sRet = InsertSql("exec auto_table_data")
+if(IsSpace(sRet)){
+alert("生成成功!")
+}else{
+alert(sRet)
+}
+}
+function tb_ondrag() {
+event.returnValue = false ;
+}
+function mytest(){
+parent.topic.execScript("CopyToPub(SKbillsheet.outerHTML)")
+}
+function test(){
+alert("aa");
+}
+function openHelp(){
+ShowHelp("index");
+}
+function window_onload() {
+if(fcpubdata.toolbarstyle == "CoolBlue"){
+MenubarDiv.style.cssText = "LEFT:618px;WIDTH:100px;POSITION:absolute;TOP:0px;HEIGHT:35px"
+}else{
+MenubarDiv.style.cssText = "LEFT:579px;WIDTH:100px;POSITION:absolute;TOP:0px;HEIGHT:40px"
+}
+MenubarDiv.style.display = ""
+}
+function cboZoom_onchange() {
+var sV = cboZoom.options(cboZoom.selectedIndex ).text ;
+var n = parseInt(sV)/100 ;
+parent.topic.middlediv.style.zoom = n ;
+}
+try{
+RegButton() ;
+}catch(e){};
+var tbCss = "" ;
+tbCss = parent.Request.QueryString("tbcss").toString();
+if(tbCss != "undefined" && tbCss != "" ){
+fcpubdata.toolbarstyle = tbCss ;
+}
+var tbtype = "";
+tbtype = parent.Request.QueryString("tbtype").toString();
+switch(tbtype){
+case "1":   
+fcpubdata.toolbar = "newdj,opendj,opendjfile,billtype,djpreview,save,saveas,|,cut,copy,paste,undo,redo,|,align,focus,front,behind,form,|,userfunction,execute,showlist,setPosition,|,menu,eformhelp,cbozoom,br,button,label,img,div,shape,|,tab,tree,a,spin,checkboxlist,radiolist,|,dataset,grid,htmltable,formattab,|,text,checkbox,radio,listbox,dropdownlist,combobox,textarea,dbimg,|,chart,upload,excel" ;
+break ;
+case "2":   
+fcpubdata.toolbar = "newdj,opendj,djpreview,save,|,setPosition,eformhelp,br,button,label,text,checkbox,radio,combobox" ;
+break ;
+case "4":   
+fcpubdata.toolbar = "newdj,opendj,djpreview,save,|,setPosition,eformhelp,br,button,label,text,checkbox,radio,combobox,mytest1" ;
+break ;
+}
+AddToolbarButton();
+</script>
+</HEAD>
+<body onload="window_onload()" >
+<div id="div1"></div>
+<div id="MenubarDiv" ></div>
+<WebMenu DataSource="MenuCode.value" class="WebMenu" id="RightMenu" Width="100" Effect="3" MenuType="1" ></WebMenu>
+<textarea rows="17" id="MenuCode" cols="73" style="display:none" NAME="MenuCode">
+<?xml version="1.0" encoding="gb2312"?>
+<Root>
+<MenuItem  hasSub="1" subWidth="160" >
+<MenuItem Func="javascript:Addeprint('ep_band','title')" Text="报表标题" img="../images/ef_design_function.gif" />  
+<MenuItem Func="javascript:Addeprint('ep_band','mainheader')" Text="页头" img="../images/ef_design_function.gif" />  
+<MenuItem Func="javascript:Addeprint('ep_band','mainlist')" Text="主数据" img="../images/ef_design_function.gif" />  
+<MenuItem Func="javascript:Addeprint('ep_band','detailheader')" Text="明细头" img="../images/ef_design_function.gif" />  
+<MenuItem Func="javascript:Addeprint('ep_band','detaillist')" Text="明细数据" img="../images/ef_design_function.gif" />  
+<MenuItem Func="javascript:Addeprint('ep_band','detailfooter')" Text="明细脚" img="../images/ef_design_function.gif" />  
+<MenuItem Func="javascript:Addeprint('ep_band','mainfooter')" Text="页脚" img="../images/ef_design_function.gif" />  
+</MenuItem>
+</Root>
+</textarea>		
+<form id="oForm" >
+<input Class="userData" style="DISPLAY: none" ID="oInput" NAME="oInput">
+</form>
+</body>
+</HTML>

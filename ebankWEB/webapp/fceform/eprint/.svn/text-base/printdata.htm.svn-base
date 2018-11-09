@@ -1,0 +1,1716 @@
+<HTML xmlns:fc xmlns:v="urn:schemas-microsoft-com:vml">
+<HEAD>
+<STYLE> 
+v\:* { BEHAVIOR: url(#default#VML);};
+DIV.nextpage { page-break-before: always;overflow:hidden }
+DIV.firstpage {overflow:hidden }
+</STYLE>
+<STYLE MEDIA="PRINT">    
+.hidden {display:none;}
+</STYLE>
+<STYLE MEDIA="SCREEN">    
+.hidden {display:block;}
+</STYLE>
+</HEAD>
+<script src="../js/fcpub.js"></script>
+<script src="../js/fcdate.js"></script>
+<script src="fcpub.js"></script>
+<script src="fcdate.js"></script>
+<script language="javascript">
+
+//window.parent.close();
+//window.parent.history.go(-1);
+//window.parent.location.href="../../set/view/v001.jsp";
+
+var Printer = window.parent.Printer;
+var oXml = Printer.oXmlTemp;
+if (oXml.documentElement!=null){
+	if (oXml.getElementsByTagName("script").length>0){
+		document.write("<script language=javascript>");
+		document.write(oXml.getElementsByTagName("script").item(0).childNodes(0).nodeValue);
+		document.write("</scr"+"ipt>");
+	}
+}	
+var pPages = 1; 
+var pLine = 1;
+var pLines = 1;
+var arrDatasets = new Array();
+function objDatasets(name,currow){
+	this.name = name;
+	this.currow = currow;
+}
+function setDatasetCurRow(name,currow){
+	for (var idataset = 0;idataset<arrDatasets.length;idataset++){
+		if (name == arrDatasets[idataset].name){
+			arrDatasets[idataset].currow = currow;  
+			break;
+		}	
+	}
+}
+	var oPageSet = {
+	paperSize	: "A4",
+	pageWidth	: 210,
+	pageHeight	: 297,
+	orientation	: "1",
+	marginTop	: 8,
+	marginLeft	: 8,
+	marginRight	: 8,
+	marginBottom	: 8,
+	header		: "",
+	footer		: "",
+	copies		: 1,	
+	divWidth	: "190mm",		
+	divHeight	: "260mm",		
+	zoomValue 	: "100",
+	issignature : 0,					//jzw 2010-05-19 是否允许签章
+	signatureData : "",					//jzw 2010-05-19 签章日期
+	showSignatureName : "",				//jzw 2010-05-19 签章名称
+	signatureUrl : "",					//jzw 2010-05-19 签章使用的url地址
+	signatureX :637,
+	signatureY :353,
+	signDateX : 0,
+	signDateY : 25
+	};
+	try{	   //jzw 获得page标签里的各个关于页面的属性
+		if(typeof Printer.oPrtPara.paperSize=="undefined" )
+			oPageSet.paperSize = oXml.getElementsByTagName("papersize").item(0).text;
+		else
+			oPageSet.paperSize = Printer.oPrtPara.paperSize;
+	}catch(e){
+		oPageSet.paperSize = oXml.getElementsByTagName("papersize").item(0).text;
+		}	
+	try{	
+		if (typeof Printer.oPrtPara.pageWidth=="undefined" )
+			oPageSet.pageWidth = oXml.getElementsByTagName("pagewidth").item(0).text;
+		else
+			oPageSet.pageWidth = Printer.oPrtPara.pageWidth;
+	}catch(e){	
+		oPageSet.pageWidth = oXml.getElementsByTagName("pagewidth").item(0).text;
+		}
+		
+	try{	
+		if (typeof Printer.oPrtPara.pageHeight=="undefined" )
+			oPageSet.pageHeight = oXml.getElementsByTagName("pageheight").item(0).text;
+		else
+			oPageSet.pageHeight = Printer.oPrtPara.pageHeight;
+	}catch(e){
+		oPageSet.pageHeight = oXml.getElementsByTagName("pageheight").item(0).text;
+		}
+		
+	try{	
+		if (typeof Printer.oPrtPara.orientation=="undefined" )
+		oPageSet.orientation = oXml.getElementsByTagName("orientation").item(0).text;
+		else
+		oPageSet.orientation = Printer.oPrtPara.orientation;
+	}catch(e){
+		oPageSet.orientation = oXml.getElementsByTagName("orientation").item(0).text;
+		}
+		
+	try{	
+		if (typeof Printer.oPrtPara.marginTop=="undefined" )
+		oPageSet.marginTop = oXml.getElementsByTagName("margintop").item(0).text;
+		else
+		oPageSet.marginTop = Printer.oPrtPara.marginTop;
+	}catch(e){
+		oPageSet.marginTop = oXml.getElementsByTagName("margintop").item(0).text;
+		}
+		
+	try{	
+		if (typeof Printer.oPrtPara.marginLeft=="undefined" )	
+		oPageSet.marginLeft = oXml.getElementsByTagName("marginleft").item(0).text;
+		else
+		oPageSet.marginLeft = Printer.oPrtPara.marginLeft;
+	}catch(e){
+		oPageSet.marginLeft = oXml.getElementsByTagName("marginleft").item(0).text;
+		}
+		
+	try{	
+		if (typeof Printer.oPrtPara.marginRight=="undefined" )
+		oPageSet.marginRight = oXml.getElementsByTagName("marginright").item(0).text;
+		else
+		oPageSet.marginRight = Printer.oPrtPara.marginRight;
+	}catch(e){oPageSet.marginRight = oXml.getElementsByTagName("marginright").item(0).text;}		
+	try{	
+		if (typeof Printer.oPrtPara.marginBottom=="undefined" )
+		oPageSet.marginBottom = oXml.getElementsByTagName("marginbottom").item(0).text;
+		else
+		oPageSet.marginBottom = Printer.oPrtPara.marginBottom;
+	}catch(e){
+		oPageSet.marginBottom = oXml.getElementsByTagName("marginbottom").item(0).text;
+	}		
+	try{	
+		if (typeof Printer.oPrtPara.header=="undefined" )
+			oPageSet.header = unescape(oXml.getElementsByTagName("header").item(0).text);
+		else
+			oPageSet.header = Printer.oPrtPara.header;
+	}catch(e){
+		oPageSet.header = unescape(oXml.getElementsByTagName("header").item(0).text);
+	}		
+	try{	
+		if (typeof Printer.oPrtPara.footer=="undefined" )
+		oPageSet.footer = unescape(oXml.getElementsByTagName("footer").item(0).text);
+		else
+		oPageSet.footer = Printer.oPrtPara.footer;
+	}catch(e){
+		oPageSet.footer = unescape(oXml.getElementsByTagName("footer").item(0).text);
+	}		
+	try{
+		if (typeof Printer.oPrtPara.zoomValue=="undefined")
+		oPageSet.zoomValue = "100";
+		else
+		oPageSet.zoomValue = Printer.oPrPara.zoomValue;	
+	}catch(E){
+		oPageSet.zoomValue="100";
+	}
+	//jzw 2010-05-19 添加属性赋值
+	try{
+		if (typeof Printer.oPrtPara.issignature=="undefined")
+			oPageSet.issignature = oXml.getElementsByTagName("issignature").item(0).text;
+		else
+			oPageSet.issignature = Printer.oPrPara.issignature;	
+	}catch(E){
+		oPageSet.issignature=0;
+	}
+	try{
+		if (typeof Printer.oPrtPara.signatureData=="undefined")
+			oPageSet.signatureData = oXml.getElementsByTagName("signatureData").item(0).text;
+		else
+			oPageSet.signatureData = Printer.oPrPara.signatureData;	
+	}catch(E){
+		oPageSet.signatureData= "";
+	}
+	try{
+		if (typeof Printer.oPrtPara.showSignatureName=="undefined")
+			oPageSet.showSignatureName = oXml.getElementsByTagName("showSignatureName").item(0).text;
+		else
+			oPageSet.showSignatureName = Printer.oPrPara.showSignatureName;	
+	}catch(E){
+		oPageSet.showSignatureName= "";
+	}
+	try{
+
+		if (typeof Printer.oPrtPara.signatureUrl=="undefined")
+			oPageSet.signatureUrl = oXml.getElementsByTagName("signatureUrl").item(0).text;
+		else
+			oPageSet.signatureUrl = Printer.oPrPara.signatureUrl;	
+	}catch(E){
+		oPageSet.signatureUrl= "http://localhost:8080/NASApp/iTreasury-ebank/SignatureServlet";
+	}
+	//添加属性 add by xiangzhou 20110921
+	try{
+		if (typeof Printer.oPrtPara.signPositionX=="undefined")
+			oPageSet.signatureX = oXml.getElementsByTagName("signPositionX").item(0).text;
+		else
+			oPageSet.signatureX = Printer.oPrPara.signPositionX;	
+	}catch(E){
+		oPageSet.signatureX= "0";
+	}
+	try{
+		if (typeof Printer.oPrtPara.signPositionY=="undefined")
+			oPageSet.signatureY = oXml.getElementsByTagName("signPositionY").item(0).text;
+		else
+			oPageSet.signatureY = Printer.oPrPara.signPositionY;	
+	}catch(E){
+		oPageSet.signatureY= "0";
+	}
+	try{
+		if (typeof Printer.oPrtPara.signDatePositionX=="undefined")
+			oPageSet.signDateX = oXml.getElementsByTagName("signDatePositionX").item(0).text;
+		else
+			oPageSet.signDateX = Printer.oPrPara.signDatePositionX;	
+	}catch(E){
+		oPageSet.signDateX= "0";
+	}
+	try{
+		if (typeof Printer.oPrtPara.signDatePositionY=="undefined")
+			oPageSet.signDateY = oXml.getElementsByTagName("signDatePositionY").item(0).text;
+		else
+			oPageSet.signDateY = Printer.oPrPara.signDatePositionY;	
+	}catch(E){
+		oPageSet.signDateY= "0";
+	}
+	
+Printer.oPrtPara = new Object();
+function objBand(type,oband,dataset,subOuterHTML,oSubObj,arrLabelSubObj){
+	this.type			= type;
+	this.oband			= oband;
+	this.dataset		= dataset;
+	this.subOuterHTML	= subOuterHTML;
+	this.oSubObj		= oSubObj;
+	this.arrLabelSubObj = arrLabelSubObj;
+}
+function objSubDiv(sPrexHTML,sInnerText,sTop){
+	this.sPrexHTML = sPrexHTML;
+	this.sInnerText = sInnerText;
+	this.sTop = sTop;
+}
+function parseBand(oband,type){  //jzw 通过elements构建各个数组的数据。
+	var oSubObj = new Array();
+	var arrLabelSubObj = new Array();
+	var strOuterHTML="";
+	var dataset = oband.getAttribute("dataset");
+	var elems = document.all;
+	var len = elems.length;
+	var obj,controltype;
+	var objLeft,objWidth,objTop,objHeight,objBRight,objBBottom,objBLeft,objBTop;
+	var bandLeft,bandWidth,bandTop,bandHeight;
+	var iElement = 0;
+	for (var i=0;i<len;i++){
+		obj = elems(i);
+		controltype = obj.getAttribute("controltype");
+		if (controltype=="ep_memo" || controltype=="img" || controltype=="shape"){			
+			objLeft = ToFloat(obj.style.left);
+			objWidth =  ToFloat(obj.style.width);
+			objTop =  ToFloat(obj.style.top);
+			objHeight =  ToFloat(obj.style.height);	
+			objBRight =  ToFloat(obj.style.borderRightWidth);
+			objBBottom =  ToFloat(obj.style.borderBottomWidth);
+			objBLeft =  ToFloat(obj.style.borderLeftWidth);
+			objBTop =  ToFloat(obj.style.borderTopWidth);	
+			bandLeft =  ToFloat(oband.style.left);
+			bandWidth =  ToFloat(oband.style.width);
+			bandTop =  ToFloat(oband.style.top);
+			bandHeight =  ToFloat(oband.style.height);	
+			if (  (objLeft + objWidth - objBRight <= bandLeft)
+			|| (objTop + objHeight - objBBottom <= bandTop)
+			|| (objLeft + objBLeft >= bandLeft + bandWidth)
+			|| (objTop + objBTop >= bandTop + bandHeight)
+			){
+				
+			}else{		
+				if (obj.isBackground!="1"){
+					if (Printer.operate!="preview"){
+						if (obj.getAttribute("cover")=="1"){
+							obj.style.display="none";
+						}else if((controltype=="ep_memo")&&(obj.getAttribute("cover")=="2")){ 
+							obj.style.borderLeftStyle="none";
+							obj.style.borderTopStyle="none";
+							obj.style.borderRightStyle="none";
+							obj.style.borderBottomStyle="none";						
+						}
+					}
+					oSubObj[iElement] = obj;
+					iElement++;				
+					strOuterHTML += obj.outerHTML;
+					if (controltype=="img"){
+						var sPrex =obj.outerHTML; 
+						var sTop = obj.style.top ;
+						var sText = obj.src;
+						arrLabelSubObj[obj.id]=new objSubDiv(sPrex,sText,sTop);					
+					}else{
+						var sInnerHTML = obj.innerHTML;
+						try{
+							var sPrex = fc_RepStr(obj.outerHTML,sInnerHTML + "</DIV>","");
+						}catch(e){
+							//alert(e.description);
+						}
+						var sTop = obj.style.top ;
+						var sText = obj.innerText;
+						try{
+							sText = fc_RepStr(sText,"\n","<BR>");
+						}catch(e){
+							//alert(e.description);
+						}
+						arrLabelSubObj[obj.id]=new objSubDiv(sPrex,sText,sTop);					
+					}
+				}
+			}
+		}		
+	}
+	return new objBand(type,oband,dataset,strOuterHTML,oSubObj,arrLabelSubObj);
+}
+function parseDetailBand(oDetailBand,arrMainList){
+	var arrTopMainList = new Array();
+	var arrBottomMainList = new Array();
+	var dTop = ToFloat(oDetailBand.oband.style.top);
+	var iTop = 0;
+	var iBottom = 0;
+	for (var i=0;i<arrMainList.length;i++){
+		var mTop = ToFloat(arrMainList[i].oband.style.top);
+		if ( dTop>= mTop){
+			arrTopMainList[iTop] = arrMainList[i];
+			iTop++;
+		}else{
+			arrBottomMainList[iBottom] = arrMainList[i];
+			iBottom++;
+		}			
+	}
+	return {detailBand  	: oDetailBand,
+	topMainList     : arrTopMainList,
+	bottomMainList	: arrBottomMainList
+	}
+}
+function parseDatasetsRelation(aDataset,bDataset){
+	var bFind = false;
+	var aFExpress="",bFExpress="";
+	var strR="";
+	var arrA,arrB;
+	for (var i=0;i<Printer.relations.length;i++){
+		strR = Printer.relations[i];
+		var s = strR.split("=");
+		if (s.length<=0) continue;
+		arrA = s[0].split(".");
+		arrB = s[1].split(".");
+		if (arrA.length<=0) continue;
+		if (arrB.length<=0) continue;
+		if ((arrA[0]==aDataset && arrB[0] == bDataset)||(arrA[0]==bDataset && arrB[0]==aDataset)){
+			bFind = true;
+			aFExpress = arrA[1];
+			bFExpress = arrB[1];
+		}
+	}
+	return {bFind		: bFind, 
+			aKey	: aFExpress,
+			bKey	: bFExpress 
+	}
+}
+function objBandSort(type,oband,orgTop){
+	this.type = type;
+	this.oband = oband;
+	this.orgTop = orgTop;
+}
+function parseBandPosition(){
+	var arrBandType= new Array();
+	arrBandType["title"]=1;
+	arrBandType["mainheader"]=2;
+	arrBandType["mainlist"]=3;
+	arrBandType["detailheader"]=4;
+	arrBandType["detaillist"]=5;
+	arrBandType["detailfooter"]=6;
+	arrBandType["mainfooter"]=7;
+	arrBandType["end"]=8;
+	var elems = document.all;
+	var len = elems.length;
+	var obj,controltype;
+	var arrBand = new Array();		
+	var j=0;
+	for (var i=0;i<len;i++){
+		obj = elems(i);
+		controltype = obj.getAttribute("controltype");
+		if (controltype=="ep_band"){
+			var top=ToFloat(obj.style.top);
+			arrBand[j] = new objBandSort(obj.type,obj,top);
+			j++;
+		}		
+	}
+	for (var i=0;i<arrBand.length;i++){
+		for (var j=i+1;j<arrBand.length;j++){
+			var oOne = arrBand[i];
+			var oTwo = arrBand[j];
+			var oneType = arrBandType[oOne.type]; 
+			var twoType = arrBandType[oTwo.type];
+			if (oneType>twoType){
+				if (oOne.type.substring(0,6)=="detail" && oTwo.type=="mainlist"){ 
+					var onePos = oOne.orgTop;
+					var twoPos = oTwo.orgTop;
+					if(onePos>twoPos){
+						var oTemp = arrBand[j];
+						arrBand[j] = arrBand[i];
+						arrBand[i] = oTemp;
+					}
+				}else{
+					var oTemp = arrBand[j];
+					arrBand[j] = arrBand[i];
+					arrBand[i] = oTemp;
+				}
+			}
+			else if (oneType==twoType){
+			var onePos = oOne.orgTop;
+			var twoPos = oTwo.orgTop;
+			if(onePos>twoPos){
+				var oTemp = arrBand[j];
+				arrBand[j] = arrBand[i];
+				arrBand[i] = oTemp;
+			}
+			}
+			else if (oOne.type=="mainlist" && oTwo.type.substring(0,6)=="detail"){ 
+				var onePos = oOne.orgTop;
+				var twoPos = oTwo.orgTop;
+				if(onePos>twoPos){
+					var oTemp = arrBand[j];
+					arrBand[j] = arrBand[i];
+					arrBand[i] = oTemp;
+				}
+			}
+		}
+	}
+	var pre_top=0;
+	for (var i=0;i<arrBand.length;i++){
+		var oBandChild = parseBand(arrBand[i].oband,"nouse");
+		var nowtop=arrBand[i].orgTop;
+		var height=ToFloat(arrBand[i].oband.style.height);
+		var moveValue = nowtop - pre_top;	
+		if (moveValue!=0){	
+			arrBand[i].oband.style.top = nowtop - moveValue;
+			var l=oBandChild.oSubObj.length;
+			for(var j=0; j<l; j++) {
+				var iTop = ToFloat(oBandChild.oSubObj[j].style.top);
+				oBandChild.oSubObj[j].style.top =iTop - moveValue ;
+			}
+		}		
+		pre_top = nowtop - moveValue + height -1;			
+	}
+}
+function initPage(){
+	if (oPrintCtl.defaultPrinterName.length==0)
+	{
+		alert("您还没有安装打印机，请先安装打印机再执行打印的功能！");
+		//alert(oPrintCtl.defaultPrinterName); //jzw
+		return;
+	}
+	if (oPrintCtl.defaultPrinterName=="Microsoft Office Document Image Writer"){
+		alert("您安装的Microsoft Office Document Image Writer文件打印机，不支持打印参数设置\r请安装正常的打印机并设置成默认打印机后，再执行打印功能！");
+		return;
+	}
+	
+	oPrintCtl.InitPrint();
+	oPrintCtl.SetMarginMeasure(1);
+	oPrintCtl.marginTop = oPageSet.marginTop;
+	oPrintCtl.marginLeft = oPageSet.marginLeft;
+	oPrintCtl.marginRight = oPageSet.marginRight;
+	oPrintCtl.marginBottom = oPageSet.marginBottom;
+	oPrintCtl.paperSize = oPageSet.paperSize;
+	oPrintCtl.orientation = oPageSet.orientation;
+	if (oPageSet.orientation=="1"){
+		oPrintCtl.pageWidth = oPageSet.pageWidth;
+		oPrintCtl.pageHeight = oPageSet.pageHeight;
+	}
+	else{
+		oPrintCtl.pageWidth = oPageSet.pageHeight;
+		oPrintCtl.pageHeight = oPageSet.pageWidth;
+	}	
+	oPrintCtl.header = oPageSet.header;
+	oPrintCtl.footer = oPageSet.footer;
+	if (Printer.prevWidth>0 && Printer.prevHeight>0){
+		oPrintCtl.prevWidth = Printer.prevWidth;
+		oPrintCtl.prevHeight = Printer.prevHeight;
+	}
+	oPrintCtl.zoomValue=oPageSet.zoomValue;
+	//jzw
+	oPrintCtl.selectedPages = true;
+	oPrintCtl.pageFrom = 1;
+	oPrintCtl.pageTo = 1; 
+	//jzw
+	makePrintData();
+	isZoomPageDiv();
+	//alert("");
+	if (Printer.operate=="preview" ){
+		try{
+			oPrintCtl.Preview();
+		}catch(e){
+			alert("打印机连接异常");
+			alert(e);
+			return;
+		}
+	}
+	if (Printer.operate=="print"){
+		oPrintCtl.Print();
+		}
+	if (Printer.operate=="printtrue")
+	{
+		oPrintCtl.Print(true);	
+	}
+}
+function isZoomPageDiv(){   //jzw
+	if (Printer.paperSize==null || Printer.pageWidth==null || Printer.pageHeight==null)
+		return 
+	var org_paperSize = oPageSet.paperSize;
+	if (oPageSet.orientation=="1"){
+		var org_pageWidth = ToFloat(oPageSet.pageWidth);
+		var org_pageHeight = ToFloat(oPageSet.pageHeight);
+	}
+	else{
+		var org_pageWidth = ToFloat(oPageSet.pageHeight);
+		var org_pageHeight = ToFloat(oPageSet.pageWidth);	
+	}	
+	var org_left = ToFloat(oPageSet.marginLeft);
+	var org_top = ToFloat(oPageSet.marginTop);
+	var org_right = ToFloat(oPageSet.marginRight);
+	var org_bottom = ToFloat(oPageSet.marginBottom);
+	if (org_pageWidth==0 || org_pageHeight==0) return;
+	if (oPageSet.orientation=="1"){	
+		var zo_pageWidth = ToFloat(Printer.pageWidth);
+		var zo_pageHeight = ToFloat(Printer.pageHeight);
+	}
+	else{
+		var zo_pageWidth = ToFloat(Printer.pageHeight);
+		var zo_pageHeight = ToFloat(Printer.pageWidth);
+	}	
+	var width = zo_pageWidth / org_pageWidth ;
+	var height = zo_pageHeight / org_pageHeight;
+	var scale = width * 100;
+	if (width >height)
+	scale = height * 100;
+	for (var i=1;i<=pPages;i++){
+		var obj = eval("div"+i);
+		obj.style.zoom = scale + "%";
+	}	
+	oPrintCtl.marginTop = org_top*scale/100;
+	oPrintCtl.marginLeft = org_left*scale/100;
+	oPrintCtl.marginRight = org_right*scale/100;
+	oPrintCtl.marginBottom = org_bottom*scale/100;
+	oPrintCtl.paperSize = Printer.paperSize; 
+	if (oPageSet.orientation=="1"){	
+		rintCtl.pageWidth = ToFloat(Printer.pageWidth); 
+		oPrintCtl.pageHeight = ToFloat(Printer.pageHeight);
+	}
+	else{
+		oPrintCtl.pageWidth = ToFloat(Printer.pageHeight); 
+		oPrintCtl.pageHeight = ToFloat(Printer.pageWidth);
+	}
+}
+function makePrintData(){  //jzw
+	var dw = "mm";
+	var mmToPixel = 3.78; 
+	if (oPageSet.orientation=="1"){        
+		oPageSet.divWidth = ToFloat(oPageSet.pageWidth) - ToFloat(oPageSet.marginLeft) - ToFloat(oPageSet.marginRight) + dw;
+		oPageSet.divHeight = ToFloat(oPageSet.pageHeight) - ToFloat(oPageSet.marginTop) - ToFloat(oPageSet.marginBottom) + dw;
+	}
+	else{
+		oPageSet.divWidth = ToFloat(oPageSet.pageHeight) - ToFloat(oPageSet.marginLeft) - ToFloat(oPageSet.marginRight) + dw;
+		oPageSet.divHeight = ToFloat(oPageSet.pageWidth) - ToFloat(oPageSet.marginTop) - ToFloat(oPageSet.marginBottom) + dw;	
+	}	
+	if (oPageSet.header.length>0){
+		oPageSet.divHeight = ToFloat(oPageSet.divHeight) - 6.858 + dw;
+	}
+	if (oPageSet.footer.length>0){
+		oPageSet.divHeight = ToFloat(oPageSet.divHeight) - 6.858 + dw;
+	}
+	var nodeList = oXml.getElementsByTagName("fcbillsheet");
+	var strTempHTML="";
+	if (nodeList.length>0){
+		if (nodeList.item(0).childNodes.length==1){
+			strTempHTML = nodeList.item(0).childNodes(0).nodeValue;
+		}	
+	}
+	document.body.insertAdjacentHTML("beforeBegin", "<div id='div1' class='firstpage'></div>");
+	document.all("div1").style.width = oPageSet.divWidth;
+	document.all("div1").style.height = oPageSet.divHeight;
+	//alert("jzw_test-----makePrintData---"+strTempHTML);	
+	document.all("div1").innerHTML = strTempHTML;	
+	parseBandPosition();
+	var arrTitle = new Array();
+	var arrMainHeader = new Array();
+	var arrMainList = new Array();
+	var arrDetailHeader = new Array();
+	var arrDetailList = new Array();
+	var arrDetailFooter = new Array();
+	var arrMainFooter = new Array();
+	var arrEnd = new Array();
+	var iT = 0;
+	var iH = 0;
+	var iL = 0;
+	var iDH = 0;
+	var iD = 0;
+	var iDF = 0;
+	var iF = 0;
+	var iE =0;
+	var elems = document.all.tags("DIV");
+	var len = elems.length;	
+	for (var i=0;i<len;i++){
+		if (elems[i].getAttribute("controltype") == "ep_band"){   //jzw 某个div对象的controltype为ep_band时才进入判断
+			switch (elems[i].getAttribute("type")){
+				case "title":{
+					arrTitle[iT] = parseBand(elems[i],"title");   //jzw 构建标题数组
+					iT++;
+					break;			
+				}
+				case "mainheader":{
+					arrMainHeader[iH] = parseBand(elems[i],"mainheader");
+					iH++;
+					break;			
+				}
+				case "mainlist":{
+					arrMainList[iL] = parseBand(elems[i],"mainlist");
+					iL++;
+					break;			
+				}
+				case "detailheader":{
+					arrDetailHeader[iDH] = parseBand(elems[i],"detailheader");
+					iDH++;
+					break;			
+				}			
+				case "detaillist":{
+					arrDetailList[iD] = parseBand(elems[i],"detaillist");				
+					iD++;
+					break;			
+				}	
+				case "detailfooter":{
+					arrDetailFooter[iDF] = parseBand(elems[i],"detailfooter");
+					iDF++;
+					break;			
+				}			
+				case "mainfooter":{
+					arrMainFooter[iF] = parseBand(elems[i],"mainfooter");
+					iF++;
+					break;			
+				}
+				case "end":{
+					arrEnd[iE] = parseBand(elems[i],"end");
+					iE++;
+					break;			
+				}			
+			}			
+		}
+	}
+	var arrParseDetailList= new Array();
+	for (var i=0;i< arrDetailList.length; i++){
+		arrParseDetailList[i] = parseDetailBand(arrDetailList[i],arrMainList);
+	}
+	var arrContinueHTML = new Array();
+	var arrContinueTtlRowH = new Array();
+	var ttlRowH=0;
+	var continueH = 0;
+	var iPage = 0;
+		for (var iD=0;iD<arrDetailList.length;iD++){  //jzw 第三方print构建结果集
+		continueH = ToFloat(oPageSet.divHeight) * mmToPixel - ToFloat(arrDetailList[iD].oband.style.top);
+		for (var i=0;i<arrParseDetailList[iD].bottomMainList.length;i++){
+			continueH = continueH - ToFloat(arrParseDetailList[iD].bottomMainList[i].oband.style.height);
+		}
+		for (var i=0;i<arrMainFooter.length ;i++){
+			continueH = continueH - ToFloat(arrMainFooter[i].oband.style.height);
+		}
+		for (var i=0;i<arrDetailFooter.length ;i++){
+			continueH = continueH - ToFloat(arrDetailFooter[i].oband.style.height);
+		}	
+		var oMainDataset="",MainDataset="",MainDatasetChn="";		
+		var oDetailDataset="",DetailDataset="",DetailDatasetChn="";
+		for (var i=0;i<Printer.datasets.length;i++){
+			var oTempdataset="";
+			if (arrParseDetailList[iD].topMainList.length>0)
+				oTempdataset=arrParseDetailList[iD].topMainList[0].dataset;
+			if (arrParseDetailList[iD].bottomMainList.length>0)	
+				oTempdataset=arrParseDetailList[iD].bottomMainList[0].dataset;
+			if (Printer.datasets[i].id==oTempdataset){
+				oMainDataset = SetDom(Printer.datasets[i].xml);
+				MainDataset = Printer.datasets[i].id;
+				MainDatasetChn = Printer.datasets[i].chnname;
+				arrDatasets[arrDatasets.length] = new objDatasets(MainDataset,0);
+				Printer.arrDataSets[MainDatasetChn].curRow = 0;
+				break;
+			}
+		}		
+		if (oMainDataset.documentElement==null){
+			alert("未找到主项数据的数据集，请确认能访问到数据集，然后再打印！")
+			continue;
+		}
+		for (var i=0;i<Printer.datasets.length;i++){
+			if (Printer.datasets[i].id==arrDetailList[iD].dataset){
+				oDetailDataset = SetDom(Printer.datasets[i].xml);
+				DetailDataset = Printer.datasets[i].id;	
+				DetailDatasetChn = Printer.datasets[i].chnname;
+				arrDatasets[arrDatasets.length] = new objDatasets(DetailDataset,0);
+				Printer.arrDataSets[DetailDatasetChn].curRow = 0;
+				break;			
+			}
+		}		
+		if (oDetailDataset.documentElement==null){
+			alert("未找到明细项数据的数据集，请确认能访问到数据集，然后再打印！")
+			continue;
+		}
+		var oReturn = parseDatasetsRelation(MainDataset,DetailDataset);
+		if (!oReturn.bFind){
+			alert("请给有主从关系的数据集之间添加关系！")
+			continue;
+		}
+		var rowMainList = oMainDataset.getElementsByTagName("tr");
+		pLines = rowMainList.length; 
+		pLine = 1;
+		arrContinueHTML[iPage]="";
+		for (var imr=0;imr<rowMainList.length;imr++){
+			setDatasetCurRow(MainDataset,imr);
+			Printer.arrDataSets[MainDatasetChn].curRow = imr;
+			pLine = imr+1; 
+			arrContinueHTML[iPage] = "";
+			arrContinueTtlRowH[iPage] = 0;
+			var len=arrTitle.length;
+			if (len>0){
+				var otemp=arrTitle[len -1].oband;
+				arrContinueTtlRowH[iPage]=ToFloat(otemp.style.top) + ToFloat(otemp.style.height) -1;
+			}
+			len=arrMainHeader.length;
+			if (len>0){
+				var otemp=arrMainHeader[len -1].oband;
+				arrContinueTtlRowH[iPage]=ToFloat(otemp.style.top) + ToFloat(otemp.style.height) -1;
+			}		
+			for (var j=0;j<arrParseDetailList[iD].topMainList.length;j++){
+				var osub = arrParseDetailList[iD].topMainList[j];
+				for (var isub=0;isub<osub.oSubObj.length;isub++){
+					if (osub.oSubObj[isub].controltype =="ep_memo"){
+						var suffix =osub.oSubObj[isub].id;							
+						var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+						var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+						arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+					}
+					else if (osub.oSubObj[isub].controltype =="img"){	
+						var suffix =osub.oSubObj[isub].id;				
+						osub.oSubObj[isub].src =parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+						arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+					}
+					else{
+						arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+					}
+				}
+				arrContinueTtlRowH[iPage] =ToFloat(osub.oband.style.top) + ToFloat(osub.oband.style.height);
+			}
+			for (var j=0;j<arrDetailHeader.length;j++){
+				var osub = arrDetailHeader[j];
+				for (var isub=0;isub<osub.oSubObj.length;isub++){
+					if (osub.oSubObj[isub].controltype =="ep_memo"){
+						var suffix =osub.oSubObj[isub].id;							
+						var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+						var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+						arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+					}
+					else if (osub.oSubObj[isub].controltype =="img"){
+						var suffix =osub.oSubObj[isub].id;
+						osub.oSubObj[isub].src = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+						arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+					}
+					else{
+						arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+					}
+				}
+				arrContinueTtlRowH[iPage] =ToFloat(osub.oband.style.top) + ToFloat(osub.oband.style.height);
+			}
+			var mrecValue = getFieldValue(oMainDataset,imr,oReturn.aKey);
+			var dcolno = getColno(oDetailDataset,oReturn.bKey);
+			var sFindXPath = "//tr[td[" + dcolno + "]='" + mrecValue + "']" ;		
+			var oSubDetailXml = oDetailDataset.documentElement.selectNodes(sFindXPath);
+			pLines = oSubDetailXml.length;
+			pLine =1;
+			var rowno = getRowno(oDetailDataset,mrecValue,dcolno,0);
+			setDatasetCurRow(DetailDataset,rowno);
+			Printer.arrDataSets[DetailDatasetChn].curRow = rowno;
+			var rowsperpage = arrDetailList[iD].oband.rowsperpage;
+			var isNeedBlankRow =false;
+			if (isSpace(rowsperpage)|| rowsperpage<= 0 ){
+				rowsperpage = oSubDetailXml.length;			
+			}
+			else if (arrDetailList[iD].oband.needblankrow =="1"){			
+				isNeedBlankRow = true; 
+			}	
+			var rowno=0;
+			var obandListTop = ToFloat(arrDetailList[iD].oband.style.top);
+			if (oSubDetailXml.length>0){			
+				var rowH = ToFloat(arrDetailList[iD].oband.style.height);
+				ttlRowH = rowH;
+				rowno = getRowno(oDetailDataset,mrecValue,dcolno,0);
+				arrContinueTtlRowH[iPage] = obandListTop + ttlRowH;
+				if (imr>0){
+					for(var itop=0;itop<arrDetailList[iD].oSubObj.length;itop++){
+						var suffix = arrDetailList[iD].oSubObj[itop].id;
+						arrDetailList[iD].oSubObj[itop].style.top = arrDetailList[iD].arrLabelSubObj[suffix].sTop;
+					}
+				}
+				var firstBorderTopWidth = 0;
+				for (var j=0;j<arrDetailList[iD].oSubObj.length;j++){
+					if (j==0) firstBorderTopWidth = ToFloat(arrDetailList[iD].oSubObj[j].style.borderTopWidth);
+					if (arrDetailList[iD].oSubObj[j].controltype =="ep_memo"){
+						var suffix =arrDetailList[iD].oSubObj[j].id;							
+						var oResult = parseMemo(arrDetailList[iD].arrLabelSubObj[suffix].sInnerText,0);
+						var sPrex = arrDetailList[iD].arrLabelSubObj[suffix].sPrexHTML;
+						arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+					}
+					else if (arrDetailList[iD].oSubObj[j].controltype =="img"){
+						var suffix =arrDetailList[iD].oSubObj[j].id;
+						arrDetailList[iD].oSubObj[j].src = parseMemo(arrDetailList[iD].arrLabelSubObj[suffix].sInnerText,0).sresult;
+						arrContinueHTML[iPage] +=arrDetailList[iD].oSubObj[j].outerHTML;
+					}
+					else{
+						arrContinueHTML[iPage] +=arrDetailList[iD].oSubObj.outerHTML;
+					}				
+				}
+				var curPrintRows =1;
+				for (var idr=1;idr<oSubDetailXml.length;idr++){	
+					pLine = idr+1; 
+					ttlRowH = ttlRowH + rowH - firstBorderTopWidth; 
+					rowno = getRowno(oDetailDataset,mrecValue,dcolno,idr);
+					setDatasetCurRow(DetailDataset,rowno);
+					Printer.arrDataSets[DetailDatasetChn].curRow = rowno;
+					if (ttlRowH <= continueH && curPrintRows< rowsperpage){
+						var odbj;
+						for (var j=0;j<arrDetailList[iD].oSubObj.length;j++){
+							odbj = arrDetailList[iD].oSubObj[j];
+							odbj.style.top = ToFloat(odbj.style.top) + rowH - ToFloat(odbj.style.borderTopWidth);
+							if (odbj.controltype =="ep_memo"){
+								var suffix =odbj.id;							
+								var oResult = parseMemo(arrDetailList[iD].arrLabelSubObj[suffix].sInnerText,0);
+								var sPrex = arrDetailList[iD].arrLabelSubObj[suffix].sPrexHTML;
+								sPrex = fc_RepStr(sPrex,"TOP: "+arrDetailList[iD].arrLabelSubObj[suffix].sTop,"TOP: " + odbj.style.top);
+								arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+							}
+							else if (odbj.controltype =="img"){
+								var suffix =odbj.id;
+								odbj.src = parseMemo(arrDetailList[iD].arrLabelSubObj[suffix].sInnerText,0).sresult;
+								arrContinueHTML[iPage] +=odbj.outerHTML;
+							}
+							else{
+								arrContinueHTML[iPage] +=odbj.outerHTML;
+							}
+							arrContinueTtlRowH[iPage] = obandListTop + ttlRowH;
+						}
+						curPrintRows++;
+					}
+					else{
+					for (var j=0;j<arrDetailFooter.length;j++){
+						var subBTopWidth = 0;
+						var minusTop = 0;
+						var osub = arrDetailFooter[j];
+						for (var isub=0;isub<osub.oSubObj.length;isub++){
+							minusTop = ToFloat(osub.oSubObj[isub].style.top) - ToFloat(osub.oband.style.top);
+							subBTopWidth = ToFloat(osub.oSubObj[isub].style.borderTopWidth);
+							osub.oSubObj[isub].style.top = arrContinueTtlRowH[iPage] + minusTop - subBTopWidth;
+							if (osub.oSubObj[isub].controltype =="ep_memo"){
+								var suffix =osub.oSubObj[isub].id;							
+								var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+								var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+								sPrex = fc_RepStr(sPrex,"TOP: "+osub.arrLabelSubObj[suffix].sTop,"TOP: " + osub.oSubObj[isub].style.top);
+								arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+							}
+							else if (osub.oSubObj[isub].controltype =="img"){
+								var suffix =osub.oSubObj[isub].id;
+								osub.oSubObj[isub].src = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+								arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+							}
+							else{
+								arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+							}						
+						}
+						osub.oband.style.top = arrContinueTtlRowH[iPage] - subBTopWidth
+						arrContinueTtlRowH[iPage] += ToFloat(osub.oband.style.height) - subBTopWidth;
+					}				
+					for (var j=0;j<arrParseDetailList[iD].bottomMainList.length;j++){
+						var subBTopWidth = 0;
+						var minusTop = 0;
+						var osub = arrParseDetailList[iD].bottomMainList[j];
+						for (var isub=0;isub<osub.oSubObj.length;isub++){
+							minusTop = ToFloat(osub.oSubObj[isub].style.top) - ToFloat(osub.oband.style.top);
+							subBTopWidth =1;
+							osub.oSubObj[isub].style.top = arrContinueTtlRowH[iPage] + minusTop - subBTopWidth;
+							if (osub.oSubObj[isub].controltype =="ep_memo"){
+								var suffix =osub.oSubObj[isub].id;							
+								var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+								var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+								sPrex = fc_RepStr(sPrex,"TOP: "+osub.arrLabelSubObj[suffix].sTop,"TOP: " + osub.oSubObj[isub].style.top);
+								arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+							}
+							else if (osub.oSubObj[isub].controltype =="img"){
+								var suffix =osub.oSubObj[isub].id;
+								osub.oSubObj[isub].src = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+								arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+							}
+							else{
+								arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+							}						
+						}
+						osub.oband.style.top = arrContinueTtlRowH[iPage] - subBTopWidth
+						arrContinueTtlRowH[iPage] += ToFloat(osub.oband.style.height) - subBTopWidth;
+					}						
+					for(var itop=0;itop<arrDetailList[iD].oSubObj.length;itop++){
+						var suffix = arrDetailList[iD].oSubObj[itop].id;
+						arrDetailList[iD].oSubObj[itop].style.top = arrDetailList[iD].arrLabelSubObj[suffix].sTop;
+					}
+					iPage++;
+					arrContinueHTML[iPage] = "";
+					for (var j=0;j<arrParseDetailList[iD].topMainList.length;j++){
+						var osub = arrParseDetailList[iD].topMainList[j];
+						for (var isub=0;isub<osub.oSubObj.length;isub++){
+							if (osub.oSubObj[isub].controltype =="ep_memo"){
+								var suffix =osub.oSubObj[isub].id;							
+								var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+								var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+								arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+							}
+							else if (osub.oSubObj[isub].controltype =="img"){
+								var suffix =osub.oSubObj[isub].id;
+								osub.oSubObj[isub].src = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+								arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+							}
+							else{
+								arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+							}
+						}
+					}						
+					for (var j=0;j<arrDetailHeader.length;j++){
+					var osub = arrDetailHeader[j];
+					for (var isub=0;isub<osub.oSubObj.length;isub++){
+						if (osub.oSubObj[isub].controltype =="ep_memo"){
+							var suffix =osub.oSubObj[isub].id;							
+							var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+							var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+							arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+						}
+						else if (osub.oSubObj[isub].controltype =="img"){
+							var suffix =osub.oSubObj[isub].id;
+							osub.oSubObj[isub].src = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+							arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+						}
+						else{
+							arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+						}
+						}
+					}						
+					rowno = getRowno(oDetailDataset,mrecValue,dcolno,idr);
+					var osub = arrDetailList[iD];
+					for (var j=0;j<osub.oSubObj.length;j++){
+						if (osub.oSubObj[j].controltype =="ep_memo"){
+							var suffix =osub.oSubObj[j].id;							
+							var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+							var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+							arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+						}
+						else if (osub.oSubObj[j].controltype =="img"){
+							var suffix =osub.oSubObj[j].id;
+							osub.oSubObj[j].src =  parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+							arrContinueHTML[iPage] +=osub.oSubObj[j].outerHTML;
+						}
+						else{
+							arrContinueHTML[iPage] += arrDetailList[iD].oSubObj[j].outerHTML;
+						}
+					}
+					ttlRowH = rowH;
+					curPrintRows =1;
+					arrContinueTtlRowH[iPage] = obandListTop + ttlRowH;				
+					}
+				}
+				if (isNeedBlankRow){
+					for (var i=curPrintRows;i<rowsperpage;i++){
+						ttlRowH = ttlRowH + rowH - firstBorderTopWidth;
+						if (ttlRowH <=continueH ){
+							for (var j=0;j<arrDetailList[iD].oSubObj.length;j++){
+								odbj = arrDetailList[iD].oSubObj[j];
+								odbj.style.top = ToFloat(odbj.style.top) + rowH - ToFloat(odbj.style.borderTopWidth);
+								if (odbj.controltype =="ep_memo"){							
+									var suffix =odbj.id;	
+									var sPrex = arrDetailList[iD].arrLabelSubObj[suffix].sPrexHTML;
+									sPrex = fc_RepStr(sPrex,"TOP: "+arrDetailList[iD].arrLabelSubObj[suffix].sTop,"TOP: " + odbj.style.top);
+									arrContinueHTML[iPage] += sPrex + "</DIV>";
+								}
+								else{
+									arrContinueHTML[iPage] +=odbj.outerHTML;
+								}
+								arrContinueTtlRowH[iPage] = obandListTop + ttlRowH;
+							}					
+						}					
+					}
+				}
+			}else{
+				if (isNeedBlankRow){
+					for(var itop=0;itop<arrDetailList[iD].oSubObj.length;itop++){
+						var suffix = arrDetailList[iD].oSubObj[itop].id;
+						arrDetailList[iD].oSubObj[itop].style.top = arrDetailList[iD].arrLabelSubObj[suffix].sTop;
+					}
+					var firstBorderTopWidth = ToFloat(arrDetailList[iD].oSubObj[0].style.borderTopWidth);
+					ttlRowH = firstBorderTopWidth;
+					for (var i=0;i<rowsperpage;i++){
+						ttlRowH = ttlRowH + rowH - firstBorderTopWidth;
+						if (ttlRowH <=continueH ){
+							for (var j=0;j<arrDetailList[iD].oSubObj.length;j++){
+								odbj = arrDetailList[iD].oSubObj[j];							
+								if (i>0){	
+									odbj.style.top = ToFloat(odbj.style.top) + rowH - ToFloat(odbj.style.borderTopWidth);						
+								}
+								if (odbj.controltype =="ep_memo"){							
+									var suffix =odbj.id;	
+									var sPrex = arrDetailList[iD].arrLabelSubObj[suffix].sPrexHTML;
+									sPrex = fc_RepStr(sPrex,"TOP: "+arrDetailList[iD].arrLabelSubObj[suffix].sTop,"TOP: " + odbj.style.top);
+									arrContinueHTML[iPage] += sPrex + "</DIV>";
+								}
+								else{
+									arrContinueHTML[iPage] +=odbj.outerHTML;
+								}
+								arrContinueTtlRowH[iPage] = obandListTop + ttlRowH;
+							}					
+						}					
+					}
+				}
+			}
+			for (var j=0;j<arrDetailFooter.length;j++){
+				var subBTopWidth = 0;
+				var minusTop = 0;
+				var osub = arrDetailFooter[j];
+				for (var isub=0;isub<osub.oSubObj.length;isub++){
+					minusTop = ToFloat(osub.oSubObj[isub].style.top) - ToFloat(osub.oband.style.top);
+					subBTopWidth = ToFloat(osub.oSubObj[isub].style.borderTopWidth);
+					osub.oSubObj[isub].style.top = arrContinueTtlRowH[iPage] + minusTop - subBTopWidth;
+					if (osub.oSubObj[isub].controltype =="ep_memo"){
+						var suffix =osub.oSubObj[isub].id;							
+						var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+						var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+						sPrex = fc_RepStr(sPrex,"TOP: "+osub.arrLabelSubObj[suffix].sTop,"TOP: " + osub.oSubObj[isub].style.top);
+						arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+					}
+					else if (osub.oSubObj[isub].controltype =="img"){
+						var suffix =osub.oSubObj[isub].id;
+						osub.oSubObj[isub].src = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+						arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+					}
+					else{
+						arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+					}						
+				}
+				osub.oband.style.top = arrContinueTtlRowH[iPage] - subBTopWidth
+				arrContinueTtlRowH[iPage] += ToFloat(osub.oband.style.height) - subBTopWidth;
+			}				
+			for (var j=0;j<arrParseDetailList[iD].bottomMainList.length;j++){
+				var subBTopWidth = 0;
+				var minusTop = 0;
+				var osub = arrParseDetailList[iD].bottomMainList[j];
+				for (var isub=0;isub<osub.oSubObj.length;isub++){
+					minusTop = ToFloat(osub.oSubObj[isub].style.top) - ToFloat(osub.oband.style.top);
+					subBTopWidth = 1;
+					osub.oSubObj[isub].style.top = arrContinueTtlRowH[iPage] + minusTop - subBTopWidth;
+					if (osub.oSubObj[isub].controltype =="ep_memo"){
+						var suffix =osub.oSubObj[isub].id;							
+						var oResult = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0);
+						var sPrex = osub.arrLabelSubObj[suffix].sPrexHTML;
+						sPrex = fc_RepStr(sPrex,"TOP: "+osub.arrLabelSubObj[suffix].sTop,"TOP: " + osub.oSubObj[isub].style.top);
+						arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";
+					}
+					else if (osub.oSubObj[isub].controltype =="img"){
+						var suffix =osub.oSubObj[isub].id;
+						osub.oSubObj[isub].src = parseMemo(osub.arrLabelSubObj[suffix].sInnerText,0).sresult;
+						arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+					}
+					else{
+						arrContinueHTML[iPage] +=osub.oSubObj[isub].outerHTML;
+					}				
+				}
+				osub.oband.style.top = arrContinueTtlRowH[iPage] - subBTopWidth
+				arrContinueTtlRowH[iPage] += ToFloat(osub.oband.style.height) - subBTopWidth ;
+			}	
+			iPage++;	
+		}
+	}		
+	var pre_inx=0; 
+	if (arrDetailList.length <=0){
+		for (var inx=0;inx<arrMainList.length;inx++){
+			if (inx!=pre_inx){
+				iPage++;
+			}
+			continueH = ToFloat(oPageSet.divHeight) * mmToPixel -  ToFloat(arrMainList[inx].oband.style.top)  ;
+			for (var i=0;i<arrMainFooter.length ;i++){
+				continueH = continueH - ToFloat(arrMainFooter[i].oband.style.height);
+			}		
+			var oDataset="";
+			var MainDataset="",MainDatasetChn="";			
+			for (var i=0;i<Printer.datasets.length;i++){
+				if (Printer.datasets[i].id==arrMainList[inx].dataset){
+					MainDataset = Printer.datasets[i].id; 
+					MainDatasetChn = Printer.datasets[i].chnname;
+					arrDatasets[arrDatasets.length] = new objDatasets(MainDataset,0);					
+					Printer.arrDataSets[MainDatasetChn].curRow = 0;
+					oDataset = SetDom(Printer.datasets[i].xml);
+					break;
+				}
+			}
+			if (oDataset.documentElement==null){
+				alert("未找到主项数据的数据集，可能是模板中未设置数据集，和代码中未添加数据集！请查找，然后再打印！");
+				continue;
+			}	
+			var rowsList = oDataset.getElementsByTagName("tr");	
+			pLines = rowsList.length; 
+			pLine = 1;
+			var rowH = ToFloat(arrMainList[inx].oband.style.height) ;
+			ttlRowH = rowH; 
+			arrContinueHTML[iPage] = "";	
+			var obandListTop =  ToFloat(arrMainList[inx].oband.style.top);
+			arrContinueTtlRowH[iPage] = obandListTop + ttlRowH;
+			var firstBorderTopWidth=0;
+			var subLen = arrMainList[inx].oSubObj.length;	
+			for (var j=0;j<subLen;j++){
+				if (j==0) firstBorderTopWidth =  ToFloat(arrMainList[inx].oSubObj[j].style.borderTopWidth);
+				if (arrMainList[inx].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+					var suffix = arrMainList[inx].oSubObj[j].id;							
+					var oResult = parseMemo(arrMainList[inx].arrLabelSubObj[suffix].sInnerText,0);
+					var sPrex = arrMainList[inx].arrLabelSubObj[suffix].sPrexHTML;
+					arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";							
+				}
+				else if (arrMainList[inx].oSubObj[j].controltype =="img"){
+					var suffix = arrMainList[inx].oSubObj[j].id;	
+					arrMainList[inx].oSubObj[j].src = parseMemo(arrMainList[inx].arrLabelSubObj[suffix].sInnerText,0).sresult;
+					arrContinueHTML[iPage] +=arrMainList[inx].oSubObj[j].outerHTML;
+				}
+				else{
+					arrContinueHTML[iPage] += arrMainList[inx].oSubObj[j].outerHTML;
+				}				
+			}	
+			var rowsperpage = arrMainList[inx].oband.rowsperpage;
+			var isNeedBlankRow =false;
+			if (isSpace(rowsperpage) || rowsperpage<=0){
+				rowsperpage = rowsList.length;
+			}	
+			else if (arrMainList[inx].oband.needblankrow =="1"){			
+				isNeedBlankRow = true; 
+			}	
+			var curPrintRows=1;
+			for (var i=1;i<rowsList.length;i++){
+				pLine = i + 1;
+				setDatasetCurRow(MainDataset,i);
+				Printer.arrDataSets[MainDatasetChn].curRow = i;
+				ttlRowH = ttlRowH + rowH - firstBorderTopWidth; 
+				if (ttlRowH <= continueH && curPrintRows < rowsperpage){ 
+					for (var j=0;j<subLen;j++){						
+						arrMainList[inx].oSubObj[j].style.top = ToFloat(arrMainList[inx].oSubObj[j].style.top) + rowH -  ToFloat(arrMainList[inx].oSubObj[j].style.borderTopWidth);
+						if (arrMainList[inx].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+							var suffix = arrMainList[inx].oSubObj[j].id;
+							var oResult = parseMemo(arrMainList[inx].arrLabelSubObj[suffix].sInnerText,0);
+							var sPrex = arrMainList[inx].arrLabelSubObj[suffix].sPrexHTML;
+							sPrex = fc_RepStr(sPrex,"TOP: "+arrMainList[inx].arrLabelSubObj[suffix].sTop,"TOP: " + arrMainList[inx].oSubObj[j].style.top);
+							arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";							
+						}
+						else if (arrMainList[inx].oSubObj[j].controltype =="img"){
+							var suffix = arrMainList[inx].oSubObj[j].id;	
+							arrMainList[inx].oSubObj[j].src = parseMemo(arrMainList[inx].arrLabelSubObj[suffix].sInnerText,0).sresult;
+							arrContinueHTML[iPage] +=arrMainList[inx].oSubObj[j].outerHTML;
+						}
+						else{
+							arrContinueHTML[iPage] += arrMainList[inx].oSubObj[j].outerHTML;						
+						}
+						arrContinueTtlRowH [iPage] = obandListTop + ttlRowH;	
+					}
+					curPrintRows++;									
+				}
+				else{
+					for (var itop=0;itop<subLen;itop++){
+						var suffix = arrMainList[inx].oSubObj[itop].id;
+						arrMainList[inx].oSubObj[itop].style.top = arrMainList[inx].arrLabelSubObj[suffix].sTop;
+					}
+					iPage++;				
+					arrContinueHTML[iPage] = "";
+					for (var j=0;j<subLen;j++){
+						if (arrMainList[inx].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+							var suffix = arrMainList[inx].oSubObj[j].id;							
+							var oResult = parseMemo(arrMainList[inx].arrLabelSubObj[suffix].sInnerText,0);
+							var sPrex = arrMainList[inx].arrLabelSubObj[suffix].sPrexHTML;
+							arrContinueHTML[iPage] += sPrex + oResult.sresult + "</DIV>";							
+						}
+						else if (arrMainList[inx].oSubObj[j].controltype =="img"){
+							var suffix = arrMainList[inx].oSubObj[j].id;
+							arrMainList[inx].oSubObj[j].src =  parseMemo(arrMainList[inx].arrLabelSubObj[suffix].sInnerText,0).sresult;
+							arrContinueHTML[iPage] +=arrMainList[inx].oSubObj[j].outerHTML;
+						}
+						else{
+							arrContinueHTML[iPage] += arrMainList[inx].oSubObj[j].outerHTML;						
+						}							
+					}
+					ttlRowH = rowH;
+					arrContinueTtlRowH [iPage] =obandListTop + ttlRowH;
+					curPrintRows = 1;
+				}
+			}
+			if (isNeedBlankRow){
+				for (var i=curPrintRows;i<rowsperpage;i++){
+					ttlRowH = ttlRowH + rowH - firstBorderTopWidth;
+					if (ttlRowH <=continueH ){
+						for (var j=0;j<subLen;j++){
+							odbj = arrMainList[inx].oSubObj[j];
+							odbj.style.top = ToFloat(odbj.style.top) + rowH - ToFloat(odbj.style.borderTopWidth);
+							if (odbj.controltype =="ep_memo"){							
+								var suffix =odbj.id;	
+								var sPrex = arrMainList[inx].arrLabelSubObj[suffix].sPrexHTML;
+								sPrex = fc_RepStr(sPrex,"TOP: "+arrMainList[inx].arrLabelSubObj[suffix].sTop,"TOP: " + odbj.style.top);
+								arrContinueHTML[iPage] += sPrex + "</DIV>";
+							}
+							else{
+								arrContinueHTML[iPage] +=odbj.outerHTML;
+							}
+							arrContinueTtlRowH[iPage] = obandListTop + ttlRowH;
+						}					
+					}					
+				}
+			}
+			pre_inx = inx;
+		}
+	}	
+	var divOuterHTML="";	
+	var divOuterHTMLperPage = new Array();
+	if (arrContinueHTML.length >0){
+		pPages = arrContinueHTML.length ;
+		for (var iPage=0;iPage<arrContinueHTML.length;iPage++){
+			for (var iT=0;iT<arrTitle.length;iT++){
+				for (var j=0;j<arrTitle[iT].oSubObj.length;j++){
+					if (arrTitle[iT].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+						var suffix = arrTitle[iT].oSubObj[j].id;							
+						var oResult = parseMemo(arrTitle[iT].arrLabelSubObj[suffix].sInnerText,0);
+						var sPrex = arrTitle[iT].arrLabelSubObj[suffix].sPrexHTML;
+						divOuterHTML += sPrex + oResult.sresult + "</DIV>";						
+					}
+					else if (arrTitle[iT].oSubObj[j].controltype =="img"){
+						var suffix = arrTitle[iT].oSubObj[j].id;
+						arrTitle[iT].oSubObj[j].src = parseMemo(arrTitle[iT].arrLabelSubObj[suffix].sInnerText,0).sresult;
+						divOuterHTML +=arrTitle[iT].oSubObj[j].outerHTML;
+					}
+					else{
+						divOuterHTML += arrTitle[iT].oSubObj[j].outerHTML;					
+					}
+				}				
+			}
+			for (var iH=0;iH<arrMainHeader.length;iH++){
+				for (var j=0;j<arrMainHeader[iH].oSubObj.length;j++){
+					if (arrMainHeader[iH].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+						var suffix = arrMainHeader[iH].oSubObj[j].id;							
+						var oResult = parseMemo(arrMainHeader[iH].arrLabelSubObj[suffix].sInnerText,0);
+						var sPrex = arrMainHeader[iH].arrLabelSubObj[suffix].sPrexHTML;
+						divOuterHTML += sPrex + oResult.sresult + "</DIV>";						
+					}
+					else if (arrMainHeader[iH].oSubObj[j].controltype =="img"){
+						var suffix = arrMainHeader[iH].oSubObj[j].id;
+						arrMainHeader[iH].oSubObj[j].src = parseMemo(arrMainHeader[iH].arrLabelSubObj[suffix].sInnerText,0).sresult;
+						divOuterHTML +=arrMainHeader[iH].oSubObj[j].outerHTML;
+					}
+					else{
+						divOuterHTML += arrMainHeader[iH].oSubObj[j].outerHTML;					
+					}	
+				}							
+			}
+			divOuterHTML += arrContinueHTML[iPage]
+			if (arrMainFooter.length>0 && iPage==0){
+				if (arrMainFooter[0].oSubObj.length>0){
+					var minusTop = ToFloat(arrMainFooter[0].oSubObj[0].style.top) - ToFloat(arrMainFooter[0].oband.style.top);
+				}
+			}
+			for (var iF=0;iF<arrMainFooter.length;iF++){
+				for (var j=0;j<arrMainFooter[iF].oSubObj.length;j++){
+					var subBTopWidth =  ToFloat(arrMainFooter[iF].oSubObj[j].style.borderTopWidth);
+					arrMainFooter[iF].oSubObj[j].style.top = arrContinueTtlRowH[iPage] + minusTop - subBTopWidth;
+					if (arrMainFooter[iF].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+						var suffix = arrMainFooter[iF].oSubObj[j].id;							
+						var oResult = parseMemo(arrMainFooter[iF].arrLabelSubObj[suffix].sInnerText,0);
+						var sPrex = arrMainFooter[iF].arrLabelSubObj[suffix].sPrexHTML;
+						sPrex = fc_RepStr(sPrex,"TOP: "+arrMainFooter[iF].arrLabelSubObj[suffix].sTop,"TOP: " + arrMainFooter[iF].oSubObj[j].style.top);
+						divOuterHTML += sPrex + oResult.sresult + "</DIV>";						
+					}
+					else if (arrMainFooter[iF].oSubObj[j].controltype =="img"){
+						var suffix = arrMainFooter[iF].oSubObj[j].id;
+						arrMainFooter[iF].oSubObj[j].src = parseMemo(arrMainFooter[iF].arrLabelSubObj[suffix].sInnerText,0).sresult;
+						divOuterHTML +=arrMainFooter[iF].oSubObj[j].outerHTML;
+					}
+					else{
+						divOuterHTML += arrMainFooter[iF].oSubObj[j].outerHTML;					
+					}	
+				}							
+			}
+			divOuterHTMLperPage[iPage] = divOuterHTML;
+			divOuterHTML = "";
+		}
+		var innerHtmlBuffer = "";
+		for (iPage=0;iPage < divOuterHTMLperPage.length;iPage++){
+			if (iPage==0){
+				//innerHtmlBuffer = innerHtmlBuffer+divOuterHTMLperPage[iPage];	 //jzw
+				document.all("div1").innerHTML = divOuterHTMLperPage[iPage];		
+			}
+			else{
+				document.body.insertAdjacentHTML("beforeEnd", "<div id='div" + eval(iPage+1) + "' class='nextpage'></div>");
+				var oDiv = eval("div" + eval(iPage + 1));
+				oDiv.style.width = oPageSet.divWidth;
+				oDiv.style.height = oPageSet.divHeight;	
+				oDiv.innerHTML = divOuterHTMLperPage[iPage];
+				innerHtmlBuffer = innerHtmlBuffer + divOuterHTMLperPage[iPage];   //jzw
+			}
+		}
+		//alert(innerHtmlBuffer);
+	}else{
+//		alert("begin");
+		for (var iT=0;iT<arrTitle.length;iT++){
+			for (var j=0;j<arrTitle[iT].oSubObj.length;j++){
+				if (arrTitle[iT].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+					var suffix = arrTitle[iT].oSubObj[j].id;						
+					var oResult = parseMemo(arrTitle[iT].arrLabelSubObj[suffix].sInnerText,0);
+					var sPrex = arrTitle[iT].arrLabelSubObj[suffix].sPrexHTML;
+					divOuterHTML += sPrex + oResult.sresult + "</DIV>";						
+				}
+				else if (arrTitle[iT].oSubObj[j].controltype =="img"){
+					var suffix = arrTitle[iT].oSubObj[j].id;				
+					arrTitle[iT].oSubObj[j].src = parseMemo(arrTitle[iT].arrLabelSubObj[suffix].sInnerText,0).sresult;
+					
+					divOuterHTML +=arrTitle[iT].oSubObj[j].outerHTML;
+				}
+				else{
+					divOuterHTML += arrTitle[iT].oSubObj[j].outerHTML;				
+				}	
+			}
+		}
+		for (var iH=0;iH<arrMainHeader.length;iH++){
+			for (var j=0;j<arrMainHeader[iH].oSubObj.length;j++){
+			
+				if (arrMainHeader[iH].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+					var suffix = arrMainHeader[iH].oSubObj[j].id;						
+					var oResult = parseMemo(arrMainHeader[iH].arrLabelSubObj[suffix].sInnerText,0);
+					//if(oResult.sresult=='财务公司盖章'||oResult.sresult=='财务公司签章'){ //jzw 
+					//	oPageSet.signatureY=ToFloat(arrMainHeader[iH].oSubObj[j].style.top.substring(0,3))+ToFloat(10);
+					//	oPageSet.signatureX=ToFloat(arrMainHeader[iH].oSubObj[j].style.left.substring(0,3))+ToFloat(20);
+					//}else if(oResult.sresult=='[复核]'||oResult.sresult=='【复核】'){ //jzw 
+					//	oPageSet.signatureY=ToFloat(arrMainHeader[iH].oSubObj[j].style.top.substring(0,3))+ToFloat(10);
+					//	oPageSet.signatureX=ToFloat(arrMainHeader[iH].oSubObj[j].style.left.substring(0,3))+ToFloat(30);
+					//}else if(oResult.sresult=='[录入]'||oResult.sresult=='【录入】'){ //jzw 
+					//	oPageSet.signatureY=ToFloat(arrMainHeader[iH].oSubObj[j].style.top.substring(0,3))+ToFloat(10);
+					//	oPageSet.signatureX=ToFloat(arrMainHeader[iH].oSubObj[j].style.left.substring(0,3))+ToFloat(30);
+					//}
+					
+					var sPrex = arrMainHeader[iH].arrLabelSubObj[suffix].sPrexHTML;
+					divOuterHTML += sPrex + oResult.sresult + "</DIV>";						
+				}else if (arrMainHeader[iH].oSubObj[j].controltype =="img"){
+					var suffix = arrMainHeader[iH].oSubObj[j].id;
+					arrMainHeader[iH].oSubObj[j].src = parseMemo(arrMainHeader[iH].arrLabelSubObj[suffix].sInnerText,0).sresult;
+					divOuterHTML +=arrMainHeader[iH].oSubObj[j].outerHTML;									
+					divOuterHTML += arrMainHeader[iH].oSubObj[j].outerHTML;
+				}	
+			}							
+		}		
+		for (var iF=0;iF<arrMainFooter.length;iF++){
+			for (var j=0;j<arrMainFooter[iF].oSubObj.length;j++){
+				if (arrMainFooter[iF].oSubObj[j].getAttribute("controltype")=="ep_memo"){
+					var suffix = arrMainFooter[iF].oSubObj[j].id;							
+					var oResult = parseMemo(arrMainFooter[iF].arrLabelSubObj[suffix].sInnerText,0);
+					var sPrex = arrMainFooter[iF].arrLabelSubObj[suffix].sPrexHTML;
+					divOuterHTML += sPrex + oResult.sresult + "</DIV>";						
+				}
+				else if (arrMainFooter[iF].oSubObj[j].controltype =="img"){
+					var suffix = arrMainFooter[iF].oSubObj[j].id;				
+					arrMainFooter[iF].oSubObj[j].src = parseMemo(arrMainFooter[iF].arrLabelSubObj[suffix].sInnerText,0).sresult;
+					divOuterHTML +=arrMainFooter[iF].oSubObj[j].outerHTML;																			
+				}
+				else{
+					divOuterHTML += arrMainFooter[iF].oSubObj[j].outerHTML;				
+				}	
+			}							
+		}
+		document.all("div1").innerHTML = divOuterHTML;
+		if(oPageSet.issignature==1){
+				AutoSigned("11111111|1111",1,1,oPageSet.signatureX,oPageSet.signatureY,oPageSet.signDateX,oPageSet.signDateY);
+		}		
+	}		
+}
+function parseMemo(strExpress,rowno) {
+
+		//if (strExpress.indexOf("[")<0){	
+		//update by jelly(lianguodong) 2011-10-28 
+		if (strExpress.indexOf("[<#LINE>]")<0 && strExpress.indexOf("[<#LSB>]")<0 && strExpress.indexOf("[<#LT>]")<0 && strExpress.indexOf("[<LINES>]")<0) {
+			return {
+				bsuccess : true, 
+				sresult	 : strExpress   
+			}	
+		}
+	var strTemp = strExpress;	
+	if (strTemp.substring(0,2)=="[<")
+		strTemp = strTemp.substring(2,strTemp.length - 2);
+	else if (strTemp.substring(0,1)=="[")
+		strTemp = strTemp.substring(1,strTemp.length - 1);
+	var s10=GetPubVarValue(strTemp,rowno);
+	if (s10!=strTemp){ 
+		s10 = s10.substring(1,s10.length-1);	
+	return {
+		bsuccess : true, 
+		sresult	 : s10   
+	}		
+	}
+	var sInput = strExpress;
+	var re = new RegExp() ;
+	re.compile("[\[]([^]]+)[]]","gi") ; 
+	var resub = new RegExp() ;
+	resub.compile("[<]([^>]+)[>]","gi") ; 
+	var posStart = 0
+	var posEnd = 0
+	var sR =""; 
+	var arr,arr1 ;
+	var bool=false; 
+	while ((arr = re.exec(sInput)) != null) {
+		posEnd = arr.index;
+		var sInput1=RegExp.$1
+		var posStart1=0
+		var posEnd1=0
+		var sRetExp = "" ;
+		var ret = "" ;  
+		var bool1=false; 
+		while ((arr1 = resub.exec(sInput1)) != null) {
+			posEnd1 = arr1.index;
+			var s1=RegExp.$1 ;
+			sRetExp = GetPubVarValue(s1,rowno);
+			ret += sInput1.substring(posStart1,posEnd1)
+			ret += sRetExp
+			posStart1=arr1.index+s1.length+2 ;
+			bool1 = true
+		}
+		if(bool1 == false ){ 
+			if( bIsVar(sInput1)){
+				ret = GetPubVarValue(sInput1,rowno)
+			}else{
+				ret = sInput1
+			}
+		}else if(posStart1 <= sInput1.length) {
+			ret += sInput1.substring(posStart1,sInput1.length)
+		}
+		if(isSpace(ret)) { ret="" }		
+		var sret="";
+		try{
+			sret = eval(ret);		
+		}catch(e){sret = ret;}
+		sR += sInput.substring(posStart,posEnd)
+		sR += sret
+		posStart=arr.index+sInput1.length+2 ;
+		bool = true
+	}
+	if(bool == false){
+		sR = sInput
+	}else if(posStart <= sInput.length) {
+		sR += sInput.substring(posStart,sInput.length)
+	}
+	if(isSpace(sR)) { sR="" }		
+	return {
+		bsuccess : true, 
+		sresult	 : sR   
+	}	
+	function GetPubVarValue(name,rowno){
+		var sRetExp =""
+		var bln = false;
+		switch (name.toUpperCase()){
+			case "#LINE":
+				sRetExp = "'" + pLine + "'";				
+				break;
+			case "#LINES":
+				sRetExp = "'" + pLines + "'";
+				break;
+			case "#LSB":
+				sRetExp = "'['"	;
+				break;
+			case "#RSB":
+				sRetExp = "']'";
+				break;	
+			case "#LT":
+				sRetExp = "'<'"	;
+				break;
+			case "#GT":
+				sRetExp = "'>'";
+				break;	
+			default:
+				bln = true;
+				break;	
+		}
+		if (bln==false)
+			return sRetExp;
+		if (Printer.oBillXml!=null && Printer.oBillXml.documentElement!=null){
+			try{	
+				var valueList = Printer.oBillXml.getElementsByTagName(name);
+				if (valueList.length>0)
+				{
+					sRetExp = "'" + valueList.item(0).text + "'";
+					return sRetExp;
+				}
+			}catch(e){}					
+		}
+		var arrName = name.split(".");
+		if (arrName.length<=1) {
+			return name; 
+		}
+		try{		
+			var rowno = Printer.arrDataSets[arrName[0]].curRow;
+			var colno = Printer.arrDataSets[arrName[0]].arrField[arrName[1]];
+			if (rowno<0 || typeof colno=="undefined") 
+			return name;
+			sRetExp = "'" + Printer.arrDataSets[arrName[0]].oDom.documentElement.childNodes(rowno).childNodes(colno).text + "'";
+		}catch(e){
+			return name;
+		}
+		return sRetExp
+	}
+	function bIsVar(name) {
+		var bln=false;
+		switch (name.toUpperCase()){
+			case "#LINE":			
+				break;
+			case "#LINES":			
+				break;
+			case "#LSB":			
+				break;
+			case "#RSB":			
+				break;	
+			case "#LT":			
+				break;
+			case "#GT":			
+				break;	
+			default:
+				bln = true;
+				break;			
+		}
+		if (bln==false)
+			return true;
+		if (Printer.oBillXml&&Printer.oBillXml.documentElement!=null){
+			try{
+			var valueList = Printer.oBillXml.getElementsByTagName(name);
+			if (valueList.length>0)
+			{
+				return true;
+			}
+			}catch(e){}
+		}
+		var arrName = name.split(".");
+		if (arrName.length<=1) {
+			return false; 
+		}
+		var oDataset=null;
+		for (var i=0;i<Printer.datasets.length;i++){
+			if (Printer.datasets[i].chnname == arrName[0])
+			{
+				oDataset = SetDom(Printer.datasets[i].xml);
+				break;
+			}
+		}
+		if (oDataset==null){
+			return false;
+		}
+		var col=-1;
+		var fieldList = oDataset.getElementsByTagName("field");
+		for (var i=0;i<fieldList.length;i++){
+			if (fieldList.item(i).childNodes(2).text.toLowerCase() == arrName[1].toLowerCase()){
+				col = i;
+				break;
+			}			
+		}
+		if (col==-1){
+			return false; 
+		}
+		return true;
+	}
+}
+function getFieldValue(odataset,row,sfield){
+	var retValue = "";
+	var fieldList = odataset.getElementsByTagName("field");
+	var col=0;
+	for (var i=0;i<fieldList.length;i++){
+		if (fieldList.item(i).childNodes(0).text.toLowerCase() == sfield.toLowerCase()){
+			col = i;
+			retValue =odataset.childNodes(0).childNodes(row).childNodes(col).text;
+			break;
+		}
+	}	
+	return retValue;
+}
+function getColno(odataset,sfield){
+	var fieldList = odataset.getElementsByTagName("field");
+	var col=0;
+	for (var i=0;i<fieldList.length;i++){
+		if (fieldList.item(i).childNodes(0).text.toLowerCase() == sfield.toLowerCase()){
+			col = i;			
+			break;
+		}
+	}
+	return col;		
+}
+function getRowno(odataset,recValue,colno,ith){
+	var rowno=-1;
+	var iFind=0;
+	var rowList = odataset.getElementsByTagName("tr");
+	for (var i=0;i<rowList.length;i++){
+		if (rowList.item(i).childNodes(colno).text == recValue){
+			if (iFind==ith){
+				rowno = i;
+				break;
+			}
+			iFind++;
+		}
+	}
+	return rowno;
+}
+function ToFloat(str1){
+	var s1=trim(str1);
+	if(isSpace(s1)) {return 0}
+	try{
+		var f1=parseFloat(s1)
+		if(isNaN(f1)) {return 0}
+	}catch(e){
+		alert("parseFloat(s1)----"+e.description+"   "+e.number);
+	}
+	return f1
+}
+function isSpace(strMain){
+		var strComp=strMain;
+		try{
+			if (strComp=="　" || strComp=="" || strComp==" " || strComp==null || strComp.length==0 || typeof strMain == "undefined" || strMain == "undefined" ) { 
+				return true;
+			}
+			else{
+				return false;
+			}
+		}catch(e){return false; }
+	}
+function trim(strMain) {
+		if (strMain==null) {return "";}
+		strMain=strMain+"";
+		var str1=strMain;
+		for (var i=0;i<=str1.length-1;i++) {
+			var mychar=str1.charAt(i);
+			if ((mychar!=" ") && (mychar!="　" && mychar != "\r" && mychar != "\n" )) {
+				break;
+			} 
+		}
+		
+		str1=str1.substring(i,str1.length);
+		for (var i=str1.length-1;i>0;i--) {
+			var mychar=str1.charAt(i);
+			if ((mychar!=" ")  && (mychar!="　") && mychar != "\r" && mychar != "\n" ) {
+				break;
+			}
+		}
+		str1=str1.substring(0,i+1);
+		return str1;
+	}
+function bandmove(){
+}
+function fc_shaperesize(){}
+function AutoSigned(transNo,transType,printType,mXCording,mYCording,signDateX,signDateY)
+{
+		try{
+		    document.all.SignatureControl.EnableMove = "false";          //设置签章是否可以移动
+		    document.all.SignatureControl.PassWord = "123456";           //签章密码,系统默认为"",当设置改参数后点签章后弹出的选择签章窗体中的密码将默认为该密码      
+		    document.all.SignatureControl.ShowSignatureWindow = "0";     //读取、设置选择签章的窗口是否可见
+		    document.all.SignatureControl.FieldsList = "strTransNos=组合业务编号";          //读取、设置签章保护信息列表
+		    document.all.SignatureControl.SaveHistory = "false";         //读取、设置是否保存历史记录true-false
+		    document.all.SignatureControl.UserName = oPageSet.showSignatureName; //读取、设置签章的用户名称
+		    document.all.SignatureControl.Position(mXCording,mYCording); //设置签章的位置
+		    document.all.SignatureControl.PositionBySignType = 1;        //设置签章什么位置在Position处(0:左上角、1:中间、2:右上角)
+		    document.all.SignatureControl.ValidateCertTime = false;      //设置是否验证证书过期或未到期
+			document.all.SignatureControl.ServiceUrl = oPageSet.signatureUrl;
+		    document.all.SignatureControl.ExtParam = transNo;
+		    if(oPageSet.signatureData == ""){
+		    	document.all.SignatureControl.WebSetFontOther(false,"","0","宋体",7,"$0000FF",false);//设置签章图案附属信息(日期时间、签章人员、意见等)显示模式
+		    }else{
+		    	document.all.SignatureControl.ExtParam1 = oPageSet.signatureData;          //设置签章附加信息
+			    document.all.SignatureControl.DefaultSignTimeFormat = 8;    //设置签章附加时间默认格式
+		    	document.all.SignatureControl.WebSetFontOther(true,"","0","宋体",7,"$0000FF",false);//设置签章图案附属信息(日期时间、签章人员、意见等)显示模式
+			    document.all.SignatureControl.SetSignTextOffset(signDateX,signDateY);      //设置盖章是的附加信息(包括时间)的偏移量
+		    }
+		  }catch(e){
+		    alert(e.description);
+		  }
+		    try{
+		    	debugger;
+		    	SignatureControl.RunSignature();               //执行签章  
+		    }catch(e){
+		    	alert("添加签章错误，请联系开发人员");
+		    }
+}
+</script>
+<BODY language="javascript" onload="initPage()" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0">
+<script language="javascript">
+if(oPageSet.issignature==1)
+{
+	document.write("<OBJECT id=\"SignatureControl\" codebase=\"/websignature/cab/iSignatureHTML.cab#Version=7,1,0,196\" classid=\"clsid:D85C89BE-263C-472D-9B6B-5264CD85B36E\" width=0 height=0>");
+	document.write("<param name=\"ServiceUrl\" value=\"oPageSet.signatureUrl\"> ");   
+	document.write("<param name=\"WebAutoSign\" value=\"0\">");                       
+	document.write("<param name=\"PrintControlType\" value=2> ");                   
+	document.write("<param name=\"MenuDocVerify\" value=false>   ");              
+	document.write("<param name=\"MenuServerVerify\" value=false> ");               
+	document.write("<param name=\"MenuDigitalCert\" value=false>");                
+	document.write("<param name=\"MenuDocLocked\" value=false>  ");                
+	document.write("<param name=\"MenuDeleteSign\" value=false> ");                
+	document.write("<param name=\"MenuMoveSetting\" value=true> ");                 
+	document.write("<param name=\"PrintWater\" value=false>  ");                    
+	document.write("</OBJECT>"); 
+} 
+</script>
+<object style="display:none" id="oPrintCtl" classid="clsid:CA03A5A8-9890-49BE-BA4A-8C524EB06441"
+codebase="eprintdemo.cab#Version=3,0,0,7" viewasext VIEWASTEXT>		
+</BODY>
+</HTML>

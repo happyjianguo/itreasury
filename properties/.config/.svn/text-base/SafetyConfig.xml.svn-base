@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CVMConfig>
+	<!--可支持多个CA-->
+	<CRLContext><!--VeriSign Class1 60天邮件证书 -->
+		<RetryPolicy>60,300,3600</RetryPolicy>
+		<!--RetryPolicy，下载CRL失败时的重试间隔策略，以“,”分隔，单位为秒-->
+		<NotCheckCRL>true</NotCheckCRL>
+		<!--若NotCheckCRL设置为true，则将不检查CRL是否由指定CA所颁发-->
+		<CrlUrl>
+			http://onsitecrl.itrus.com.cn/iTruschinaCoLtdVTNIndividualConsumerServiceCenter/LatestCRL.crl
+		</CrlUrl>
+		<!--若不设置<CrlUrl>，则从用户证书的CRL颁发点下载CRL-->
+		<CaFileName>cafiles/itrus.cer</CaFileName>
+		<!--CaFileName，用户CA的证书文件-->
+		<CrlFileName>cafiles/itrus.crl</CrlFileName>
+	</CRLContext>
+</CVMConfig>

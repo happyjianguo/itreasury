@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/dao
+END
+ImportTRF_CurrencyInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/dao/ImportTRF_CurrencyInfoDao.java
+END
+ImportTRF_LoanContractFormInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/dao/ImportTRF_LoanContractFormInfoDao.java
+END
+ImportTRF_ClientInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/dao/ImportTRF_ClientInfoDao.java
+END
+Loan_PayFormInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/dao/Loan_PayFormInfoDao.java
+END
+Loan_AssureChargeFormInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/dao/Loan_AssureChargeFormInfoDao.java
+END
+Loan_DiscountCredenceInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/dataconvert/importdataToDB/dao/Loan_DiscountCredenceInfoDao.java
+END

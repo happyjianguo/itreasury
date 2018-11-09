@@ -1,0 +1,253 @@
+10
+
+dir
+43532
+https://10.24.16.98/svn/itreasury/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/settlement
+https://10.24.16.98/svn/itreasury
+
+
+
+2013-06-17T03:13:22.633753Z
+40903
+hanaijun
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2934e90a-06d0-2947-8c99-299d1987327d
+
+logger
+dir
+
+offbalance
+dir
+
+bizdelegation
+dir
+
+transcompatibility
+dir
+
+capitaltransfer
+dir
+
+settadjustinterestrate
+dir
+
+offbalanceregister
+dir
+
+transsecurities
+dir
+
+transcommission
+dir
+
+transspecial
+dir
+
+transfinancialmargin
+dir
+
+obbudget
+dir
+
+transfixeddeposit
+dir
+
+transdiscount
+dir
+
+generalledger
+dir
+
+compatibilityaccountbook
+dir
+
+obinstruction
+dir
+
+enddayprocess
+dir
+
+importdata
+dir
+
+transinvestment
+dir
+
+transinterest
+dir
+
+query
+dir
+
+transfinance
+dir
+
+clearinterestplanSetting
+dir
+
+remind
+dir
+
+transadjustinterest
+dir
+
+integration
+dir
+
+transreserve
+dir
+
+craftbrother
+dir
+
+transinternallend
+dir
+
+autotask
+dir
+
+transferloancontract
+dir
+
+account
+dir
+
+ebankPrint
+dir
+
+interest
+dir
+
+compareTrans
+dir
+
+mergedVoucher
+dir
+
+transbakreserve
+dir
+
+accountsystem
+dir
+
+transfee
+dir
+
+accountbook
+dir
+
+compatibilitysetting
+dir
+
+fundplan
+dir
+
+transupsave
+dir
+
+util
+dir
+
+transcurrentdeposit
+dir
+
+conversion
+dir
+
+matureremind
+dir
+
+bankinterface
+dir
+
+consignvoucher
+dir
+
+dataentity
+dir
+
+assistant
+dir
+
+approvaltran
+dir
+
+report
+dir
+
+setting
+dir
+
+bankinstruction
+dir
+
+reportlossorfreeze
+dir
+
+Liquidation
+dir
+
+comparisontrans
+dir
+
+transnoteacceptance
+dir
+
+clientmanage
+dir
+
+mywork
+dir
+
+exporttrans
+dir
+
+settpaynotice
+dir
+
+print
+dir
+
+transloan
+dir
+
+transferinterest
+dir
+
+transgeneralledger
+dir
+
+transabatement
+dir
+
+base
+dir
+
+repaymentloancorresponding
+dir
+
+settcontract
+dir
+
+transmargindeposit
+dir
+
+upgathering
+dir
+
+bankbill
+dir
+

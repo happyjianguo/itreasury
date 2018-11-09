@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorderservice/bizlogic
+END
+DeliveryOrderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorderservice/bizlogic/DeliveryOrderService.java
+END
+DeliveryOrderServiceEJB.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorderservice/bizlogic/DeliveryOrderServiceEJB.java
+END
+DeliveryOrderServiceOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorderservice/bizlogic/DeliveryOrderServiceOperation.java
+END
+DeliveryOrderServiceBiz.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorderservice/bizlogic/DeliveryOrderServiceBiz.java
+END
+DeliveryOrderServiceBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorderservice/bizlogic/DeliveryOrderServiceBean.java
+END
+DeliveryOrderServiceHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/itreasury/!svn/ver/39510/branches/iTreasury5.9.2_trunk_20130427/itreasuryEJB/src/com/iss/itreasury/securities/deliveryorderservice/bizlogic/DeliveryOrderServiceHome.java
+END

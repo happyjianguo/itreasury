@@ -1,0 +1,104 @@
+; ========================= MeadCo's ScriptX ========================
+; Copyright (c) 1998-2002, Mead & Co Limited.
+
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.5,"You need a newer version of Advpack.dll"
+
+[Add.Code]
+MCPrintX.dll=MCPrintX.dll
+
+[MCPrintX.dll]
+clsid={1663ed6a-23eb-11d2-b92f-008048fdd814}
+FileVersion=6,1,429,14
+hook=TriPrint
+
+[TriPrint]
+InfFile=PrintX.inf
+
+; ========================= Win32 INF ========================
+
+[SourceDisksNames]
+1="MeadCo TriPrint","TriPrint.cab", 0
+
+[SourceDisksFiles]
+MCPrintX.dll=1
+MCPrintXU.dll=1
+MCPrintX.htm=1
+PrintX.inf=1
+
+[DefaultInstall.NT]
+RequiredEngine=Setupapi,%SetupApi%
+BeginPrompt=BeginPrompt.Inst
+CustomDestination=Destinations
+CopyFiles=BinFilesU, HtmlFiles, InfFiles
+RegisterOCXs=RegisterFiles
+AddReg=AddRegistry
+
+[DefaultInstall]
+RequiredEngine=Setupapi,%SetupApi%
+BeginPrompt=BeginPrompt.Inst
+CustomDestination=Destinations
+CopyFiles=BinFiles, HtmlFiles, InfFiles
+RegisterOCXs=RegisterFiles
+AddReg=AddRegistry
+
+[DefaultUninstall]
+RequiredEngine=Setupapi,%SetupApi%
+BeginPrompt=BeginPrompt.Uninst
+CustomDestination=Destinations
+UnRegisterOCXs=RegisterFiles
+DelFiles=BinFiles, HtmlFiles, InfFiles
+DelReg=DelRegistry
+
+[DestinationDirs]
+BinFiles=11
+BinFilesU=11
+HtmlFiles=49101
+InfFiles=17
+
+[BinFiles] 
+MCPrintX.dll,MCPrintX.dll,,97
+
+[BinFilesU] 
+MCPrintX.dll,MCPrintXU.dll,,97
+
+[HtmlFiles] 
+MCPrintX.htm
+
+[InfFiles]
+PrintX.inf
+
+[RegisterFiles]
+%11%\MCPrintX.dll
+
+[AddRegistry]
+HKLM,SOFTWARE\%TriPrintKey%,TemplateFolder,,%49102%
+HKLM,SOFTWARE\%TriPrintKey%,TemplateURL,,file://%49102%\MCPrintX.htm
+
+[Destinations]
+49100,49101,49102,49103=TriPrintPath,5
+
+[TriPrintPath]
+HKLM,SOFTWARE\%TriPrintKey%,TemplateFolder,'%DestinationPrompt%','%18%'
+
+[BeginPrompt.Inst]
+Prompt=%InstallPrompt%
+ButtonType=YESNO
+Title=%Title%
+
+[BeginPrompt.Uninst]
+Prompt=%UninstallPrompt%
+ButtonType=YESNO
+Title=%Title%
+
+[DelRegistry]
+HKLM,SOFTWARE\%TriPrintKey%
+
+[Strings]
+SetupApi="This setup program requires Win32 SetupAPI DLLs"
+TriPrintKey="MeadCo\TriPrint"
+Title="MeadCo PrintX for Internet Explorer"
+InstallPrompt="Are you sure you want to install MeadCo PrintX software?"
+DestinationPrompt="Where would you like to install MeadCo PrintX software?"
+UninstallPrompt="Are you sure you want to uninstall MeadCo PrintX software? Please close *ALL* active Internet Explorer windows before continuing."

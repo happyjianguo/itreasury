@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="gb2312"?>
+<itreasury_codingrule>
+<coding_type><!--编码类型-->
+	<codingtypeitem>
+		<id>1</id>
+		<name>openDate</name>
+		<desc>结算开机时间</desc>
+		<value_type>2</value_type><!--取值逻辑：1为静态文本，2为sql，3为方法。-->
+		<value_sql>
+			<sql_string>select dtOpenDate from sett_officetime where ncurrencyid=? and nOfficeID= ?</sql_string>
+			<sql_paralist>
+				<paravalue>currencyID</paravalue><!--必须和parameter.xml中的参数名称一致-->
+				<paravalue>officeID</paravalue>
+			</sql_paralist>						
+		</value_sql>
+		<value_return>Timestamp</value_return><!--暂时只支持Timestamp、Data、Time、String，尽可能在sql中转换为String。-->		
+		<format_type>2</format_type>	
+	</codingtypeitem>
+		
+	<codingtypeitem>
+		<id>2</id>
+		<name>spaceMark</name>
+		<desc>间隔字符</desc>
+		<value_type>1</value_type>
+		<value_return>java.lang.String</value_return>
+		<format_type>3</format_type>
+	</codingtypeitem>
+
+	<codingtypeitem>
+		<id>3</id>
+		<name>serialNO</name>
+		<desc>流水号</desc>
+		<value_type>3</value_type>
+		<value_method>
+			<method_class>com.iss.itreasury.codingrule.bizlogic.CodingRuleMethodBiz</method_class>
+			<method_name>getSerialNumber</method_name>
+			<method_paratypelist>
+				<paratype>java.util.HashMap</paratype><!--如果参数为类，写出完整类名-->
+			</method_paratypelist>
+			<method_paravaluelist>
+				<paravalue>selfHashMap</paravalue><!--必须和parameter.xml中的参数名称一致-->
+			</method_paravaluelist>
+		</value_method>
+		<value_return>java.lang.String</value_return>		
+	</codingtypeitem>
+	
+	<codingtypeitem>
+		<id>4</id>
+		<name>serverTime</name>
+		<desc>数据库服务器时间</desc>
+		<value_type>2</value_type>
+		<value_sql>
+			<sql_string>select sysDate from dual</sql_string>
+			<sql_paralist>
+			</sql_paralist>						
+		</value_sql>
+		<value_return>Timestamp</value_return>
+		<format_type>2</format_type>			
+	</codingtypeitem>	
+	
+	<codingtypeitem>
+		<id>5</id>
+		<name>officeCode</name>
+		<desc>办事处编号</desc>
+		<value_type>2</value_type>
+		<value_sql>
+			<sql_string>select to_number(scode) scode from office where id= ?</sql_string>
+			<sql_paralist>
+				<paravalue>officeID</paravalue>
+			</sql_paralist>						
+		</value_sql>
+		<value_return>java.lang.String</value_return>			
+	</codingtypeitem>
+	
+	<codingtypeitem>
+		<id>7</id>
+		<name>officeCode</name>
+		<desc>币种编号</desc>
+		<value_type>3</value_type>
+		<value_method>
+			<method_class>java.lang.String</method_class>
+			<method_name>valueOf</method_name>
+			<method_paratypelist>
+				<paratype>long</paratype><!--如果参数为类，写出完整类名-->
+			</method_paratypelist>
+			<method_paravaluelist>
+				<paravalue>currencyID</paravalue><!--必须和parameter.xml中的参数名称一致-->
+			</method_paravaluelist>
+		</value_method>
+		<value_return>java.lang.String</value_return>			
+	</codingtypeitem>		
+	
+	
+	<codingtypeitem>
+		<id>8</id>
+		<name>subLoanTypeCode</name>
+		<desc>贷款子类型号</desc>
+		<value_type>2</value_type>
+		<value_sql>
+			<sql_string>select code from loan_loantypesetting  where id= ?</sql_string>
+			<sql_paralist>
+				<paravalue>subTransTypeID</paravalue>
+			</sql_paralist>						
+		</value_sql>
+		<value_return>java.lang.String</value_return>			
+	</codingtypeitem>
+
+	
+	<codingtypeitem>
+		<id>9</id>
+		<name>actionTypeCode</name>
+		<desc>贷款操作类型号</desc>
+		<value_type>3</value_type>
+		<value_method>
+			<method_class>java.lang.String</method_class>
+			<method_name>valueOf</method_name>
+			<method_paratypelist>
+				<paratype>long</paratype><!--如果参数为类，写出完整类名-->
+			</method_paratypelist>
+			<method_paravaluelist>
+				<paravalue>actionID</paravalue><!--必须和parameter.xml中的参数名称一致-->
+			</method_paravaluelist>
+		</value_method>
+		<value_return>java.lang.String</value_return>			
+	</codingtypeitem>	
+
+	<codingtypeitem>
+		<id>10</id>
+		<name>loanTypeCode</name>
+		<desc>贷款大类型号</desc>
+		<value_type>3</value_type>
+		<value_method>
+			<method_class>java.lang.String</method_class>
+			<method_name>valueOf</method_name>
+			<method_paratypelist>
+				<paratype>long</paratype><!--如果参数为类，写出完整类名-->
+			</method_paratypelist>
+			<method_paravaluelist>
+				<paravalue>transTypeID</paravalue><!--必须和parameter.xml中的参数名称一致-->
+			</method_paravaluelist>
+		</value_method>
+		<value_return>java.lang.String</value_return>			
+	</codingtypeitem>
+
+	<codingtypeitem>
+		<id>11</id>
+		<name>loanTypeCode</name>
+		<desc>客户经理号</desc>
+		<value_type>3</value_type>
+		<value_method>
+			<method_class>java.lang.String</method_class>
+			<method_name>valueOf</method_name>
+			<method_paratypelist>
+				<paratype>long</paratype><!--如果参数为类，写出完整类名-->
+			</method_paratypelist>
+			<method_paravaluelist>
+				<paravalue>clientCode</paravalue><!--必须和parameter.xml中的参数名称一致-->
+			</method_paravaluelist>
+		</value_method>
+		<value_return>java.lang.String</value_return>			
+	</codingtypeitem>
+<!--
+	<codingtypeitem>
+		<id>11</id>
+		<name>clientManagerCode</name>
+		<desc>客户经理号</desc>
+		<value_type>2</value_type>
+		<value_sql>
+			<sql_string>select substr(nvl(u.scode,'000'),1,3) as code from client c,userinfo u where c.ncustomermanageruserid = u.id and c.id = ?</sql_string>
+			<sql_paralist>
+				<paravalue>clientID</paravalue>
+			</sql_paralist>						
+		</value_sql>
+		<value_return>java.lang.String</value_return>			
+	</codingtypeitem>
+-->	
+	<codingtypeitem>
+		<id>12</id>
+		<name>clientCode</name>
+		<desc>客户编号</desc>
+		<value_type>2</value_type>
+		<value_sql>
+			<sql_string>select sCode from client where id= ?</sql_string>
+			<sql_paralist>
+				<paravalue>clientID</paravalue>
+			</sql_paralist>						
+		</value_sql>
+		<value_return>java.lang.String</value_return>			
+	</codingtypeitem>			
+	
+</coding_type>
+
+<return_format><!--返回格式-->
+	<formatitem>
+		<format_type>1</format_type>
+		<format_mode>select</format_mode><!--静态文本录入方式，select为选择，input为录入-->
+		<format_paralist><!--如果format_mode为input则该节点无效-->
+			<parameter>_</parameter>
+			<parameter>-</parameter>
+			<parameter>|</parameter>
+			<parameter> </parameter>
+		</format_paralist>
+	</formatitem>
+	<formatitem>
+		<format_type>2</format_type>
+		<format_mode>select</format_mode><!--静态文本录入方式，select为选择，input为录入-->
+		<format_paralist><!--如果format_mode为input则该节点无效-->
+			<parameter>yyyymmdd</parameter>
+			<parameter>ddmmyyyy</parameter>
+			<parameter>yyyy-mm-dd</parameter>
+			<parameter>yyyy/mm/dd</parameter>
+			<parameter>yyyy</parameter>
+			<parameter>mm</parameter>
+			<parameter>dd</parameter>
+		</format_paralist>
+	</formatitem>
+	<formatitem>
+		<format_type>3</format_type>
+		<format_mode>input</format_mode><!--静态文本录入方式，select为选择，input为录入-->
+		<format_paralist></format_paralist><!--如果format_mode为input则该节点无效-->
+	</formatitem>	
+</return_format>
+
+</itreasury_codingrule>
+
